@@ -1,0 +1,430 @@
+[
+	{
+		"id": 0,
+		"name": "Artifical Intelligence",
+		"desc": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
+		"Courses": [
+			1972,
+			1140,
+			1235
+		]
+	},
+	{
+		"id": 1,
+		"name": "Arts History, Theory, and Criticism",
+		"desc": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
+		"Courses": [
+			1080,
+			1300,
+			1170,
+			1700
+		]
+	},
+	{
+		"id": 2,
+		"name": "Behavioral and Cognitive Neuroscience",
+		"desc": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
+		"Courses": [
+
+		]
+	},
+	{
+		"id": 3,
+		"name": "Chinese Language",
+		"desc": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 4,
+		"name": "Creative Design and Innovation",
+		"desc": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
+		"Courses": [
+			1170,
+			1700,
+			1969,
+			1964
+		]
+	},
+	{
+		"id": 5,
+		"name": "Design, Innovation, and Society",
+		"desc": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 6,
+		"name": "Economics",
+		"desc": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
+		"Courses": [
+			1200
+		]
+	},
+	{
+		"id": 7,
+		"name": "Economics of Banking and Finance",
+		"desc": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.",
+		"Courses": [
+			1200
+		]
+	},
+	{
+		"id": 8,
+		"name": "Economics of Biotech and Medical Markets",
+		"desc": "Study different types of markets related to pharmaceuticals, medical devices, and healthcare. Students are prepared to use theory, econometric models, and data to study the role of R&D, patents, innovation, and policies in healthcare markets, and in pharmaceuticals and medical devices.",
+		"Courses": [
+			1200
+		]
+	},
+	{
+		"id": 9,
+		"name": "Economics of Policy and Regulations",
+		"desc": "Study different types of regulations and economic policy measures, and their impact on individuals, markets, and the economy. Students are prepared to use economic models, quantitative methods, and data to assess different types of regulations and policies, and their impact.",
+		"Courses": [
+			1200
+		]
+	},
+	{
+		"id": 10,
+		"name": "Economics of Quantitative Modeling",
+		"desc": "Study different types of mathematical models and econometric techniques used in Economics. Students are prepared to use economic theory, and econometric and statistical methods to study behavior of individuals and firms in the economy.",
+		"Courses": [
+			1200
+		]
+	},
+	{
+		"id": 11,
+		"name": "Economics of Technology and Innovation",
+		"desc": "Study different types of economic models related to innovation and new technologies. Students are prepared to use economic theory, econometric and statistical methods, and data to examine patents, R&D, and innovation more broadly, as well as in specific industries in the economy.",
+		"Courses": [
+			1200
+		]
+	},
+	{
+		"id": 12,
+		"name": "Electronic Arts",
+		"desc": "This pathway allows students to study a range of approaches to electronic, or digital arts, such as digital imaging, graphic storytelling, interactive media, and 3D animation. This immersive study will give students a comprehensive view of how to use digital tools to tell stories, and to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
+		"Courses": [
+			1987,
+			1964
+		]
+	},
+	{
+		"id": 13,
+		"name": "Environmental Futures",
+		"desc": "The future seems up for grabs as climate change challenges human and nonhuman societies to meet basic needs for clean air, water, soil, food, and energy. How will we adapt, reduce harm, or mitigate the problems of the past and present? This pathway involves courses in sustainability, defined as the means to ensure the well-being of the planet and quality of life of present and future generations. Courses integrate research and insights from the social sciences, arts, and humanities to pursue a healthy environment, economic prosperity, and social justice by building on the present to inform the future.",
+		"Courses": [
+			1110,
+			1200,
+			1240,
+			1350,
+			1720,
+			1961
+		]
+	},
+	{
+		"id": 14,
+		"name": "Ethics, Integrity, and Social Responsibility",
+		"desc": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.",
+		"Courses": [
+			1140,
+			1150,
+			1350,
+			1961
+		]
+	},
+	{
+		"id": 15,
+		"name": "Extent and Limits of Rationality",
+		"desc": "Humans can do, and have done, some really stupid things: we are not as rational as we would like to think, and we are subject to scores of cognitive and social biases. That said, however, we also have the power to correct for these, and to do good and constructive work. Let's see how we can harness our cognitive and social powers for the good. How can critical thinking be used constructively? How can we learn from our past mistakes? How can social institutions and policies be set up to ensure that we will make wise decisions and create a world that lasts into the extended future?",
+		"Courses": [
+			1140,
+			1200,
+			1235,
+			1180
+		]
+	},
+	{
+		"id": 16,
+		"name": "Fact and Fiction",
+		"desc": "A pathway for those who are curious about what makes something fake or factual and how such concepts are evolving in contemporary political and popular culture. Students will learn how to think more precisely and analytically about the distinctions between fact, fiction, truth, and reality.",
+		"Courses": [
+			1300,
+			1560,
+			1976,
+			1964
+		]
+	},
+	{
+		"id": 17,
+		"name": "Foreign Language",
+		"desc": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same foreign language.",
+		"Courses": [
+
+		]
+	},
+	{
+		"id": 18,
+		"name": "Game Studies",
+		"desc": "This pathway explores the design, creation, and analysis of games.  Students completing this pathway will develop depth in creative and critical thinking, technological proficiency and multicultural awareness.",
+		"Courses": [
+
+		]
+	},
+	{
+		"id": 19,
+		"name": "Gender, Race, Sexuality, Ethnicity and Social Change",
+		"desc": "This pathway enables students to cultivate an appreciation of how diverse identities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.",
+		"Courses": [
+			1150,
+			1300,
+			1560,
+			1666,
+			1710
+		]
+	},
+	{
+		"id": 20,
+		"name": "Graphic Design",
+		"desc": "Study Graphic Design through the integration of theory and practice, in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols and images.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 21,
+		"name": "History",
+		"desc": "The pathway in History is designed for students interested in US and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.",
+		"Courses": [
+			1410,
+			1500,
+			1964,
+			1978
+		]
+	},
+	{
+		"id": 22,
+		"name": "Information Technology and Web Sciences",
+		"desc": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provides in our lives and workplaces.  Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered deisgn issues to make technology more usable.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 23,
+		"name": "Interactive Media/Data Design",
+		"desc": "The Interactive Media/Data Design pathway covers communication design theory and practice, interaction design theory and practice, and information design to prepare students for creating different forms of interactive, multimedia communication and data representation. Students use critical thinking, creative thinking, multimedia design, and data representation to develop effective forms of communication in diverse global contexts.",
+		"Courses": [
+			1560
+		]
+	},
+	{
+		"id": 24,
+		"name": "Law and Policy",
+		"desc": "The Law and Policy pathway is designed for students interested in the design of policy and legislation, and students on a pre-law track. Skills and knowledge may be applied to fields such as environment and climate change, technological innovation, public health law, or intellectual property law.",
+		"Courses": [
+			1350,
+			1500
+		]
+	},
+	{
+		"id": 25,
+		"name": "Linguistics",
+		"desc": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You’ll also learn how to effectively communicate and handle foreign languages.",
+		"Courses": [
+
+		]
+	},
+	{
+		"id": 26,
+		"name": "Literature and Creative Writing",
+		"desc": "The Literature and Creative Writing Pathway offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
+		"Courses": [
+			1976,
+			1978
+		]
+	},
+	{
+		"id": 27,
+		"name": "Living in a World of Data",
+		"desc": "We live in the age of information ... and misinformation ... of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds ... and of rushing to judgment on viral videos.  We better all develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding our collective awareness driving our decisions and affecting the world around us.",
+		"Courses": [
+			1140,
+			1150,
+			1200
+		]
+	},
+	{
+		"id": 28,
+		"name": "Logical Thinking",
+		"desc": "This Pathway is for students with an interest in symbolic logic, and the connections between formal logic and mathematics, computer science, Artificial Intelligence, and the human mind.",
+		"Courses": [
+			1235
+		]
+	},
+	{
+		"id": 29,
+		"name": "Media and Culture",
+		"desc": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.",
+		"Courses": [
+			1560,
+			1987,
+			1964,
+			1958,
+			1978
+		]
+	},
+	{
+		"id": 30,
+		"name": "Mind, Brain, and Intelligence",
+		"desc": "Discover Cognitive Science: a young but fast-growing field focused on the study of mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artificial intelligence.",
+		"Courses": [
+			1140,
+			1972,
+			1235
+		]
+	},
+	{
+		"id": 31,
+		"name": "Music and Culture",
+		"desc": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
+		"Courses": [
+			1080,
+			1700,
+			1710,
+			1958
+		]
+	},
+	{
+		"id": 32,
+		"name": "Music Composition and Production",
+		"desc": "Students learn to compose music starting with the Western Classical tradition then branching out to modern and experimental methods.  Students also learn to program and apply modern information technology to music creation and production.",
+		"Courses": [
+			1080,
+			1700,
+			1710,
+			1958
+		]
+	},
+	{
+		"id": 33,
+		"name": "Music Performance",
+		"desc": "Students learn to perform focal and instrumental music from a variety of styles, Classical to Afro-Cuban to experimental.",
+		"Courses": [
+			1080,
+			1710
+		]
+	},
+	{
+		"id": 34,
+		"name": "Philosophy",
+		"desc": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions, about enduring and contemporary problems in ethics, science, technology, religion, and politics — including some of the biggest challenges that humanity currently faces.",
+		"Courses": [
+			1150,
+			1235
+		]
+	},
+	{
+		"id": 35,
+		"name": "Public Health",
+		"desc": "The pathway in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-medical track.",
+		"Courses": [
+			1150,
+			1410
+		]
+	},
+	{
+		"id": 36,
+		"name": "Science, Technology, and Society",
+		"desc": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 37,
+		"name": "Strategic Communication",
+		"desc": "This pathway is designed to train versatile, critical, and self-possessed 21st- century communicators. Students who successfully complete this pathway will demonstrate the ability to make focused, audience-appropriate arguments; communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts; and respond creatively to the analytical demands involved with developing, arranging, and revising ideas and arguments.",
+		"Courses": [
+			1560
+		]
+	},
+	{
+		"id": 38,
+		"name": "Studio Arts",
+		"desc": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history and theory in the visual arts.  Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color, 2 and 3D Design, and learn to articulate ideas about their own, other students’, and historical works through class discussions and critiques.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 39,
+		"name": "Sustainability",
+		"desc": "The pathway in Sustainability focuses on the interactions between various systems - social, political, cultural, economic, technological and ecological - that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems.",
+		"Courses": [
+			1110,
+			1240,
+			1961
+		]
+	},
+	{
+		"id": 40,
+		"name": "Thinking with Science",
+		"desc": "This pathway offers instruction in identifying and understanding the methods and media for scientific knowledge is dissemination. Students who successfully complete this pathway will demonstrate the ability to critique how textual and social representations create diverse and competing receptions of scientific knowledge; analyze the social construction of scientific knowledge; and solve problems through disseminating scientific knowledge across a variety of social and rhetorical contexts.",
+		"Courses": [
+			1175
+		]
+	},
+	{
+		"id": 41,
+		"name": "Transfer Student Arts and Humanities",
+		"desc": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the arts and humanities to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 42,
+		"name": "Transfer Student Social Science",
+		"desc": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the social sciences to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
+		"Courses": [
+			
+		]
+	},
+	{
+		"id": 43,
+		"name": "Understanding Human Behavior",
+		"desc": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society.  In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
+		"Courses": [
+			1975
+		]
+	},
+	{
+		"id": 44,
+		"name": "Video, Performance, and Social Impact",
+		"desc": "This pathway allows students to study video, performance and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio mediums. Strategically situating art, media and technology in a social context, students engage in creative practice designed to make change from the local to the global.",
+		"Courses": [
+			1300,
+			1987,
+			1964,
+			1958
+		]
+	},
+	{
+		"id": 45,
+		"name": "Well-being: Body and Mind",
+		"desc": "How do we maintain a sense of well-being in our lives? Each person’s path to well-being in body and mind is unique—arising from an awareness of our needs, goals and what we find fulfilling. The Well-being Interdisciplinary Pathway includes a wide variety of courses that explore the nature of what it is to be human and to orient ourselves in the world, to have relationships, make decisions, be creative, and make discoveries.",
+		"Courses": [
+			1110,
+			1140,
+			1175,
+			1700,
+			1720,
+			1180,
+			1975
+		]
+	}
+]

@@ -1,0 +1,386 @@
+[
+	{
+		"model":"api.Courses",
+		"pk": 1972,
+		"fields":{
+			"name": "AI and Society",
+			"category": "IHSS",
+			"pathways": [
+				0,
+				30
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1978,
+		"fields":{
+			"name": "The American Dream",
+			"category": "IHSS",
+			"pathways": [
+				21,
+				26,
+				29
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1235,
+		"fields":{
+			"name": "Are Humans Rational?",
+			"category": "IHSS",
+			"pathways": [
+				0,
+				15,
+				28,
+				30,
+				34
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1180,
+		"fields":{
+			"name": "The Art of Listening",
+			"category": "IHSS",
+			"pathways": [
+				15,
+				45
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1987,
+		"fields":{
+			"name": "Behind the Television Screen",
+			"category": "IHSS",
+			"pathways": [
+				12,
+				29,
+				44
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1410,
+		"fields":{
+			"name": "Century of the Gene",
+			"category": "IHSS",
+			"pathways": [
+				21,
+				35
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1961,
+		"fields":{
+			"name": "Designing Climate Justice",
+			"category": "IHSS",
+			"pathways": [
+				13,
+				14,
+				39
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1964,
+		"fields":{
+			"name": "Documentary in the 21st Century",
+			"category": "IHSS",
+			"pathways": [
+				4,
+				12,
+				16,
+				21,
+				29,
+				44
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1976,
+		"fields":{
+			"name": "Fiction: From Film to the Internet",
+			"category": "IHSS",
+			"pathways": [
+				16,
+				26
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1150,
+		"fields":{
+			"name": "The Genome and You",
+			"category": "IHSS",
+			"pathways": [
+				14,
+				19,
+				27,
+				34,
+				35
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1170,
+		"fields":{
+			"name": "History of Animation",
+			"category": "IHSS",
+			"pathways": [
+				1,
+				4
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1969,
+		"fields":{
+			"name": "History of Design",
+			"category": "IHSS",
+			"pathways": [
+				4
+			]
+		}
+	},	
+	{
+		"model":"api.Courses",
+		"pk": 1080,
+		"fields":{
+			"name": "History of Jazz and Improv Music",
+			"category": "IHSS",
+			"pathways": [
+				1,
+				31,
+				32,
+				33
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1500,
+		"fields":{
+			"name": "Human Rights in History",
+			"category": "IHSS",
+			"pathways": [
+				21,
+				24
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1350,
+		"fields":{
+			"name": "Law, Values and Public Policy",
+			"category": "IHSS",
+			"pathways": [
+				13,
+				14,
+				24
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1560,
+		"fields":{
+			"name": "Media and Society",
+			"category": "IHSS",
+			"pathways": [
+				16,
+				19,
+				23,
+				29,
+				37
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1140,
+		"fields":{
+			"name": "Minds and Machines",
+			"category": "IHSS",
+			"pathways": [
+				0,
+				14,
+				15,
+				27,
+				45
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1720,
+		"fields":{
+			"name": "Music and Nature",
+			"category": "IHSS",
+			"pathways": [
+				13,
+				45
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1110,
+		"fields":{
+			"name": "Nature and Society",
+			"category": "IHSS",
+			"pathways": [
+				13,
+				38,
+				45
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1973,
+		"fields":{
+			"name": "News Media, Culture and Politics",
+			"category": "IHSS",
+			"pathways": [
+	
+			]
+		}
+		},
+	{
+		"model":"api.Courses",
+		"pk": 1710,
+		"fields":{
+			"name": "Popular Music and Society",
+			"category": "IHSS",
+			"pathways": [
+				19,
+				31,
+				32,
+				33
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1200,
+		"fields":{
+			"name": "Principles of Economics",
+			"category": "IHSS",
+			"pathways": [
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				13,
+				15,
+				27
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1300,
+		"fields":{
+			"name": "Race and Film in US Culture and History",
+			"category": "IHSS",
+			"pathways": [
+				1,
+				16,
+				19,
+				44
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1666,
+		"fields":{
+			"name": "Religion in a Global World",
+			"category": "IHSS",	
+			"pathways": [
+				19
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1700,
+		"fields":{
+			"name": "Songwriting Workshop",
+			"category": "IHSS",
+			"pathways": [
+				1,
+				4,
+				31,
+				32,
+				45
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1240,
+		"fields":{
+			"name": "Sustainability Debates",
+			"category": "IHSS",
+			"pathways": [
+				13,
+				38
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1958,
+		"fields":{
+			"name": "Technology and the Top Ten",
+			"category": "IHSS",
+			"pathways": [
+				29,
+				31,
+				32,
+				44
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1975,
+		"fields":{
+			"name": "Understanding Empathy",
+			"category": "IHSS",
+			"pathways": [
+				43,
+				45
+			]
+		}
+	},
+	{
+		"model":"api.Courses",
+		"pk": 1175,
+		"fields":{
+			"name": "Well-Being: Cultivating Curiosity",
+			"category": "IHSS",
+			"pathways": [
+				40,
+				45
+			]
+		}
+	}
+]
