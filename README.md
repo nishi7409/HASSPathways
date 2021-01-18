@@ -10,11 +10,11 @@ https://hasspathways.netlify.app/
 - Visit the specified website (localhost/IP address) the console spits out
 
 
-# BRANCH/PR
+# Branch/Pull Request
 To maintain an individual's credibility towards this project and order, we'll be using branches and pull requests. Branches will separate our work from one another preventing each other from overwriting someone else's work. Pull requests is more of a formaility before it goes to production. I will be handling all pull requests.
 
 The ideal format for a branch name in this project is `issueNumber-&-issueNumber/FirstName`
-For example, your branch would be called `3-&-16/Chris`. You'd base your branch off the `all-frontend` or `all-backend` branch depending on what *type* (frontend or backend) issue you've been assigned.
+For example, a possible branch name would be called `3-&-16/Chris`. You'd base your branch off the `all-frontend` or `all-backend` branch depending on what *stack* (frontend or backend) issue you've been assigned.
 
 When you're completely done with your tasks, push to your specific branch then create a pull request to the your main-stack's branch (`all-frontend` or `all-backend`).
 
