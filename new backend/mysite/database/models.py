@@ -1,39 +1,56 @@
 import csv
-
+import os
 from django.db import models
 
-# Create your models here.
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Individual class model
 class Class(models.Model):
-    prefix = models.CharField(max_length=5)
-    ID = models.IntegerField()
-    name = models.CharField()
-    description = models.TextField()
-    HI = models.IntegerField()
-    CI = models.IntegerField()
-    DI = models.IntegerField()
-    fall = models.IntegerField()
-    spring = models.IntegerField()
-    summer = models.IntegerField()
-    pathway = models.CharField()
+    prefix = models.CharField(max_length=10)
+    ID = models.IntegerField(null=False, blank=False)
+    name = models.TextField(null=False, blank=False)
+    description = models.TextField(null=False, blank=False)
+    HI = models.IntegerField(null=False, blank=False, default=0)
+    CI = models.IntegerField(null=False, blank=False, default=0)
+    DI = models.IntegerField(null=False, blank=False, default=0)
+    fall = models.IntegerField(null=False, blank=False, default=0)
+    spring = models.IntegerField(null=False, blank=False, default=0)
+    summer = models.IntegerField(null=False, blank=False, default=0)
+    pathway = models.TextField(null=False, blank=False)
 
+# Parse through CSV file
 def parse():
-    with open('HASSPathways.csv', 'r') as file:
-        file_r = csv.reader(file, delimiter=',', quotechar="")
+    # Get the absolute csv file
+    csvFile = os.getcwd() + "/" + "HassPathways.csv"
 
-        for column in file_r:
+    # Open the file
+    with open(csvFile, 'r') as file:
+        # Read it and note the delimeter
+        file_r = csv.reader(file, delimiter=',')
+
+        # Loop through teh columns
+        for col in file_r:
+            # Skip the empty empty data (work on more debugging so we can handle errors, or maybe create a Google app script that handles the errors for us... more details on that later)
+            if (col[0] == "" or col[6] == "" or col[1] == "ID"):
+                continue
+            # Create class
             created = Class(
-            ID = col[1],
-            name = col[2],
-            description = col[3],
-            HI = col[4],
-            CI = col[5],
-            DI = col[6],
-            fall = col[7],
-            spring = col[8],
-            summer = col[9],
-            pathway = col[10])
+            prefix = col[0].strip(),
+            ID = col[1].strip(),
+            name = col[2].strip(),
+            description = col[3].strip(),
+            HI = col[4].strip(),
+            CI = col[5].strip(),
+            DI = col[6].strip(),
+            fall = col[7].strip(),
+            spring = col[8].strip(),
+            summer = col[9].strip(),
+            pathway = col[10].strip())
             
+            # Save class
             created.save() # --> database
 
 parse()
-print('Done!')
+print("Done!")
+
+# HASSPathways.csv
