@@ -33,22 +33,25 @@ def parse():
             # Skip the empty empty data (work on more debugging so we can handle errors, or maybe create a Google app script that handles the errors for us... more details on that later)
             if (col[0] == "" or col[6] == "" or col[1] == "ID"):
                 continue
-            # Create class
-            created = Class(
-            prefix = col[0].strip(),
-            ID = col[1].strip(),
-            name = col[2].strip(),
-            description = col[3].strip(),
-            HI = col[4].strip(),
-            CI = col[5].strip(),
-            DI = col[6].strip(),
-            fall = col[7].strip(),
-            spring = col[8].strip(),
-            summer = col[9].strip(),
-            pathway = col[10].strip())
+            # Make sure the class object doesn't already exist
+            if (len(Class.objects.filter(prefix = col[0].strip(), name = col[2].strip())) == 0):
+                # Create class
+                created = Class(
+                prefix = col[0].strip(),
+                ID = col[1].strip(),
+                name = col[2].strip(),
+                description = col[3].strip(),
+                HI = col[4].strip(),
+                CI = col[5].strip(),
+                DI = col[6].strip(),
+                fall = col[7].strip(),
+                spring = col[8].strip(),
+                summer = col[9].strip(),
+                pathway = col[10].strip())
+                
+                # Save class
+                created.save() # --> database
             
-            # Save class
-            created.save() # --> database
 
 parse()
 print("Done!")
