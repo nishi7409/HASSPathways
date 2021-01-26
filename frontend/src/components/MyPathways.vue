@@ -22,10 +22,51 @@
       
       <v-card flat>
 
-        <v-card-title>
-          {{ currentCourse.pathway.name }}
-        </v-card-title>
 
+        <div>
+          <p class="font-weight-regular">
+            Your Pathway:
+          </p>
+          <p class="font-weight-black">
+            {{ currentCourse.pathway.name }}
+          </p>
+        </div>
+
+      </v-card>
+
+      <v-card>
+        <v-expansion-panels flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
+          <v-expansion-panel >  
+
+            <v-expansion-panel-header h6 color="#c65353" id="expansion-header">
+              {{ currentCourse.first_course }}
+              <template v-slot:actions>
+                <v-icon color="white">$expand</v-icon>
+              </template>
+            </v-expansion-panel-header>
+
+            <v-expansion-panel-content>
+              <v-card flat color="#dcdcdc">
+                <v-card-text class="mt-4">COURSE DESCRIPTION</v-card-text>
+              </v-card>
+            </v-expansion-panel-content>
+
+          </v-expansion-panel>
+        </v-expansion-panels>
+
+
+      </v-card>
+    </v-container>
+
+
+
+
+
+
+
+
+    <v-container fluid v-if="getOptions.length > 0">
+      <v-card>
         <v-card-subtitle>
 
           <!-- loop button x times -->
