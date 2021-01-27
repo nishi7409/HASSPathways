@@ -5,8 +5,7 @@
     <v-container fluid class="mt-4" v-if="getOptions.length > 0">
       <div id="buttonAndNav_holder">
         <div id="clearButtons" class="ml-4">
-          <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Delete Pathway</v-btn>
-          <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize">Clear All Pathways</v-btn>
+          <v-spacer> </v-spacer> <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize">Clear All Pathways</v-btn>
         </div>
         <div id="pathwaysNavigation" class="mr-4">
           <div v-if="getOptions.length > 0">
@@ -18,40 +17,86 @@
       </div>
     </v-container>
     
+    <!-- "YOUR PATHWAY" Header -->
     <v-container fluid v-if="getOptions.length > 0">
-      
       <v-card flat>
-
-
         <div>
-          <p class="font-weight-regular">
-            Your Pathway:
-          </p>
-          <p class="font-weight-black">
+          <span class= "font-weight-bold">
+            Pathway
+          </span>
+
+          <p class="headline font-weight-black">
             {{ currentCourse.pathway.name }}
           </p>
+          
         </div>
 
       </v-card>
 
       <v-card>
-        <v-expansion-panels flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
-          <v-expansion-panel >  
+        <v-expansion-panels flat outlined dark tile accordion hover multiple class="expansion-panel overflow-y-auto">
+          <v-expansion-panel>  
 
-            <v-expansion-panel-header h6 color="#c65353" id="expansion-header">
+            <v-expansion-panel-header dark color="#c65353" id="expansion-header" class= "font-weight-black">
               {{ currentCourse.first_course }}
               <template v-slot:actions>
                 <v-icon color="white">$expand</v-icon>
               </template>
             </v-expansion-panel-header>
 
-            <v-expansion-panel-content>
-              <v-card flat color="#dcdcdc">
-                <v-card-text class="mt-4">COURSE DESCRIPTION</v-card-text>
+            <v-expansion-panel-content color= "white">
+              <v-card flat color="#dcdcdc" >
+                <v-card-text class= "mt-6 red--text"> COURSE DESCRIPTION 
+                  <v-spacer> </v-spacer>
+                    <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Remove Course </v-btn>
+                </v-card-text>
               </v-card>
             </v-expansion-panel-content>
 
+
           </v-expansion-panel>
+
+          <v-expansion-panel class="mt-3">  
+
+            <v-expansion-panel-header color="#c65353" id="expansion-header"  class= "font-weight-black">
+              {{ currentCourse.second_course }}
+              <template v-slot:actions>
+                <v-icon color="white">$expand</v-icon>
+              </template>
+            </v-expansion-panel-header>
+
+            <v-expansion-panel-content color= "white">
+              <v-card flat color="#dcdcdc">
+                <v-card-text class="mt-4 red--text">COURSE DESCRIPTION
+                  <v-spacer> </v-spacer>
+                    <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Remove Course </v-btn>
+                </v-card-text>
+              </v-card>
+            </v-expansion-panel-content>
+
+
+          </v-expansion-panel>
+          
+          <v-expansion-panel class="mt-3">  
+
+            <v-expansion-panel-header color="#c65353" id="expansion-header" class= "font-weight-black">
+              {{ currentCourse.third_course }}
+              <template v-slot:actions>
+                <v-icon color="white">$expand</v-icon>
+              </template>
+            </v-expansion-panel-header>
+
+            <v-expansion-panel-content color= "white">
+              <v-card flat color="#dcdcdc">
+                <v-card-text class="mt-4 red--text">
+                  <p> COURSE DESCRIPTION </p>
+                  <v-spacer> </v-spacer>
+                    <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Remove Course </v-btn>
+                </v-card-text>
+              </v-card>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+
         </v-expansion-panels>
 
 
@@ -62,7 +107,7 @@
 
 
 
-
+    Everything Below this line will not be here after the refresh.
 
 
     <v-container fluid v-if="getOptions.length > 0">
@@ -278,5 +323,9 @@ export default {
 .rounded-right {
   border-radius: 0px 5px 5px 0px;
 }
+
+.v-text-field {
+    font-size: 5em;
+  }
 
 </style>
