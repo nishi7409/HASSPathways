@@ -69,6 +69,9 @@ const store = new Vuex.Store({
         state.currentSelection.course3 = localStorage.getItem('course3')
       }
     },
+    test(){
+      alert('hi')
+    },
     setSelectedPathway(state, pathwayID) {
       state.currentSelection.pathway = pathwayID;
 
