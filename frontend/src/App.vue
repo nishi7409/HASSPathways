@@ -11,7 +11,7 @@
             <!-- TITLE -->
             <v-flex md1 sm11 xs11>
               <router-link to="/home">
-                <v-img class="pl-6 pr-8 ml-4" height=40 width=40 :src="require('./assets/logo.png')"></v-img>
+                <v-img class="pl-6 pr-8 ml-4" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
               </router-link>
             </v-flex>
 
@@ -55,11 +55,11 @@
       <v-layout column>
         <div>
 
-          We love feedback!
-          <a href="https://github.com/dmata210/HASSpathways/issues" target="_blank" style="text-decoration: none">
+          We love feedback! Visit our 
+          <a href="https://github.com/nishi7409/HASSPathways/issues" target="_blank" style="text-decoration: none">
 
             <span style="color: #c65353">
-              Github
+              Github Repo
               <i style="color: #c65353" class="fab fa-github"></i>
             </span>
 
