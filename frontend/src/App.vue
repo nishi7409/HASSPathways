@@ -11,39 +11,34 @@
             <!-- TITLE -->
             <v-flex md1 sm11 xs11>
               <router-link to="/home">
-                <v-img class="pl-6 pr-8 ml-4" height=40 width=40 :src="require('./assets/logo.png')"></v-img>
+                <v-img class="pl-6 pr-8 ml-4" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
               </router-link>
             </v-flex>
-            
-            <!-- SEARCH BAR -->
-            <v-flex md7>
-              <v-combobox append-icon="" prepend-inner-icon="mdi-magnify" hide-details class="hidden-sm-and-down pl-4 combo-box" clearable :items="items" dense flat solo label="Search Courses" item-color="#c65353" color="#c65353" :search-input.sync="searchInput" @update:search-input="handleInput"></v-combobox>
-            </v-flex>
 
+            <v-spacer></v-spacer>
+            
+            <!-- MENU BAR -->
+            <v-icon @click="extension=!extension" class="hidden-md-and-up mt-2" color="white">fa-bars</v-icon>
+            
             <!-- BUTTONS -->
-            <v-flex md4>
+            <v-col class="text-right">
                 <v-btn class="hidden-sm-and-down text-capitalize" id="button" :to="{name: 'activity'}">My Pathways</v-btn>
                 <v-btn class="hidden-sm-and-down mr-2 text-capitalize" 
                   @click="clearProgress()"
                   active-class="v-btn--active toolbar-btn-active"
                   depressed id="button" :to="{name: 'home'}">Add Pathways
                 </v-btn>
-            </v-flex>
+            </v-col>
 
-            <!-- MENU BAR -->
-            <v-flex sm1 xs1>
-              <v-icon @click="extension=!extension" class="hidden-md-and-up mt-2" color="white">fa-bars</v-icon>
-            </v-flex>
           </v-layout>
         </v-container>
 
         <!-- HEADER EXTENSION -->
         <template v-if="(this.$vuetify.breakpoint.xs==true || this.$vuetify.breakpoint.sm==true) && extension==true" v-slot:extension>
           <v-layout column>
-
-            <!-- SEARCH BAR -->
-            <v-combobox class="mb-2" append-icon="" prepend-inner-icon="mdi-magnify" hide-details clearable :items="items" dense flat solo label="Search Courses" item-color="#c65353" color="#c65353" :search-input.sync="searchInput" @update:search-input="handleInput"></v-combobox>
             
+            <v-spacer></v-spacer>
+
             <!-- BUTTONS -->
             <div class="mb-2">
               <v-btn class="mr-2 text-capitalize" depressed color='primary' :to="{name: 'activity'}">My Pathways</v-btn>
@@ -70,7 +65,7 @@
           <a href="https://github.com/nishi7409/HASSPathways/issues" target="_blank" style="text-decoration: none">
 
             <span style="color: #c65353">
-              Github
+              Github Repo
               <i style="color: #c65353" class="fab fa-github"></i>
             </span>
 
