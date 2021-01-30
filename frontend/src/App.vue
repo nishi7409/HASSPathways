@@ -21,9 +21,10 @@
             </v-flex>
 
             <!-- BUTTONS -->
-            <v-flex md4>
-              <v-btn class="hidden-sm-and-down text-capitalize" depressed id="button" :to="{name: 'activity'}">My Pathways</v-btn>
-              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
+            <!-- v-ripple="{ class: 'error--text' }"  -->
+            <v-flex md4 id="topRightButtons">
+              <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" :to="{name: 'activity'}">My Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
             </v-flex>
 
             <!-- MENU BAR -->
@@ -121,6 +122,11 @@ export default {
 #button {
   float: right;
 }
+
+#topRightButtons .v-btn::before{
+  background-color: transparent;
+}
+
 
 #header {
   height: 70px;
