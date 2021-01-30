@@ -21,14 +21,21 @@
             <v-icon @click="extension=!extension" class="hidden-md-and-up mt-2" color="white">fa-bars</v-icon>
             
             <!-- BUTTONS -->
-            <v-col class="text-right">
-                <v-btn class="hidden-sm-and-down text-capitalize" id="button" :to="{name: 'activity'}">My Pathways</v-btn>
+            <v-col class="text-right" id="topRightButtons">
+                <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" :to="{name: 'activity'}">My Pathways</v-btn>
                 <v-btn class="hidden-sm-and-down mr-2 text-capitalize" 
                   @click="clearProgress()"
                   active-class="v-btn--active toolbar-btn-active"
+                  rounded
+                  elevation="4"
                   depressed id="button" :to="{name: 'home'}">Add Pathways
                 </v-btn>
             </v-col>
+
+<!-- <v-flex md4 id="topRightButtons">
+              <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" :to="{name: 'activity'}">My Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
+            </v-flex> -->
 
           </v-layout>
         </v-container>
