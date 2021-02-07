@@ -6,7 +6,8 @@
       <div id="buttonAndNav_holder">
         <div id="clearButtons">
           <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Delete This Pathway</v-btn>
-            <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize">Clear All Pathways</v-btn>
+          <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize mr-2">Clear All Pathways</v-btn>
+          <v-btn color="#c65353" depressed :to="{name: 'home'}" class="white--text text-capitalize">Edit Pathway</v-btn>
         </div>
         <div id="pathwaysNavigation" class="mr-4">
           <div v-if="getOptions.length > 0">
@@ -21,6 +22,20 @@
     <v-container fluid v-if="getOptions.length == 0"> 
       <!-- If no Pathways have been specified yet [TO BE CODED] -->
       <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever -->
+
+      <v-container fill-height>
+          <v-row justify="center" align="center">
+              <v-col sm="4" class= "font-weight-regular  pa-8">
+                  <p> This place seems pretty lonely. </p>
+
+                  <span> You can add Pathways from the </span>
+                  <span class= "font-weight-black">Add Pathways </span>
+                  <span class= "font-weight-regular">section.</span>
+              </v-col>
+          </v-row>
+      </v-container>
+
+
     </v-container>
 
 
@@ -59,8 +74,8 @@
               </v-card-subtitle>
 
               <!-- COURSE 1 DESCRIPTION -->
-              <v-card flat color="#dcdcdc" class= "mt-1" >
-                <v-card-text class= "mt-6 red--text">
+              <v-card flat color="#c65353" class= "mt-1" >
+                <v-card-text class= "mt-6 white--text font-weight-black">
                   <p> COURSE DESCRIPTION </p>
                 </v-card-text>
               </v-card>
@@ -86,8 +101,8 @@
               </v-card-subtitle>
 
               <!-- COURSE 2 DESCRIPTION -->
-              <v-card flat color="#dcdcdc" class= "mt-1">
-                <v-card-text class="mt-6 red--text">
+              <v-card flat color="#c65353" class= "mt-1">
+                <v-card-text class="mt-6 white--text font-weight-black">
                   <p> COURSE DESCRIPTION </p>
                 </v-card-text>
               </v-card>
@@ -113,8 +128,8 @@
               </v-card-subtitle>
 
               <!-- COURSE 3 DESCRIPTION -->
-              <v-card flat color="#dcdcdc" class= "mt-1">
-                <v-card-text class="mt-6 red--text">
+              <v-card flat color="#c65353" class= "mt-1">
+                <v-card-text class="mt-6 white--text font-weight-black">
                   <p> COURSE DESCRIPTION </p>
                 </v-card-text>
               </v-card>
@@ -233,6 +248,14 @@ export default {
 
 .rounded-right {
   border-radius: 0px 5px 5px 0px;
+}
+
+.element {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .v-text-field {
