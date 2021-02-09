@@ -1,3 +1,5 @@
+
+
 <template>
   <div>
     <ProgressBar/>
@@ -25,7 +27,25 @@
         <v-divider color="white"></v-divider>
 
       </v-expansion-panel>
+      
     </v-expansion-panels>
+  <div>
+    <v-btn
+        large
+        fixed
+        bottom
+        right
+        fab
+        id = "button1"
+        v-if="courseNumber=='third'"
+        @click="savePathway()"
+        class="stickyButton"
+      >
+      <v-icon>
+          mdi-content-save
+      </v-icon>
+    </v-btn>
+    </div>
   </div>
 </template>
 
@@ -35,7 +55,6 @@ import ProgressBar from './ProgressBar.vue'
 import FirstCourses from './FirstCourses'
 import SecondCourses from './SecondCourses'
 import ThirdCourses from './ThirdCourses'
-
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
@@ -70,7 +89,33 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['setSelectedPathway']),
+    ...mapGetters(['thirdCourse']),
+    ...mapMutations(['setSelectedPathway','saveButton']),
+    savePathway(){
+      console.log(localStorage.getItem('course1'))
+      if (this.thirdCourse){
+        this.saveButton()
+        this.$root.$emit('resetProgress')
+        this.$toast.clear()
+        this.$toast.success("Saved Pathway!", {
+          position: "top-right",
+          timeout: 3000,
+          pauseOnFocusLoss: true,
+          hideProgressBar: true,
+          closeButton: "button",
+        });
+      }else{
+        this.$toast.clear()
+        this.$toast.error("You haven't chosen three courses yet!", {
+          position: "top-right",
+          timeout: 3000,
+          pauseOnFocusLoss: true,
+          hideProgressBar: true,
+          closeButton: "button",
+        });
+      }
+        
+    },
     selectPathway(path) {
       console.log(path.name)
       this.setSelectedPathway(path)
@@ -157,6 +202,11 @@ export default {
 </script>
 
 <style scoped>
+
+  #button1 {
+    margin-bottom: 36px;
+    background-color: rgba(180, 67, 52, 0.87);
+  }
 
   .expansion-panel {
     position: relative;

@@ -60,6 +60,7 @@ export default {
     ...mapMutations(['setSelectedCourse1']),
     selectCourse(course) {
       this.setSelectedCourse1(course);
+      this.$forceUpdate();
       console.log(course)
       this.$emit('nextBucket', this.nextBucketNumber)
       this.$root.$emit('makeSecondCourseEditable', true)

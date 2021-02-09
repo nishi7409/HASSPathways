@@ -29,7 +29,6 @@
                   depressed id="button" :to="{name: 'home'}">Add Pathways
                 </v-btn>
             </v-flex>
-
             <!-- MENU BAR -->
             <v-flex sm1 xs1>
               <v-icon @click="extension=!extension" class="hidden-md-and-up mt-2" color="white">fa-bars</v-icon>
@@ -59,7 +58,7 @@
     <v-content>
       <router-view></router-view>
     </v-content>
-
+    
     <!-- FOOTER -->
     <v-footer app>
 
@@ -90,7 +89,6 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 
 export default {
   name: 'App',
@@ -104,7 +102,6 @@ export default {
     handleInput() {
       this.$root.$emit('changedFilter', this.searchInput)
     },
-    ...mapMutations(['clearProgress','setSelectedCourse2','setSelectedCourse1']),
     clearProgress() {
       this.$root.$emit('resetProgress')
     },
