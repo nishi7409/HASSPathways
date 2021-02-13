@@ -143,7 +143,7 @@ export default {
           closeButton: "button",
         });
       }
-        
+      this.$root.$emit(`closePanels`)
     },
     selectPathway(path) {
       console.log(path.name)
