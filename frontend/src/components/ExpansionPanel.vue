@@ -4,7 +4,7 @@
   <div>
     <ProgressBar/>
 
-    <v-expansion-panels flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
+    <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
       <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
 
         <v-expansion-panel-header color="#c65353" id="expansion-header">
@@ -41,7 +41,7 @@
         @click="savePathway()"
         class="stickyButton"
       >
-      <v-icon>
+      <v-icon style="color: white">
           mdi-content-save
       </v-icon>
     </v-btn>
@@ -85,25 +85,54 @@ export default {
       ],
       courseNumber: 'first',
       savedCourses: [],
-      filter: ''
+      filter: '',
+      panel: []
     }
   },
   methods: {
-    ...mapGetters(['thirdCourse']),
+    ...mapGetters(['thirdCourse',`secondCourse`,`firstCourse`]),
     ...mapMutations(['setSelectedPathway','saveButton']),
+    pathwayExist(courseCombo){
+      for (var i = 0; i < this.$store.getters.getOptions.length; i++) {
+        if (this.$store.getters.getOptions[i][1] == courseCombo[0] &&
+          this.$store.getters.getOptions[i][2] == courseCombo[1] &&
+          this.$store.getters.getOptions[i][3] == courseCombo[2]) {
+            console.log("exists")
+            return true
+        }
+      }
+      console.log("does not exist")
+      return false
+    },
     savePathway(){
       console.log(localStorage.getItem('course1'))
-      if (this.thirdCourse){
-        this.saveButton()
-        this.$root.$emit('resetProgress')
-        this.$toast.clear()
-        this.$toast.success("Saved Pathway!", {
-          position: "top-right",
-          timeout: 3000,
-          pauseOnFocusLoss: true,
-          hideProgressBar: true,
-          closeButton: "button",
-        });
+      // If the third course has been chosen or not
+      if (this.$store.getters.thirdCourse){
+        // If the pathway already exists reject save
+        if (this.pathwayExist([this.$store.getters.firstCourse, this.$store.getters.secondCourse, this.$store.getters.thirdCourse])) {
+          this.$toast.clear()
+          this.$toast.error("This pathway already exists!", {
+            position: "top-right",
+            timeout: 3000,
+            pauseOnFocusLoss: true,
+            hideProgressBar: true,
+            rtl: false,
+            closeButton: "button",
+          });
+          this.$root.$emit('resetProgress')
+        }else{
+          this.saveButton()
+          this.$root.$emit('resetProgress')
+          this.$toast.clear()
+          this.$toast.success("Saved Pathway!", {
+            position: "top-right",
+            timeout: 3000,
+            pauseOnFocusLoss: true,
+            hideProgressBar: true,
+            rtl: false,
+            closeButton: "button",
+          });
+        }
       }else{
         this.$toast.clear()
         this.$toast.error("You haven't chosen three courses yet!", {
@@ -138,6 +167,9 @@ export default {
     this.$root.$on('changedFilter', (input) => {
       this.filter = input
     }),
+    this.$root.$on('closePanels', () => {
+      this.panel = []
+    }),
     this.courseNumber = this.bucketNumber;
   },
   computed: {
@@ -163,7 +195,7 @@ export default {
         if (courses != null) {
           for (i = 0; i < courses.length; i++) {
             course = courses[i]
-            if (course == this.firstCourse) {
+            if (course == this.$store.getters.firstCourse) {
               result[key] = item
             }
           }
@@ -172,7 +204,7 @@ export default {
         if (secondCourses != null) {
           for (i = 0; i < secondCourses.length; i++) {
             course = secondCourses[i]
-            if (course == this.secondCourse) {
+            if (course == this.$store.getters.secondCourse) {
               result[key] = item
             }
           }
@@ -186,9 +218,9 @@ export default {
       return items
     },
     bucketNumber() {
-      if (this.firstCourse != null) {
-        if (this.secondCourse != null) {
-          if (this.thirdCourse != null) {
+      if (this.$store.getters.firstCourse != null) {
+        if (this.$store.getters.secondCourse != null) {
+          if (this.$store.getters.thirdCourse != null) {
             return 'third'
           }
           return 'third'
