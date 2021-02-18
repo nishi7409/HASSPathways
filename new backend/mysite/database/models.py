@@ -1,11 +1,12 @@
 import csv
 import os
+import time
 from django.db import models
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Individual class model
-class Class(models.Model):
+class Classes(models.Model):
     prefix = models.CharField(max_length=10)
     ID = models.IntegerField(null=False, blank=False)
     name = models.TextField(null=False, blank=False)
@@ -17,6 +18,17 @@ class Class(models.Model):
     spring = models.IntegerField(null=False, blank=False, default=0)
     summer = models.IntegerField(null=False, blank=False, default=0)
     pathway = models.TextField(null=False, blank=False)
+
+    def __str__(self):
+        return self.name
+
+class Pathways(models.Model):
+    pathway_name = models.TextField(null=False, blank=False)
+    #pathway_description = models.TextField(null=False, blank=False)
+    courses = models.ManyToManyField(Classes)
+
+    def __str__(self):
+        return self.pathway_name
 
 # Parse through CSV file
 def parse():
@@ -34,9 +46,9 @@ def parse():
             if (col[0] == "" or col[6] == "" or col[1] == "ID"):
                 continue
             # Make sure the class object doesn't already exist
-            if (len(Class.objects.filter(prefix = col[0].strip(), name = col[2].strip())) == 0):
+            if (len(Classes.objects.filter(prefix = col[0].strip(), name = col[2].strip())) == 0):
                 # Create class
-                created = Class(
+                created = Classes(
                 prefix = col[0].strip(),
                 ID = col[1].strip(),
                 name = col[2].strip(),
@@ -52,8 +64,19 @@ def parse():
                 # Save class
                 created.save() # --> database
             
+def makePath():
+    for course in Classes.objects.all():
+        if (len(Pathways.objects.filter(pathway = course.pathway) == 0)):
+            created = Pathways(pathway_name = course.pathway, courses = course)
+            created.save()
+        
+        else:
+            result = Pathways.objects.get(name__icontains=course.pathway)
+            result[0].courses.add(course)
+            result.save()
 
 parse()
+makePath()
 print("Done!")
 
 # HASSPathways.csv
