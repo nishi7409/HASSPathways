@@ -18,30 +18,10 @@ class Class(models.Model):
     fall = models.IntegerField(null=False, blank=False, default=0)
     spring = models.IntegerField(null=False, blank=False, default=0)
     summer = models.IntegerField(null=False, blank=False, default=0)
-    pathways = ArrayField(models.TextField(null=False, blank=False))
+    pathways = ArrayField(models.CharField(max_length=150, blank=True), default=list, size=10, null=True, blank=True)
 
     def __str__(self):
         return self.name
-
-# class Pathway(models.Model):
-#     pathway_name = models.TextField(null=False, blank=False)
-#     #pathway_description = models.TextField(null=False, blank=False)
-#     courses = models.ForeignKey(Class, on_delete=models.CASCADE)
-
-#     def __str__(self):
-#         return self.pathway_name
-
-# def makePath():
-#     for course in Classes.objects.all():
-#         if (len(Pathways.objects.filter(pathway = course.pathway) == 0)):
-#             print("hi")
-#             created = Pathways(pathway_name = course.pathway, courses = course)
-#             created.save()
-        
-#         else:
-#             result = Pathways.objects.get(name__icontains=course.pathway)
-#             result[0].courses.add(course)
-#             result.save()
 
 #Parse through CSV file
 def parse():
@@ -72,22 +52,22 @@ def parse():
                 DI = col[6].strip(),
                 fall = col[7].strip(),
                 spring = col[8].strip(),
-                summer = col[9].strip(),
-                pathways = col[10].strip())
+                summer = col[9].strip())
                 
+                created.pathways.append(col[10].strip())
+
                 # Save class
                 created.save()
 
             else:
-                result = Class.objects.get(name = col[2].strip())
+                result = Class.objects.get(prefix = col[0].strip(), name = col[2].strip())
                 result.pathways.append(col[10].strip())
                 result.save()
                 
 
 
 #Main code start
-#parse()
-#makePath()
+parse()
 print("Done!")
 
 # HASSPathways.csv
