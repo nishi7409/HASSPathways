@@ -185,7 +185,7 @@ export default {
       var array_length, innerLoop;
       for (array_length = 0; array_length < this.$store.getters.getOptions.length; array_length++){
         var firstCourse, secondCourse, thirdCourse;
-        for (innerLoop = 1; innerLoop < this.$store.getters.getOptions[array_length].length; innerLoop++){
+        for (innerLoop = 0; innerLoop < this.$store.getters.getOptions[array_length].length; innerLoop++){
           if (innerLoop === 1) firstCourse = this.$store.getters.getOptions[array_length][innerLoop];
           if (innerLoop === 2) secondCourse = this.$store.getters.getOptions[array_length][innerLoop]
           if (innerLoop === 3) thirdCourse = this.$store.getters.getOptions[array_length][innerLoop];

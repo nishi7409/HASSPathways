@@ -3,6 +3,14 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import router from './router';
 import Vuex from 'vuex';
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
+
+Vue.use(Toast, {
+  transition: "Vue-Toastification__bounce",
+  maxToasts: 1,
+  newestOnTop: true
+});
 
 Vue.use(Vuex)
 
@@ -83,67 +91,25 @@ const store = new Vuex.Store({
 
       // save in localStorage
       localStorage.setItem('course1', courseName)
-
-      if (state.currentSelection.course1 != null) {
-        if (this.getters.stateAlreadyExists([state.currentSelection.course1, state.currentSelection.course2, state.currentSelection.course3], state.count)) {
-          return
-        }
-
-        state.shoppingCart.options[state.count] = [state.currentSelection.pathway, state.currentSelection.course1, state.currentSelection.course2, state.currentSelection.course3];
-        
-        // save in localStorage
-        const parsed = JSON.stringify(state.shoppingCart.options)
-        localStorage.setItem('options', parsed)
-        
-        console.log(state.shoppingCart.options.length + " options")
-      }
+    
     },
     setSelectedCourse2(state, courseName) {
       state.currentSelection.course2 = courseName;
 
       // save in localStorage
       localStorage.setItem('course2', courseName)
-
-      if (state.currentSelection.course2 != null) {
-        if (this.getters.stateAlreadyExists([state.currentSelection.course1, state.currentSelection.course2, state.currentSelection.course3], state.count)) {
-          return
-        }
-
-        state.shoppingCart.options[state.count] = [state.currentSelection.pathway, state.currentSelection.course1, state.currentSelection.course2, state.currentSelection.course3];
-      
-        // save in localStorage
-        const parsed = JSON.stringify(state.shoppingCart.options)
-        localStorage.setItem('options', parsed)
-      }
     },
     setSelectedCourse3(state, courseName) {
-      state.currentSelection.course3 = courseName;
+       state.currentSelection.course3 = courseName;
 
       // save in localStorage
       localStorage.setItem('course3', courseName)
-
-      console.log()
-      if (state.currentSelection.course3 != null) {
-        if (this.getters.stateAlreadyExists([state.currentSelection.course1, state.currentSelection.course2, state.currentSelection.course3], state.count)) {
-          return
-        }
-
-        state.shoppingCart.options[state.count] = [state.currentSelection.pathway, state.currentSelection.course1, state.currentSelection.course2, state.currentSelection.course3];
-        
-        // save in localStorage
-        const parsed = JSON.stringify(state.shoppingCart.options)
-        localStorage.setItem('options', parsed)
-        
-        state.count += 1;
-
-        // save in localStorage
-        localStorage.setItem('count', state.count)
-      }
     },
     saveButton(state) {
-      state.shoppingCart.options[state.count] = [state.currentSelection.course1, state.currentSelection.course2, state.currentSelection.course3];
+      console.log("Saved button")
+      state.shoppingCart.options[state.count] = [state.currentSelection.pathway, localStorage.getItem('course1'), localStorage.getItem('course2'), localStorage.getItem('course3')];
       state.count += 1;
-
+      console.log(state.shoppingCart.options.length)
       state.currentSelection.pathway = null;
       state.currentSelection.course1 = null
       state.currentSelection.course2 = null;
@@ -205,7 +171,7 @@ const store = new Vuex.Store({
     pathway(state) {
       return state.currentSelection.pathway;
     },
-    getOptionsLength(state) {
+    getOptionsLength: state => {
       // double check
       if (state.count === state.shoppingCart.options.length){
         return state.count
@@ -213,24 +179,9 @@ const store = new Vuex.Store({
         return state.shoppingCart.options.length;
       }
     },
-    getOptions(state) {
+    getOptions: state => {
       return state.shoppingCart.options;
     },
-    stateAlreadyExists(state) {
-      return (courseCombo, count) => {
-        for (var i = 0; i < state.shoppingCart.options.length; i++) {
-          if (state.shoppingCart.options[i][1] == courseCombo[0] &&
-            state.shoppingCart.options[i][2] == courseCombo[1] &&
-            state.shoppingCart.options[i][3] == courseCombo[2] &&
-            count != i) {
-              console.log("exists")
-              return true
-          }
-        }
-        console.log("does not exist")
-        return false
-      }
-    }
   }
 })
 
