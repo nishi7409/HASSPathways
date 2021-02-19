@@ -15,44 +15,15 @@
               </router-link>
             </v-flex>
 
-            <v-spacer></v-spacer>
-            
-            <!-- MENU BAR -->
-            <v-icon @click="extension=!extension" class="hidden-md-and-up mt-2" color="white">fa-bars</v-icon>
-            
             <!-- BUTTONS -->
             <v-col class="text-right" id="topRightButtons">
-                <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" :to="{name: 'activity'}">My Pathways</v-btn>
-                <v-btn class="hidden-sm-and-down mr-2 text-capitalize" 
-                  @click="clearProgress()"
-                  active-class="v-btn--active toolbar-btn-active"
-                  rounded
-                  elevation="4"
-                  depressed id="button" :to="{name: 'home'}">Add Pathways
-                </v-btn>
+                <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'activity'}">My Pathways</v-btn>
+                <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="clearProgress()" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
             </v-col>
-            <!-- MENU BAR -->
-            <v-flex sm1 xs1>
-              <v-icon @click="extension=!extension" class="hidden-md-and-up mt-2" color="white">fa-bars</v-icon>
-            </v-flex>
+
           </v-layout>
         </v-container>
 
-        <!-- HEADER EXTENSION -->
-        <template v-if="(this.$vuetify.breakpoint.xs==true || this.$vuetify.breakpoint.sm==true) && extension==true" v-slot:extension>
-          <v-layout column>
-            
-            <v-spacer></v-spacer>
-
-            <!-- BUTTONS -->
-            <div class="mb-2">
-              <v-btn class="mr-2 text-capitalize" depressed color='primary' :to="{name: 'activity'}">My Pathways</v-btn>
-              <v-btn class="text-capitalize" depressed :to="{name: 'home'}">Add Pathways</v-btn>
-            </div>
-            
-          </v-layout>
-        </template>
-        
     </v-app-bar>
 
     <!-- ROUTER VIEW -->
