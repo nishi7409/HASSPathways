@@ -7,7 +7,7 @@
         <div id="clearButtons">
           <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Delete This Pathway</v-btn>
           <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize mr-2">Clear All Pathways</v-btn>
-          <v-btn color="#c65353" depressed :to="{name: 'home'}" class="white--text text-capitalize">Edit Pathway</v-btn>
+          <v-btn @click="makeCoursesEditable()" color="#c65353" depressed :to="{name: 'home'}" class="white--text text-capitalize">Edit Pathway</v-btn>
         </div>
         <div id="pathwaysNavigation" class="mr-4">
           <div v-if="getOptions.length > 0">
@@ -183,6 +183,11 @@ export default {
       if (i == this.getOptions.length) {
         this.i -= 1
       }
+    },
+    makeCoursesEditable(){
+      this.$root.$emit('makeFirstCourseEditable', true)
+      this.$root.$emit('makeSecondCourseEditable', true)
+      this.$root.$emit('makeThirdCourseEditable', true)
     }
   },
   computed: {

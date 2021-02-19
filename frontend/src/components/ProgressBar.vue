@@ -84,17 +84,23 @@ export default {
       if (num == 1) {
         this.courseNumber = "first"
         this.$root.$emit('changeWhichCourse', "first")
+        if (this.firstCourseEditable)
+          this.$emit('nextBucket', 1)
         this.current = 1
       } else if (num == 2) {
         if (this.firstCourse != null) {
           this.courseNumber = "second"
           this.$root.$emit('changeWhichCourse', "second")
+          if (this.secondCourseEditable)
+            this.$emit('nextBucket', 2)
           this.current = 2
         }
       } else if (num == 3) {
         if (this.secondCourse != null) {
           this.courseNumber = "third"
           this.$root.$emit('changeWhichCourse', "third")
+          if (this.thirdCourseEditable)
+            this.$emit('nextBucket', 3)
           this.current = 3
         }
       }
@@ -143,6 +149,9 @@ export default {
   mounted() {
     this.$root.$on('changeWhichCourse', (course) => {
       this.courseNumber = course
+    }),
+    this.$root.$on('makeFirstCourseEditable', (editable) => {
+      this.firstCourseEditable = editable
     }),
     this.$root.$on('makeSecondCourseEditable', (editable) => {
       this.secondCourseEditable = editable
