@@ -1,6 +1,7 @@
 import csv
 import os
 import time
+import json
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
@@ -23,6 +24,10 @@ class Class(models.Model):
     def __str__(self):
         return self.name
 
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, 
+        sort_keys=True, indent=4)
+
 #Parse through CSV file
 def parse():
     # Get the absolute csv file
@@ -40,7 +45,7 @@ def parse():
                 continue
 
             # Make sure the class object doesn't already exist
-            if (len(Class.objects.filter(prefix = col[0].strip(), name = col[2].strip())) == 0):
+            if (len(Class.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip())) == 0):
                 # Create class
                 created = Class.objects.create(
                 prefix = col[0].strip(),
@@ -60,14 +65,22 @@ def parse():
                 created.save()
 
             else:
-                result = Class.objects.get(prefix = col[0].strip(), name = col[2].strip())
-                result.pathways.append(col[10].strip())
-                result.save()
+                result = Class.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip())
+                if (col[10].strip() in result.pathways):
+                    continue
+                else:
+                    result.pathways.append(col[10].strip())
+                    result.save()
                 
+def writeJson():
+    with open('data.json', 'w', encoding='utf-8') as f:
+        for course in Class.objects.all():
+            json.dump(course.toJSON(), f, ensure_ascii=False)
 
 
 #Main code start
 parse()
+writeJson()
 print("Done!")
 
 # HASSPathways.csv
