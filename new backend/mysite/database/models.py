@@ -2,13 +2,14 @@ import csv
 import os
 import time
 import json
-from django.contrib.postgres.fields import ArrayField
 from django.db import models
+from django.core import serializers
+from django.contrib.postgres.fields import ArrayField
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Individual class model
-class Class(models.Model):
+class Course(models.Model):
     prefix = models.CharField(max_length=10)
     ID = models.IntegerField(null=False, blank=False)
     name = models.TextField(null=False, blank=False)
@@ -24,11 +25,6 @@ class Class(models.Model):
     def __str__(self):
         return self.name
 
-    def toJSON(self):
-        return json.dumps(self, default=lambda o: o.__dict__, 
-        sort_keys=True, indent=4)
-
-#Parse through CSV file
 def parse():
     # Get the absolute csv file
     csvFile = os.getcwd() + "/" + "HassPathways.csv"
@@ -40,14 +36,16 @@ def parse():
 
         # Loop through teh columns
         for col in file_r:
+            
             # Skip the empty empty data (work on more debugging so we can handle errors, or maybe create a Google app script that handles the errors for us... more details on that later)
             if (col[0] == "" or col[6] == "" or col[1] == "ID"):
                 continue
 
             # Make sure the class object doesn't already exist
-            if (len(Class.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip())) == 0):
+            if (len(Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip())) == 0):
+                print("Creating " + col[2].strip())
                 # Create class
-                created = Class.objects.create(
+                created = Course.objects.create(
                 prefix = col[0].strip(),
                 ID = col[1].strip(),
                 name = col[2].strip(),
@@ -58,14 +56,15 @@ def parse():
                 fall = col[7].strip(),
                 spring = col[8].strip(),
                 summer = col[9].strip())
-                
+
                 created.pathways.append(col[10].strip())
 
                 # Save class
                 created.save()
 
             else:
-                result = Class.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip())
+                print("Adding " + col[2].strip())
+                result = Course.objects.get(prefix__exact = col[0].strip(), ID__exact = col[1].strip() ,name__exact = col[2].strip())
                 if (col[10].strip() in result.pathways):
                     continue
                 else:
@@ -73,14 +72,13 @@ def parse():
                     result.save()
                 
 def writeJson():
+    data = serializers.serialize("json", Course.objects.all())
     with open('data.json', 'w', encoding='utf-8') as f:
-        for course in Class.objects.all():
-            json.dump(course.toJSON(), f, ensure_ascii=False)
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 #Main code start
 parse()
-writeJson()
 print("Done!")
 
 # HASSPathways.csv
