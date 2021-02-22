@@ -27,7 +27,7 @@ class Course(models.Model):
 
 def parse():
     # Get the absolute csv file
-    csvFile = os.getcwd() + "/" + "HassPathways.csv"
+    csvFile = os.getcwd() + "/" + "HassPathways_SMALL.csv"
 
     # Open the file
     with open(csvFile, 'r') as file:
