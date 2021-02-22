@@ -58,7 +58,7 @@ def parse():
                 spring = col[8].strip(),
                 summer = col[9].strip())
 
-                created.pathways.append(col[10].strip())
+                created.pathways.append(col[10].strip().lower())
 
                 # Save class
                 created.save()
@@ -70,7 +70,7 @@ def parse():
                 if (col[10].strip().lower() in result.pathways):
                     continue
                 else:
-                    result.pathways.append(col[10].strip())
+                    result.pathways.append(col[10].strip().lower())
                     result.save()
                 
 def writeJson():
