@@ -43,7 +43,8 @@ def parse():
 
             # Make sure the class object doesn't already exist
             if (len(Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip())) == 0):
-                print("Creating " + col[2].strip())
+                if (col[2].strip() == "AI and Society"):
+                    print("Creating " + col[2].strip())
                 # Create class
                 created = Course.objects.create(
                 prefix = col[0].strip(),
@@ -63,7 +64,8 @@ def parse():
                 created.save()
 
             else:
-                print("Adding " + col[2].strip())
+                if (col[2].strip() == "AI and Society"):
+                    print("Adding " + col[2].strip())
                 result = Course.objects.get(prefix__exact = col[0].strip(), ID__exact = col[1].strip() ,name__exact = col[2].strip())
                 if (col[10].strip() in result.pathways):
                     continue
@@ -79,6 +81,7 @@ def writeJson():
 
 #Main code start
 parse()
+writeJson()
 print("Done!")
 
 # HASSPathways.csv
