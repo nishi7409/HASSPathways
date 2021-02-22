@@ -42,7 +42,7 @@ def parse():
                 continue
 
             # Make sure the class object doesn't already exist
-            if (len(Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip())) == 0):
+            if (len(Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().lower())) == 0):
                 if (col[2].strip() == "AI and Society"):
                     print("Creating " + col[2].strip())
                 # Create class
@@ -64,10 +64,10 @@ def parse():
                 created.save()
 
             else:
-                if (col[2].strip() == "AI and Society"):
-                    print("Adding " + col[2].strip())
-                result = Course.objects.get(prefix__exact = col[0].strip(), ID__exact = col[1].strip() ,name__exact = col[2].strip())
-                if (col[10].strip() in result.pathways):
+                if (col[2].strip().lower() == "AI and Society"):
+                    print("Adding to it" + col[2].strip())
+                result = Course.objects.get(prefix__exact = col[0].strip(), ID__exact = col[1].strip() ,name__exact = col[2].strip().lower())
+                if (col[10].strip().lower() in result.pathways):
                     continue
                 else:
                     result.pathways.append(col[10].strip())
