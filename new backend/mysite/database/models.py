@@ -8,6 +8,13 @@ from django.contrib.postgres.fields import ArrayField
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+class Pathway(models.Model):
+    pathName = models.CharField(max_length=150, blank = True)
+    relatedCourses = models.ManyToManyField('Course')
+
+    def __str__(self):
+        return self.pathName
+
 # Individual class model
 class Course(models.Model):
     prefix = models.CharField(max_length=10)
@@ -20,7 +27,7 @@ class Course(models.Model):
     fall = models.IntegerField(null=False, blank=False, default=0)
     spring = models.IntegerField(null=False, blank=False, default=0)
     summer = models.IntegerField(null=False, blank=False, default=0)
-    pathways = ArrayField(models.CharField(max_length=150, blank=True), default=list, size=10, null=True, blank=True)
+    pathwaysArray = ArrayField(models.CharField(max_length=150, blank=True), default=list, size=10, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -34,17 +41,25 @@ def parse():
         # Read it and note the delimeter
         file_r = csv.reader(file, delimiter=',')
 
-        # Loop through teh columns
+        # Loop through the columns
         for col in file_r:
             
             # Skip the empty empty data (work on more debugging so we can handle errors, or maybe create a Google app script that handles the errors for us... more details on that later)
             if (col[0] == "" or col[6] == "" or col[1] == "ID"):
                 continue
+            
+            # Since we know we are on an actual line grab the specified course/pathway if it exists
+            courseResult = Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().lower())
+            pathwayName = col[10].strip().lower()
+            pathResult = Pathway.objects.filter(pathName = pathwayName)
+            flag = False
 
-            # Make sure the class object doesn't already exist
-            if (len(Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().lower())) == 0):
-                # if (col[2].strip() == "AI and Society"):
-                    # print("Creating " + col[2].strip())
+            # Checker to see if the path exists or not
+            if (len(pathResult) != 0):
+                flag = True
+
+            # Check if the course already exists in the database or not
+            if (len(courseResult) == 0):
                 # Create class
                 created = Course.objects.create(
                 prefix = col[0].strip(),
@@ -58,29 +73,49 @@ def parse():
                 spring = col[8].strip(),
                 summer = col[9].strip())
 
-                created.pathways.append(col[10].strip().lower())
+                created.pathwaysArray.append(pathwayName)
 
-                # Save class
+                # Save the course to database
                 created.save()
 
-            else:
-                # if (col[2].strip().lower() == "AI and Society"):
-                    # print("Adding to it" + col[2].strip())
-                result = Course.objects.get(prefix__exact = col[0].strip(), ID__exact = col[1].strip() ,name__exact = col[2].strip().lower())
-                
-                print("Course name: " + str(result.name) + "\nPathway(s): " + str(result.pathways))
-                
-                if (col[10].strip().lower() in result.pathways):
-                    continue
+                # Now check if the pathway exists in the database
+                if (flag == False):
+                    print("Creating")
+                    # If it does not already exist create the pathway and make the course associated to it
+                    tmp = Pathway.objects.create(pathName = pathwayName)
+                    tmp.relatedCourses.add(created)
+
+                    tmp.save()
+
+                # If pathway already exists make the course related to it
                 else:
-                    result.pathways.append(col[10].strip().lower())
-                    result.save()
-                
+                    print("adding to")
+                    pathResult[0].relatedCourses.add(created)
+                    pathResult[0].save()
+
+            # If (Course) already exists add the pathway it is associated with
+            else:
+
+                # Need to check if the path exists, if it doesn't create
+                if (flag == False):
+                    tmp = Pathway.objects.create(pathName = pathwayName)
+                    tmp.relatedCourses.add(courseResult[0])
+
+                    tmp.save()
+                else:
+                    # If the course is already related to the pathway skip, if not add to
+                    if courseResult[0] in pathResult[0].relatedCourses.all():
+                        continue
+                    else:
+                        courseResult[0].Pathways__set.add(pathResult[0])
+                        courseResult[0].save()
+
+        
 def writeJson():
+    # Honestly have no idea what this doess
     data = serializers.serialize("json", Course.objects.all())
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-
 
 #Main code start
 parse()
