@@ -11,8 +11,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class Pathway(models.Model):
     pathName = models.CharField(max_length=150)
+    pathDescript = models.TextField(default = 'description')
     relatedCourses = models.ManyToManyField('Course', related_name='pathways')
-
     def __str__(self):
         return self.pathName
 
@@ -48,20 +48,20 @@ def parse():
             if (col[0] == "" or col[6] == "" or col[1] == "ID"):
                 continue
             
-            pathwayName = col[10].strip().lower()
+            pathwayName = col[10].strip().title()
             pathResult = Pathway.objects.filter(pathName = pathwayName)
-            courseResult = Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().lower())
+            courseResult = Course.objects.filter(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title())
             
             # Does pathway exist
             if (len(pathResult) == 0):
-                tmpPath = Pathway.objects.create(pathName = pathwayName)
+                tmpPath = Pathway.objects.create(pathName = pathwayName, pathDescript = col[11].strip())
 
                 # Does course exist
                 if (len(courseResult) == 0):
                     tmpCourse = Course.objects.create(
                         prefix = col[0].strip(),
                         ID = col[1].strip(),
-                        name = col[2].strip().lower(),
+                        name = col[2].strip().title(),
                         description = col[3].strip(),
                         HI = col[4].strip(),
                         CI = col[5].strip(),
@@ -75,7 +75,7 @@ def parse():
                     tmpPath.save()
 
                 else:
-                    tmpPath.relatedCourses.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().lower()))
+                    tmpPath.relatedCourses.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
                     tmpPath.save()
 
             else:
@@ -86,7 +86,7 @@ def parse():
                     tmpCourse = Course.objects.create(
                         prefix = col[0].strip(),
                         ID = col[1].strip(),
-                        name = col[2].strip().lower(),
+                        name = col[2].strip().title(),
                         description = col[3].strip(),
                         HI = col[4].strip(),
                         CI = col[5].strip(),
@@ -100,7 +100,7 @@ def parse():
                     tmpPath.save()
 
                 else:
-                    tmpCourse = Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().lower())
+                    tmpCourse = Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title())
                     tmpPath.relatedCourses.add(tmpCourse)
                     tmpPath.save()
 
@@ -108,14 +108,6 @@ def parse():
 #Main code start
 parse()
 
-# Get the first object in the pathways queryset, get the first class object, then the description
-# Pathway.objects.all()[0].relatedCourses.all()[0].description
-
-# tmpPath = Course.objects.get(name = 'ai and society')
-
-# print("Done!")
-
-# HASSPathways.csv
 
 
 
