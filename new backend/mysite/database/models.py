@@ -5,6 +5,7 @@ import json
 from django.db import models
 from django.core import serializers
 from django.contrib.postgres.fields import ArrayField
+import django
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -103,10 +104,18 @@ def parse():
                     tmpPath.relatedCourses.add(tmpCourse)
                     tmpPath.save()
 
+
 #Main code start
 parse()
-tmpPath = Course.objects.get(name = 'ai and society')
 
-print("Done!")
+# Get the first object in the pathways queryset, get the first class object, then the description
+# Pathway.objects.all()[0].relatedCourses.all()[0].description
+
+# tmpPath = Course.objects.get(name = 'ai and society')
+
+# print("Done!")
 
 # HASSPathways.csv
+
+
+
