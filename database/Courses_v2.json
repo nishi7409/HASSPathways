@@ -1,0 +1,235 @@
+[
+	{
+		"model":"api.Course",
+		"pk": 1972,
+		"fields":{
+			"name": "AI and Society",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1978,
+		"fields":{
+			"name": "The American Dream",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1235,
+		"fields":{
+			"name": "Are Humans Rational?",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1180,
+		"fields":{
+			"name": "The Art of Listening",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1987,
+		"fields":{
+			"name": "Behind the Television Screen",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1410,
+		"fields":{
+			"name": "Century of the Gene",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1961,
+		"fields":{
+			"name": "Designing Climate Justice",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1964,
+		"fields":{
+			"name": "Documentary in the 21st Century",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1976,
+		"fields":{
+			"name": "Fiction: From Film to the Internet",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1150,
+		"fields":{
+			"name": "The Genome and You",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1170,
+		"fields":{
+			"name": "History of Animation",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1969,
+		"fields":{
+			"name": "History of Design",
+			"category": "IHSS"
+		}
+	},	
+	{
+		"model":"api.Course",
+		"pk": 1080,
+		"fields":{
+			"name": "History of Jazz and Improv Music",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1500,
+		"fields":{
+			"name": "Human Rights in History",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1350,
+		"fields":{
+			"name": "Law, Values and Public Policy",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1560,
+		"fields":{
+			"name": "Media and Society",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1140,
+		"fields":{
+			"name": "Minds and Machines",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1720,
+		"fields":{
+			"name": "Music and Nature",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1110,
+		"fields":{
+			"name": "Nature and Society",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1973,
+		"fields":{
+			"name": "News Media, Culture and Politics",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1710,
+		"fields":{
+			"name": "Popular Music and Society",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1200,
+		"fields":{
+			"name": "Principles of Economics",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1300,
+		"fields":{
+			"name": "Race and Film in US Culture and History",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1666,
+		"fields":{
+			"name": "Religion in a Global World",
+			"category": "IHSS"	
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1700,
+		"fields":{
+			"name": "Songwriting Workshop",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1240,
+		"fields":{
+			"name": "Sustainability Debates",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1958,
+		"fields":{
+			"name": "Technology and the Top Ten",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1975,
+		"fields":{
+			"name": "Understanding Empathy",
+			"category": "IHSS"
+
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1175,
+		"fields":{
+			"name": "Well-Being: Cultivating Curiosity",
+			"category": "IHSS"
+		}
+	}
+]
