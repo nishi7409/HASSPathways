@@ -215,7 +215,7 @@
 			"category": "IHSS"
 		}
 	},
-	{
+	{ 
 		"model":"api.Course",
 		"pk": 1975,
 		"fields":{
