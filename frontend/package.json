@@ -12,6 +12,7 @@
     "node-sass": "^4.14.1",
     "vue": "^2.6.11",
     "vue-router": "^3.3.2",
+    "vue-toastification": "^1.7.11",
     "vuetify": "^2.2.31",
     "vuex": "^3.6.0"
   },

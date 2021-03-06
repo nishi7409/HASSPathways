@@ -3,6 +3,7 @@
   <div>
 
     <v-list id="list" class="overflow-y-auto" height="250px">
+
       Select a {{ bucketNumber }} course
 
       <v-divider></v-divider>
@@ -37,8 +38,10 @@
         </v-list-item>
 
       </v-list-group>
-    </v-list>
 
+      
+
+    </v-list>
   </div>
 
 </template>
@@ -59,6 +62,7 @@ export default {
     ...mapMutations(['setSelectedCourse3']),
     selectCourse(course) {
       this.setSelectedCourse3(course);
+      this.$forceUpdate();
       console.log(course)
     }
   }

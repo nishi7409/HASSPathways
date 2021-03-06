@@ -1,8 +1,10 @@
+
+
 <template>
   <div>
     <ProgressBar/>
 
-    <v-expansion-panels flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
+    <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
       <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
 
         <v-expansion-panel-header color="#c65353" id="expansion-header">
@@ -25,7 +27,25 @@
         <v-divider color="white"></v-divider>
 
       </v-expansion-panel>
+      
     </v-expansion-panels>
+  <div>
+    <v-btn
+        large
+        fixed
+        bottom
+        right
+        fab
+        id = "button1"
+        v-if="courseNumber=='third'"
+        @click="savePathway()"
+        class="stickyButton"
+      >
+      <v-icon style="color: white">
+          mdi-content-save
+      </v-icon>
+    </v-btn>
+    </div>
   </div>
 </template>
 
@@ -35,7 +55,6 @@ import ProgressBar from './ProgressBar.vue'
 import FirstCourses from './FirstCourses'
 import SecondCourses from './SecondCourses'
 import ThirdCourses from './ThirdCourses'
-
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
@@ -66,11 +85,66 @@ export default {
       ],
       courseNumber: 'first',
       savedCourses: [],
-      filter: ''
+      filter: '',
+      panel: []
     }
   },
   methods: {
-    ...mapMutations(['setSelectedPathway']),
+    ...mapGetters(['thirdCourse',`secondCourse`,`firstCourse`]),
+    ...mapMutations(['setSelectedPathway','saveButton']),
+    pathwayExist(courseCombo){
+      for (var i = 0; i < this.$store.getters.getOptions.length; i++) {
+        if (this.$store.getters.getOptions[i][1] == courseCombo[0] &&
+          this.$store.getters.getOptions[i][2] == courseCombo[1] &&
+          this.$store.getters.getOptions[i][3] == courseCombo[2]) {
+            console.log("exists")
+            return true
+        }
+      }
+      console.log("does not exist")
+      return false
+    },
+    savePathway(){
+      console.log(localStorage.getItem('course1'))
+      // If the third course has been chosen or not
+      if (this.$store.getters.thirdCourse){
+        // If the pathway already exists reject save
+        if (this.pathwayExist([this.$store.getters.firstCourse, this.$store.getters.secondCourse, this.$store.getters.thirdCourse])) {
+          this.$toast.clear()
+          this.$toast.error("This pathway already exists!", {
+            position: "top-right",
+            timeout: 3000,
+            pauseOnFocusLoss: true,
+            hideProgressBar: true,
+            rtl: false,
+            closeButton: "button",
+          });
+          this.$root.$emit('resetProgress')
+        }else{
+          this.saveButton()
+          this.$root.$emit('resetProgress')
+          this.$toast.clear()
+          this.$toast.success("Saved Pathway!", {
+            position: "top-right",
+            timeout: 3000,
+            pauseOnFocusLoss: true,
+            hideProgressBar: true,
+            rtl: false,
+            closeButton: "button",
+          });
+        }
+      }else{
+        this.$toast.clear()
+        this.$toast.error("You haven't chosen three courses yet!", {
+          position: "top-right",
+          timeout: 3000,
+          pauseOnFocusLoss: true,
+          hideProgressBar: true,
+          closeButton: "button",
+        });
+      }
+      this.$root.$emit(`closePanels`)
+    },
     selectPathway(path) {
       console.log(path.name)
       this.setSelectedPathway(path)
@@ -92,6 +166,9 @@ export default {
     }),
     this.$root.$on('changedFilter', (input) => {
       this.filter = input
+    }),
+    this.$root.$on('closePanels', () => {
+      this.panel = []
     }),
     this.courseNumber = this.bucketNumber;
   },
@@ -118,7 +195,7 @@ export default {
         if (courses != null) {
           for (i = 0; i < courses.length; i++) {
             course = courses[i]
-            if (course == this.firstCourse) {
+            if (course == this.$store.getters.firstCourse) {
               result[key] = item
             }
           }
@@ -127,7 +204,7 @@ export default {
         if (secondCourses != null) {
           for (i = 0; i < secondCourses.length; i++) {
             course = secondCourses[i]
-            if (course == this.secondCourse) {
+            if (course == this.$store.getters.secondCourse) {
               result[key] = item
             }
           }
@@ -141,9 +218,9 @@ export default {
       return items
     },
     bucketNumber() {
-      if (this.firstCourse != null) {
-        if (this.secondCourse != null) {
-          if (this.thirdCourse != null) {
+      if (this.$store.getters.firstCourse != null) {
+        if (this.$store.getters.secondCourse != null) {
+          if (this.$store.getters.thirdCourse != null) {
             return 'third'
           }
           return 'third'
@@ -157,6 +234,11 @@ export default {
 </script>
 
 <style scoped>
+
+  #button1 {
+    margin-bottom: 36px;
+    background-color: rgba(180, 67, 52, 0.87);
+  }
 
   .expansion-panel {
     position: relative;

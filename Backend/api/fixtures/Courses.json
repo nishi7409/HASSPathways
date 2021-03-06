@@ -1,0 +1,32 @@
+[
+	{
+		"model":"api.Course",
+		"pk": 1972,
+		"fields":{
+			"name": "AI and Society",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1140,
+		"fields":{
+			"name": "Minds and Machines",
+			"category": "IHSS"
+		}
+	},
+	{
+		"model":"api.Course",
+		"pk": 1235,
+		"fields":{
+			"name": "Are Humans Rational?",
+			"category": "IHSS"
+		}
+	}
+]
+
+
+
+
+
+
