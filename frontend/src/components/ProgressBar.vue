@@ -48,7 +48,6 @@
 
         </v-stepper>
       </div>
-
     </div>
 
 </template>

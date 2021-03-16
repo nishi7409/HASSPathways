@@ -185,6 +185,7 @@ export default {
       }
     },
     makeCoursesEditable(){
+      localStorage.setItem('editingCourses', true)
       this.$root.$emit('makeFirstCourseEditable', true)
       this.$root.$emit('makeSecondCourseEditable', true)
       this.$root.$emit('makeThirdCourseEditable', true)

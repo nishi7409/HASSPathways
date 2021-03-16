@@ -15,7 +15,10 @@
               </router-link>
             </v-flex>
 
-            <v-spacer></v-spacer>
+            <v-col class="pt-3 text-middle"> <!-- v-if= "getEditable() == true", idk why this bricks it -->
+              <span class= "font-weight-black">Editing Pathway</span>
+            </v-col>
+            
             
             <!-- BUTTONS -->
             <v-col class="text-right">
@@ -97,6 +100,9 @@ export default {
     if (localStorage.getItem('extension') == "true") {
       this.extension = true
     }
+  },
+  getEditable() {
+    return localStorage.getItem('editingCourses')
   },
   watch: {
     extension(newExtension) {

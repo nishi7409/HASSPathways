@@ -31,6 +31,7 @@ const store = new Vuex.Store({
       course2: null,
       course3: null
     },
+    editingCourses: false,
     // shopping cart starts out as an empty object
     // we just copy application states as the user saves them
     shoppingCart: {
@@ -39,6 +40,7 @@ const store = new Vuex.Store({
   },
   mutations: {
     initializeStore(state) {
+      localStorage.setItem('editingCourses', false)
       if (localStorage.getItem('options')) {
         try {
           state.shoppingCart.options = JSON.parse(localStorage.getItem('options'))
@@ -238,5 +240,5 @@ new Vue({
   vuetify,
   store,
   beforeCreate() { this.$store.commit('initializeStore') },
-  render: h => h(App)
+  render: h => h(App),
 }).$mount('#app')
