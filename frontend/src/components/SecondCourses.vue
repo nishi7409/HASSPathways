@@ -63,6 +63,7 @@ export default {
       this.$emit('nextBucket', this.nextBucketNumber)
       this.$root.$emit('makeThirdCourseEditable', true)
       this.$root.$emit('changeCurrent', 3)
+      this.$root.$emit(`closePanels`)
     }
   }
 }

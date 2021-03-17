@@ -147,6 +147,9 @@ export default {
     }
   },
   mounted() {
+    this.$root.$on('resetProgress', () => {
+      this.clearProgress()
+    }),
     this.$root.$on('changeWhichCourse', (course) => {
       this.courseNumber = course
     }),
