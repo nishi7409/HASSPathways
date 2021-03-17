@@ -19,46 +19,29 @@
               <span class= "font-weight-black">Editing Pathway</span>
             </v-col>
             
-            
             <!-- BUTTONS -->
-            <v-col class="text-right">
-              <v-btn class="hidden-sm-and-down text-capitalize" depressed id="button" :to="{name: 'activity'}">My Pathways</v-btn>
-              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
+            <v-col class="text-right" id="topRightButtons">
+                <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'activity'}">My Pathways</v-btn>
+                <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="clearProgress()" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
             </v-col>
 
           </v-layout>
-
         </v-container>
 
-        <!-- HEADER EXTENSION -->
-        <template v-if="(this.$vuetify.breakpoint.xs==true || this.$vuetify.breakpoint.sm==true) && extension==true" v-slot:extension>
-          <v-layout column>
-            
-            <v-spacer></v-spacer>
-
-            <!-- BUTTONS -->
-            <div class="mb-2">
-              <v-btn class="mr-2 text-capitalize" depressed :to="{name: 'activity'}">My Pathways</v-btn>
-              <v-btn class="text-capitalize" depressed :to="{name: 'home'}">Add Pathways</v-btn>
-            </div>
-            
-          </v-layout>
-        </template>
-        
     </v-app-bar>
 
     <!-- ROUTER VIEW -->
     <v-content>
       <router-view></router-view>
     </v-content>
-
+    
     <!-- FOOTER -->
     <v-footer app>
 
       <v-layout column>
         <div>
 
-          We love feedback! Visit our 
+          We love feedback!
           <a href="https://github.com/nishi7409/HASSPathways/issues" target="_blank" style="text-decoration: none">
 
             <span style="color: #c65353">
@@ -86,6 +69,7 @@
 export default {
   name: 'App',
   data: () => ({
+    deleteClicked: false,
     items: ['Minds and Machines', 'AI and Society', 'Are Humans Rational?', 'Chinese 1', 'Chinese 2', 'Chinese 3', 'Chinese 4', 'etc'],
     searchInput: "",
     extension: ""
@@ -93,6 +77,9 @@ export default {
   methods: {
     handleInput() {
       this.$root.$emit('changedFilter', this.searchInput)
+    },
+    clearProgress() {
+      this.$root.$emit('resetProgress')
     },
   },
   mounted() {
@@ -119,6 +106,11 @@ export default {
   float: right;
 }
 
+#topRightButtons .v-btn::before{
+  background-color: transparent;
+}
+
+
 #header {
   height: 70px;
   background-color: #fa8072;
@@ -126,6 +118,11 @@ export default {
   font-family: 'Muli', sans-serif;
   font-size: 20px;
 }
+
+.v-btn--active .v-btn__content { 
+  color: black
+}  
+
 
 #title {
   color: white;
