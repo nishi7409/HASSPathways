@@ -11,13 +11,10 @@
             <!-- TITLE -->
             <v-flex md1 sm11 xs11>
               <router-link to="/home">
-                <v-img class="pl-6 pr-8 ml-4" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
+                <v-img class="pl-6 pr-8 ml-4" @click="clearProgress()" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
               </router-link>
             </v-flex>
-
-            <v-col class="pt-3 text-middle"> <!-- v-if= "getEditable() == true", idk why this bricks it -->
-              <span class= "font-weight-black">Editing Pathway</span>
-            </v-col>
+            
             
             <!-- BUTTONS -->
             <v-col class="text-right" id="topRightButtons">
@@ -80,6 +77,8 @@ export default {
     },
     clearProgress() {
       this.$root.$emit('resetProgress')
+      this.$store.editingCourses = false
+      // location.reload()
     },
   },
   mounted() {
@@ -87,9 +86,6 @@ export default {
     if (localStorage.getItem('extension') == "true") {
       this.extension = true
     }
-  },
-  getEditable() {
-    return localStorage.getItem('editingCourses')
   },
   watch: {
     extension(newExtension) {

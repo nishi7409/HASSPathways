@@ -2,11 +2,16 @@
 
 <template>
   <div>
+    <div>
+      <v-card flat class="ml-3 pt-5 pb-1 text-middle" v-if= "this.$store.editingCourses == true"> <!--  v-if= "courseEditStatus == true" -->
+        <span class= "pt-3 headline font-weight-bold">Editing Pathway </span>
+      </v-card>
+    </div>
     <ProgressBar/>
-
+    
     <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
       <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
-
+        
         <v-expansion-panel-header color="#c65353" id="expansion-header">
           {{ path.name }}
           <template v-slot:actions>
@@ -30,17 +35,7 @@
       
     </v-expansion-panels>
   <div>
-    <v-btn
-        large
-        fixed
-        bottom
-        right
-        fab
-        id = "button1"
-        v-if="courseNumber=='third'"
-        @click="savePathway()"
-        class="stickyButton"
-      >
+    <v-btn large fixed bottom right fab id = "button1" v-if="courseNumber=='third' || this.$store.editingCourses == true" @click="savePathway()" class="stickyButton">
       <v-icon style="color: white">
           mdi-content-save
       </v-icon>
@@ -91,7 +86,7 @@ export default {
   },
   methods: {
     ...mapGetters(['thirdCourse',`secondCourse`,`firstCourse`]),
-    ...mapMutations(['setSelectedPathway','saveButton']),
+    ...mapMutations(['setSelectedPathway','saveButton', 'removePath']),
     pathwayExist(courseCombo){
       for (var i = 0; i < this.$store.getters.getOptions.length; i++) {
         if (this.$store.getters.getOptions[i][1] == courseCombo[0] &&
@@ -110,6 +105,11 @@ export default {
       if (this.$store.getters.thirdCourse){
         // If the pathway already exists reject save
         if (this.pathwayExist([this.$store.getters.firstCourse, this.$store.getters.secondCourse, this.$store.getters.thirdCourse])) {
+          if (this.$store.editingCourses == true){
+            this.removePath(this.$store.targetEditIndex)
+            this.$store.editingCourses = false
+            this.$store.targetEditIndex = -1
+          }
           this.$toast.clear()
           this.$toast.error("This pathway already exists!", {
             position: "top-right",
@@ -121,6 +121,11 @@ export default {
           });
           this.$root.$emit('resetProgress')
         }else{
+          if (this.$store.editingCourses == true){
+            this.removePath(this.$store.targetEditIndex)
+            this.$store.editingCourses = false
+            this.$store.targetEditIndex = -1
+          }
           this.saveButton()
           this.$root.$emit('resetProgress')
           this.$toast.clear()
