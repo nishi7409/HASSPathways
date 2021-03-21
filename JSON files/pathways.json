@@ -1,40 +1,59 @@
 [
     {
-    model: "database.pathway",
-    pk: 2,
-    fields: {
-    pathName: "Arts History, Theory, And Criticism",
-    pathDescript: "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
-    relatedCourses: [
-    22,
-    21,
-    20,
-    19,
-    18,
-    17,
-    16,
+    "model": "database.pathway",
+    "pk": 2,
+    "fields": {
+    "pathName": "Arts History, Theory, And Criticism",
+    "pathDescript": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
+    "priority1": [
+    14,
     15,
-    14
+    16,
+    17,
+    19
+    ],
+    "priority2": [
+    20,
+    21
+    ],
+    "priority3": [
+    22
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 17,
-    fields: {
-    pathName: "Extent And Limits Of Rationality",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 17,
+    "fields": {
+    "pathName": "Extent And Limits Of Rationality",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     1,
-    4,
-    13,
     72,
-    89,
-    94,
     156,
     157,
     158,
-    159,
+    159
+    ],
+    "priority2": [
+    4,
+    13,
+    89,
+    94,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167
+    ],
+    "priority3": [
+    4,
+    13,
+    89,
+    94,
     160,
     161,
     162,
@@ -47,63 +66,87 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 11,
-    fields: {
-    pathName: "Economics Of Policy & Regulations",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    111,
-    90,
-    84,
-    82,
-    73,
-    72
-    ]
-    }
-    },
-    {
-    model: "database.pathway",
-    pk: 4,
-    fields: {
-    pathName: "Chinese Language",
-    pathDescript: "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
-    relatedCourses: [
-    40,
-    39,
-    38,
-    37,
-    36
-    ]
-    }
-    },
-    {
-    model: "database.pathway",
-    pk: 6,
-    fields: {
-    pathName: "Design, Innovation, And Society",
-    pathDescript: "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
-    relatedCourses: [
-    71,
-    70,
-    69,
-    68,
-    67
-    ]
-    }
-    },
-    {
-    model: "database.pathway",
-    pk: 7,
-    fields: {
-    pathName: "Economics",
-    pathDescript: "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 11,
+    "fields": {
+    "pathName": "Economics Of Policy & Regulations",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     72,
-    73,
+    73
+    ],
+    "priority2": [
+    82,
+    84,
+    90,
+    111
+    ],
+    "priority3": [
+    82,
+    84,
+    90,
+    111
+    ]
+    }
+    },
+    {
+    "model": "database.pathway",
+    "pk": 4,
+    "fields": {
+    "pathName": "Chinese Language",
+    "pathDescript": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
+    "priority1": [
+    36,
+    37,
+    38
+    ],
+    "priority2": [
+    37,
+    38,
+    39,
+    40
+    ],
+    "priority3": [
+    38,
+    39,
+    40
+    ]
+    }
+    },
+    {
+    "model": "database.pathway",
+    "pk": 6,
+    "fields": {
+    "pathName": "Design, Innovation, And Society",
+    "pathDescript": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
+    "priority1": [
+    67
+    ],
+    "priority2": [
+    68
+    ],
+    "priority3": [
+    69,
+    70,
+    71
+    ]
+    }
+    },
+    {
+    "model": "database.pathway",
+    "pk": 7,
+    "fields": {
+    "pathName": "Economics",
+    "pathDescript": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
+    "priority1": [
+    72,
+    73
+    ],
+    "priority2": [
     74,
-    75,
-    76,
+    75
+    ],
+    "priority3": [
     77,
     78,
     79,
@@ -141,16 +184,20 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 1,
-    fields: {
-    pathName: "Artificial Intelligence",
-    pathDescript: "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 1,
+    "fields": {
+    "pathName": "Artificial Intelligence",
+    "pathDescript": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
+    "priority1": [
     1,
     2,
-    3,
-    4,
+    3
+    ],
+    "priority2": [
+    4
+    ],
+    "priority3": [
     5,
     6,
     7,
@@ -164,24 +211,44 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 15,
-    fields: {
-    pathName: "Environmental Futures",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 15,
+    "fields": {
+    "pathName": "Environmental Futures",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     44,
-    65,
-    66,
     72,
-    90,
     125,
     126,
     127,
     128,
     129,
     130,
-    131,
+    131
+    ],
+    "priority2": [
+    65,
+    66,
+    90,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144
+    ],
+    "priority3": [
+    65,
+    66,
+    90,
     132,
     133,
     134,
@@ -199,13 +266,12 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 5,
-    fields: {
-    pathName: "Creative Design And Innovation",
-    pathDescript: "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
-    relatedCourses: [
-    4,
+    "model": "database.pathway",
+    "pk": 5,
+    "fields": {
+    "pathName": "Creative Design And Innovation",
+    "pathDescript": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
+    "priority1": [
     17,
     18,
     41,
@@ -215,7 +281,31 @@
     45,
     46,
     47,
-    48,
+    48
+    ],
+    "priority2": [
+    4,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
+    ],
+    "priority3": [
+    4,
     49,
     50,
     51,
@@ -238,13 +328,15 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 3,
-    fields: {
-    pathName: "Behavioral And Cognitive Neuroscience",
-    pathDescript: "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act. Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
-    relatedCourses: [
-    23,
+    "model": "database.pathway",
+    "pk": 3,
+    "fields": {
+    "pathName": "Behavioral And Cognitive Neuroscience",
+    "pathDescript": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act. Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
+    "priority1": [
+    23
+    ],
+    "priority2": [
     24,
     25,
     26,
@@ -257,46 +349,107 @@
     33,
     34,
     35
-    ]
+    ],
+    "priority3": [ ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 12,
-    fields: {
-    pathName: "Economics Of Quantitative Modeling",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    104,
+    "model": "database.pathway",
+    "pk": 12,
+    "fields": {
+    "pathName": "Economics Of Quantitative Modeling",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    72,
+    73
+    ],
+    "priority2": [
     102,
-    112,
-    73,
-    72
+    104,
+    112
+    ],
+    "priority3": [
+    102,
+    104,
+    112
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 8,
-    fields: {
-    pathName: "Economics Of Banking & Finance",
-    pathDescript: "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.",
-    relatedCourses: [
-    100,
-    110,
+    "model": "database.pathway",
+    "pk": 8,
+    "fields": {
+    "pathName": "Economics Of Banking & Finance",
+    "pathDescript": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.",
+    "priority1": [
+    72,
+    73
+    ],
+    "priority2": [
     80,
-    73,
-    72
+    100,
+    110
+    ],
+    "priority3": [
+    80,
+    100,
+    110
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 30,
-    fields: {
-    pathName: "Media And Culture",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 30,
+    "fields": {
+    "pathName": "Media And Culture",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    46,
+    47,
+    48,
+    160,
+    169,
+    171,
+    172,
+    173,
+    175,
+    177,
+    178,
+    179,
+    204,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269
+    ],
+    "priority2": [
+    46,
+    47,
+    48,
+    160,
+    169,
+    171,
+    172,
+    173,
+    175,
+    177,
+    178,
+    179,
+    204,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269
+    ],
+    "priority3": [
     46,
     47,
     48,
@@ -322,77 +475,108 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 26,
-    fields: {
-    pathName: "Linguistics",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    243,
-    242,
-    205,
-    203,
+    "model": "database.pathway",
+    "pk": 26,
+    "fields": {
+    "pathName": "Linguistics",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    239,
+    243
+    ],
+    "priority2": [
     9,
-    241,
+    203,
+    205,
     240,
-    239
+    241,
+    242
+    ],
+    "priority3": [
+    9,
+    203,
+    205,
+    240,
+    241,
+    242
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 13,
-    fields: {
-    pathName: "Economics Of Technology & Innovation",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    113,
-    96,
+    "model": "database.pathway",
+    "pk": 13,
+    "fields": {
+    "pathName": "Economics Of Technology & Innovation",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    72,
+    73
+    ],
+    "priority2": [
     78,
-    73,
-    72
+    96,
+    113
+    ],
+    "priority3": [
+    78,
+    96,
+    113
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 9,
-    fields: {
-    pathName: "Economics Of Decision-Making",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    102,
-    100,
-    98,
-    94,
-    89,
+    "model": "database.pathway",
+    "pk": 9,
+    "fields": {
+    "pathName": "Economics Of Decision-Making",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    72,
+    73
+    ],
+    "priority2": [
     74,
-    73,
-    72
+    89,
+    94,
+    98,
+    100,
+    102
+    ],
+    "priority3": [
+    74,
+    89,
+    94,
+    98,
+    100,
+    102
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 23,
-    fields: {
-    pathName: "History",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 23,
+    "fields": {
+    "pathName": "History",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     127,
-    140,
-    141,
     149,
     150,
     173,
-    183,
-    184,
     202,
     217,
     218,
     219,
-    220,
-    221,
+    220
+    ],
+    "priority2": [
+    221
+    ],
+    "priority3": [
+    140,
+    141,
+    183,
+    184,
     222,
     223,
     224,
@@ -402,68 +586,98 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 40,
-    fields: {
-    pathName: "Video, Performance, And Social Practice",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 40,
+    "fields": {
+    "pathName": "Video, Performance, And Social Practice",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     16,
-    21,
-    22,
     42,
     44,
     47,
-    56,
     115,
-    151,
     159,
     169,
+    264
+    ],
+    "priority2": [
+    21,
+    151,
     175,
     176,
-    264,
     313,
     329,
     330,
     331
+    ],
+    "priority3": [
+    22,
+    56,
+    151,
+    313,
+    330
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 10,
-    fields: {
-    pathName: "Economics Of Healthcare Markets",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    96,
-    94,
+    "model": "database.pathway",
+    "pk": 10,
+    "fields": {
+    "pathName": "Economics Of Healthcare Markets",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    72,
+    73
+    ],
+    "priority2": [
     84,
-    73,
-    72
+    94,
+    96
+    ],
+    "priority3": [
+    84,
+    94,
+    96
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 28,
-    fields: {
-    pathName: "Living In A World Of Data",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 28,
+    "fields": {
+    "pathName": "Living In A World Of Data",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     1,
     72,
+    145,
+    146,
+    227,
+    228
+    ],
+    "priority2": [
     89,
     94,
     104,
-    145,
-    146,
     161,
     162,
     212,
     213,
-    227,
-    228,
+    236,
+    255,
+    256,
+    257,
+    258
+    ],
+    "priority3": [
+    89,
+    94,
+    104,
+    161,
+    162,
+    212,
+    213,
     236,
     255,
     256,
@@ -473,13 +687,35 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 39,
-    fields: {
-    pathName: "Understanding Human Behavior",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    23,
+    "model": "database.pathway",
+    "pk": 39,
+    "fields": {
+    "pathName": "Understanding Human Behavior",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    23
+    ],
+    "priority2": [
+    24,
+    29,
+    164,
+    255,
+    256,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328
+    ],
+    "priority3": [
     24,
     29,
     164,
@@ -502,22 +738,35 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 21,
-    fields: {
-    pathName: "Gender, Race, Sexuality, Ethnicity, And Social Change",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 21,
+    "fields": {
+    "pathName": "Gender, Race, Sexuality, Ethnicity, And Social Change",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     16,
     48,
-    134,
     145,
     168,
-    178,
     199,
     200,
     201,
-    202,
+    202
+    ],
+    "priority2": [
+    134,
+    178,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209
+    ],
+    "priority3": [
+    134,
+    178,
     203,
     204,
     205,
@@ -529,26 +778,40 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 16,
-    fields: {
-    pathName: "Ethics, Integrity, And Social Responsibility",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 16,
+    "fields": {
+    "pathName": "Ethics, Integrity, And Social Responsibility",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     1,
     128,
     131,
-    132,
-    135,
-    136,
-    137,
-    138,
     145,
     146,
     147,
     148,
     149,
-    150,
+    150
+    ],
+    "priority2": [
+    132,
+    135,
+    136,
+    137,
+    138,
+    151,
+    152,
+    153,
+    154,
+    155
+    ],
+    "priority3": [
+    132,
+    135,
+    136,
+    137,
+    138,
     151,
     152,
     153,
@@ -558,20 +821,34 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 14,
-    fields: {
-    pathName: "Electronic Arts",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 14,
+    "fields": {
+    "pathName": "Electronic Arts",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     41,
     46,
     47,
-    52,
-    56,
     114,
     115,
-    116,
+    116
+    ],
+    "priority2": [
+    52,
+    56,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124
+    ],
+    "priority3": [
+    52,
+    56,
     117,
     118,
     119,
@@ -584,15 +861,20 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 38,
-    fields: {
-    pathName: "Thinking With Science",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 38,
+    "fields": {
+    "pathName": "Thinking With Science",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     146,
     149,
     150,
+    310,
+    311,
+    312
+    ],
+    "priority2": [
     160,
     161,
     162,
@@ -603,9 +885,21 @@
     224,
     234,
     281,
-    310,
-    311,
-    312,
+    313,
+    314,
+    315
+    ],
+    "priority3": [
+    160,
+    161,
+    162,
+    165,
+    167,
+    181,
+    182,
+    224,
+    234,
+    281,
     313,
     314,
     315
@@ -613,35 +907,71 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 29,
-    fields: {
-    pathName: "Logical Thinking",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    162,
-    161,
-    13,
-    261,
-    260,
-    259,
-    163,
+    "model": "database.pathway",
+    "pk": 29,
+    "fields": {
+    "pathName": "Logical Thinking",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     1,
-    3
+    3,
+    13,
+    161,
+    162,
+    163,
+    259,
+    260,
+    261
+    ],
+    "priority2": [
+    1,
+    3,
+    13,
+    161,
+    162,
+    163,
+    259,
+    260,
+    261
+    ],
+    "priority3": [
+    1,
+    3,
+    13,
+    161,
+    162,
+    163,
+    259,
+    260,
+    261
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 31,
-    fields: {
-    pathName: "Mind, Brain, And Intelligence",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 31,
+    "fields": {
+    "pathName": "Mind, Brain, And Intelligence",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    4
+    ],
+    "priority2": [
     1,
     2,
     3,
-    4,
+    13,
+    28,
+    31,
+    164,
+    256,
+    270,
+    271
+    ],
+    "priority3": [
+    1,
+    2,
+    3,
     13,
     28,
     31,
@@ -653,12 +983,22 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 24,
-    fields: {
-    pathName: "Information Technology And Web Sciences",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 24,
+    "fields": {
+    "pathName": "Information Technology And Web Sciences",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    227,
+    228,
+    229
+    ],
+    "priority2": [
+    227,
+    228,
+    229
+    ],
+    "priority3": [
     4,
     21,
     72,
@@ -666,9 +1006,6 @@
     160,
     166,
     210,
-    227,
-    228,
-    229,
     230,
     231,
     232,
@@ -678,25 +1015,46 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 18,
-    fields: {
-    pathName: "Fact And Fiction",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 18,
+    "fields": {
+    "pathName": "Fact And Fiction",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     16,
     42,
     146,
-    151,
-    161,
-    162,
     168,
     169,
     170,
     171,
     172,
     173,
-    174,
+    174
+    ],
+    "priority2": [
+    151,
+    161,
+    162,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188
+    ],
+    "priority3": [
+    151,
+    161,
+    162,
     175,
     176,
     177,
@@ -715,12 +1073,42 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 22,
-    fields: {
-    pathName: "Graphic Design",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 22,
+    "fields": {
+    "pathName": "Graphic Design",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    45,
+    59,
+    61,
+    63,
+    160,
+    168,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216
+    ],
+    "priority2": [
+    45,
+    59,
+    61,
+    63,
+    160,
+    168,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216
+    ],
+    "priority3": [
     45,
     59,
     61,
@@ -738,12 +1126,40 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 35,
-    fields: {
-    pathName: "Strategic Communication",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 35,
+    "fields": {
+    "pathName": "Strategic Communication",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    58,
+    160,
+    166,
+    205,
+    216,
+    234,
+    262,
+    268,
+    289,
+    290,
+    291,
+    292
+    ],
+    "priority2": [
+    58,
+    160,
+    166,
+    205,
+    216,
+    234,
+    262,
+    268,
+    289,
+    290,
+    291,
+    292
+    ],
+    "priority3": [
     58,
     160,
     166,
@@ -760,12 +1176,54 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 27,
-    fields: {
-    pathName: "Literature And Creative Writing",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 27,
+    "fields": {
+    "pathName": "Literature And Creative Writing",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    61,
+    173,
+    177,
+    181,
+    187,
+    188,
+    216,
+    238,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254
+    ],
+    "priority2": [
+    61,
+    173,
+    177,
+    181,
+    187,
+    188,
+    216,
+    238,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254
+    ],
+    "priority3": [
     61,
     173,
     177,
@@ -789,44 +1247,48 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 19,
-    fields: {
-    pathName: "Foreign Language",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    194,
-    193,
-    40,
-    39,
-    38,
-    192,
-    191,
-    190,
-    189
-    ]
+    "model": "database.pathway",
+    "pk": 19,
+    "fields": {
+    "pathName": "Foreign Language",
+    "pathDescript": "Pathway Description",
+    "priority1": [ ],
+    "priority2": [ ],
+    "priority3": [ ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 33,
-    fields: {
-    pathName: "Philosophy",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 33,
+    "fields": {
+    "pathName": "Philosophy",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     3,
-    136,
     145,
     146,
     161,
     162,
     163,
     174,
-    182,
-    259,
     278,
     279,
-    280,
+    280
+    ],
+    "priority2": [
+    136,
+    182,
+    259,
+    281,
+    282,
+    283,
+    284,
+    285
+    ],
+    "priority3": [
+    136,
+    182,
+    259,
     281,
     282,
     283,
@@ -836,26 +1298,57 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 20,
-    fields: {
-    pathName: "Game Studies",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    198,
-    197,
-    196,
+    "model": "database.pathway",
+    "pk": 20,
+    "fields": {
+    "pathName": "Game Studies",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     195
+    ],
+    "priority2": [
+    196,
+    197,
+    198
+    ],
+    "priority3": [
+    196,
+    197,
+    198
     ]
     }
     },
     {
-    model: "database.pathway",
-    pk: 25,
-    fields: {
-    pathName: "Interactive Media/Data Design",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 25,
+    "fields": {
+    "pathName": "Interactive Media/Data Design",
+    "pathDescript": "Pathway Description",
+    "priority1": [
+    160,
+    168,
+    210,
+    212,
+    213,
+    216,
+    235,
+    236,
+    237,
+    238
+    ],
+    "priority2": [
+    160,
+    168,
+    210,
+    212,
+    213,
+    216,
+    235,
+    236,
+    237,
+    238
+    ],
+    "priority3": [
     160,
     168,
     210,
@@ -870,30 +1363,50 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 41,
-    fields: {
-    pathName: "Well-Being: Body And Mind",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 41,
+    "fields": {
+    "pathName": "Well-Being: Body And Mind",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     1,
     18,
     24,
+    125,
+    129,
+    159,
+    293,
+    310,
+    332
+    ],
+    "priority2": [
     29,
     32,
     33,
     34,
     35,
-    125,
-    129,
-    159,
     187,
     232,
     254,
     283,
-    293,
-    310,
-    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339
+    ],
+    "priority3": [
+    29,
+    32,
+    33,
+    34,
+    35,
+    187,
+    232,
+    254,
+    283,
     333,
     334,
     335,
@@ -905,26 +1418,30 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 37,
-    fields: {
-    pathName: "Sustainability",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
-    65,
-    66,
+    "model": "database.pathway",
+    "pk": 37,
+    "fields": {
+    "pathName": "Sustainability",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     126,
     127,
     131,
+    149,
+    150,
+    299
+    ],
+    "priority2": [
+    286
+    ],
+    "priority3": [
+    65,
+    66,
     139,
     140,
     141,
-    149,
-    150,
     152,
     224,
-    286,
-    299,
     300,
     301,
     302,
@@ -939,22 +1456,33 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 32,
-    fields: {
-    pathName: "Music And Culture",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 32,
+    "fields": {
+    "pathName": "Music And Culture",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     15,
     18,
     46,
     47,
-    52,
-    56,
     129,
     200,
     264,
-    272,
+    272
+    ],
+    "priority2": [
+    52,
+    56,
+    273,
+    274,
+    275,
+    276,
+    277
+    ],
+    "priority3": [
+    52,
+    56,
     273,
     274,
     275,
@@ -964,19 +1492,23 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 36,
-    fields: {
-    pathName: "Studio Arts",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 36,
+    "fields": {
+    "pathName": "Studio Arts",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     21,
+    114
+    ],
+    "priority2": [
     49,
     50,
-    54,
-    114,
     293,
-    294,
+    294
+    ],
+    "priority3": [
+    54,
     295,
     296,
     297,
@@ -985,21 +1517,32 @@
     }
     },
     {
-    model: "database.pathway",
-    pk: 34,
-    fields: {
-    pathName: "Science, Technology, And Society",
-    pathDescript: "Pathway Description",
-    relatedCourses: [
+    "model": "database.pathway",
+    "pk": 34,
+    "fields": {
+    "pathName": "Science, Technology, And Society",
+    "pathDescript": "Pathway Description",
+    "priority1": [
     48,
     149,
     150,
+    227,
+    228
+    ],
+    "priority2": [
     153,
     207,
     208,
     221,
-    227,
-    228,
+    286,
+    287,
+    288
+    ],
+    "priority3": [
+    153,
+    207,
+    208,
+    221,
     286,
     287,
     288
