@@ -12,7 +12,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 class Pathway(models.Model):
     pathName = models.CharField(max_length=150)
     pathDescript = models.TextField(default = 'description')
-    relatedCourses = models.ManyToManyField('Course', related_name='pathways')
+    priority1 = models.ManyToManyField('Course', related_name='priority1')
+    priority2 = models.ManyToManyField('Course', related_name='priority2')
+    priority3 = models.ManyToManyField('Course', related_name='priority3')
+
     def __str__(self):
         return self.pathName
 
@@ -71,11 +74,23 @@ def parse():
                         summer = col[9].strip())
 
                     tmpCourse.save()
-                    tmpPath.relatedCourses.add(tmpCourse)
+                    if (col[12].strip().find('1') != -1):
+                        tmpPath.priority1.add(tmpCourse)
+                    if (col[12].strip().find('2') != -1):
+                        tmpPath.priority2.add(tmpCourse)
+                    if (col[12].strip().find('3') != -1):
+                        tmpPath.priority3.add(tmpCourse)
+                    
                     tmpPath.save()
 
                 else:
-                    tmpPath.relatedCourses.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
+                    if (col[12].strip().find('1') != -1):
+                        tmpPath.priority1.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
+                    if (col[12].strip().find('2') != -1):
+                        tmpPath.priority2.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
+                    if (col[12].strip().find('3') != -1):
+                        tmpPath.priority3.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
+
                     tmpPath.save()
 
             else:
@@ -96,12 +111,22 @@ def parse():
                         summer = col[9].strip())
 
                     tmpCourse.save()
-                    tmpPath.relatedCourses.add(tmpCourse)
+                    if (col[12].strip().find('1') != -1):
+                        tmpPath.priority1.add(tmpCourse)
+                    if (col[12].strip().find('2') != -1):
+                        tmpPath.priority2.add(tmpCourse)
+                    if (col[12].strip().find('3') != -1):
+                        tmpPath.priority3.add(tmpCourse)
                     tmpPath.save()
 
                 else:
-                    tmpCourse = Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title())
-                    tmpPath.relatedCourses.add(tmpCourse)
+                    if (col[12].strip().find('1') != -1):
+                        tmpPath.priority1.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
+                    if (col[12].strip().find('2') != -1):
+                        tmpPath.priority2.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
+                    if (col[12].strip().find('3') != -1):
+                        tmpPath.priority3.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
+
                     tmpPath.save()
 
 
