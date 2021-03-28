@@ -9,12 +9,12 @@
       <v-divider></v-divider>
 
       <!-- LIST OF POSSIBLE THIRD COURSES -->
-      <v-list-group color="#c65353" v-for="(course, i) in path.thirdCourses" :key="i">
+      <v-list-group color="#c65353" v-for="(course, i) in checkPriority(path)" :key="i">
 
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
           <v-list-item-content>
-            <v-list-item-title>{{ course }}</v-list-item-title>
+            <v-list-item-title>{{ findCourse(course).fields.name }}</v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -22,11 +22,11 @@
 
           <!-- COURSE DESCRIPTION AND BUTTON TO SELECT -->
           <v-card flat class="mt-2 mb-2" color="#dcdcdc" width="100%">
-            <v-card-text>Description of course here</v-card-text>
+            <v-card-text>{{findCourse(course).fields.description}}</v-card-text>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn depressed @click="selectCourse(course)" class="mr-2 mb-2 text-capitalize">
+              <v-btn depressed @click="selectCourse(findCourse(course))" class="mr-2 mb-2 text-capitalize">
                 <span>
                   <i style="color: #c65353" class="fas fa-plus"></i>
                   Add Course
@@ -49,11 +49,13 @@
 <script>
 
 import { mapMutations } from 'vuex'
+import cJson from './courses.json'
 
 export default {
   props: ['path'],
   data() {
     return {
+      allCourses: cJson,
       bucketNumber: 'third',
       selected: false
     }
@@ -61,9 +63,23 @@ export default {
   methods: {
     ...mapMutations(['setSelectedCourse3']),
     selectCourse(course) {
-      this.setSelectedCourse3(course);
+      this.setSelectedCourse3(course.fields.name);
       this.$forceUpdate();
       console.log(course)
+    },
+    checkPriority(path){
+      if (path.priority3.length == 0){
+        return path.priority2
+      }
+      return path.priority3
+    },
+    findCourse(course){
+      var courses = this.allCourses
+      for (var courseKey in courses){
+        if (course == courses[courseKey].pk){
+          return courses[courseKey]
+        }
+      }
     }
   }
 }

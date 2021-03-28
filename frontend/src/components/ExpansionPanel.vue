@@ -8,7 +8,7 @@
       <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
 
         <v-expansion-panel-header color="#c65353" id="expansion-header">
-          {{ path.name }}
+          {{ path.pathName }}
           <template v-slot:actions>
             <v-icon color="white">$expand</v-icon>
           </template>
@@ -16,7 +16,7 @@
 
         <v-expansion-panel-content>
           <v-card flat color="#dcdcdc">
-            <v-card-text class="mt-4">{{ path.pathDescription }}</v-card-text>
+            <v-card-text class="mt-4">{{ path.pathDescript }}</v-card-text>
           </v-card>
 
           <FirstCourses @nextBucket="moveToNextBucket" v-if="courseNumber=='first'" :path="path"/>
@@ -133,8 +133,9 @@ export default {
       this.$root.$emit(`closePanels`)
     },
     selectPathway(path) {
-      console.log(path.name)
-      this.setSelectedPathway(path)
+      
+      this.setSelectedPathway(path.pathName)
+      console.log(this.$store.getters.pathway)
     },
     moveToNextBucket(course) {
       this.courseNumber = course
@@ -163,74 +164,20 @@ export default {
     ...mapGetters(['pathway', 'firstCourse', 'secondCourse', 'thirdCourse']),
     filteredPathways() {
       var pathwayObj = this.pathways
-      var courses = this.coursesJson
+      //var allCourses = this.coursesJson
       var result = []
       //Loop through pathway objects
       for (var modelKey in pathwayObj) {
-        var model = pathwayObj[modelKey]
-        console.log(model.fields.pathName)
-        if (this.courseNumber == 'first'){
-          for (var id in model.fields.priority1){
-            for (var course in courses){
-              if (course.pk == id){
-                result[modelKey].push(course.field)
-              }
-            }
+        if (this.courseNumber != "first"){
+          if (pathwayObj[modelKey].fields.pathName == this.$store.getters.pathway){
+            result[0] = pathwayObj[modelKey].fields
           }
-        }else if (this.courseNumber == 'second'){
-          for (id in model.fields.priority2){
-            for (course in courses){
-              if (course.pk == id){
-                result[modelKey].push(course.field)
-              }
-            }
-          }
+        }else{
+          var model = pathwayObj[modelKey].fields
+          result[modelKey] = model 
         }
-        for (id in model.fields.priority3){
-          for (course in courses){
-            if (course.pk == id){
-              result[modelKey].push(course.field)
-            }
-          }
-        }
-        
-
-
-        // var secondCourses = item.secondCourses
-
-        // if (courses != null) {
-        //   for (var i = 0; i < courses.length; i++) {
-        //     var course = courses[i]          
-        //     if (course == this.filter) {
-        //       result[key] = item
-        //     }
-        //   }
-        // }
-
-        // if (courses != null) {
-        //   for (i = 0; i < courses.length; i++) {
-        //     course = courses[i]
-        //     if (course == this.$store.getters.firstCourse) {
-        //       result[key] = item
-        //     }
-        //   }
-        // }
-
-        // if (secondCourses != null) {
-        //   for (i = 0; i < secondCourses.length; i++) {
-        //     course = secondCourses[i]
-        //     if (course == this.$store.getters.secondCourse) {
-        //       result[key] = item
-        //     }
-        //   }
-        // }
       }
     return result
-      // if (result.length != 0) {
-      //   return result
-      // }
-
-      // return items
     },
     bucketNumber() {
       if (this.$store.getters.firstCourse != null) {

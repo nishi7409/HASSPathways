@@ -8,12 +8,13 @@
       <v-divider></v-divider>
 
       <!-- LIST OF POSSIBLE FIRST COURSES -->
-      <v-list-group color="#c65353" v-for="(course, i) in path.Courses" :key="i">
+      <v-list-group color="#c65353" v-for="(course, i) in path.priority1" :key="i">
 
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
           <v-list-item-content>
-            <v-list-item-title>{{ course }}</v-list-item-title>
+
+            <v-list-item-title>{{ findCourse(course).fields.name }}</v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -21,11 +22,11 @@
 
           <!-- COURSE DESCRIPTION AND BUTTON TO SELECT -->
           <v-card flat class="mt-2 mb-2" color="#dcdcdc" width="100%">
-            <v-card-text>Description of course here</v-card-text>
+            <v-card-text>{{ findCourse(course).fields.description }}</v-card-text>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn depressed @click="selectCourse(course)" class="mr-2 mb-2 text-capitalize">
+              <v-btn depressed @click="selectCourse(findCourse(course),path)" class="mr-2 mb-2 text-capitalize">
                 <span>
                   <i style="color: #c65353" class="fas fa-plus"></i>
                   Add Course
@@ -47,24 +48,35 @@
 <script>
 
 import { mapMutations } from 'vuex'
+import cJson from './courses.json'
 
 export default {
   props: ['path'],
   data() {
     return {
       bucketNumber: 'first',
-      nextBucketNumber: 'second'
+      nextBucketNumber: 'second',
+      allCourses: cJson
     }
   },
   methods: {
-    ...mapMutations(['setSelectedCourse1']),
-    selectCourse(course) {
-      this.setSelectedCourse1(course);
+    ...mapMutations(['setSelectedCourse1','setSelectedPathway']),
+    selectCourse(course, path) {
+      this.setSelectedPathway(path.pathName)
+      this.setSelectedCourse1(course.fields.name);
       console.log(course)
       this.$emit('nextBucket', this.nextBucketNumber)
       this.$root.$emit('makeSecondCourseEditable', true)
       this.$root.$emit('changeCurrent', 2)
       this.$root.$emit(`closePanels`)
+    },
+    findCourse(course){
+      var courses = this.allCourses
+      for (var courseKey in courses){
+        if (course == courses[courseKey].pk){
+          return courses[courseKey]
+        }
+      }
     }
   }
 }

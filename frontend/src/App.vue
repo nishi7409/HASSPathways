@@ -66,7 +66,6 @@ export default {
   name: 'App',
   data: () => ({
     deleteClicked: false,
-    items: ['Minds and Machines', 'AI and Society', 'Are Humans Rational?', 'Chinese 1', 'Chinese 2', 'Chinese 3', 'Chinese 4', 'etc'],
     searchInput: "",
     extension: ""
   }),
