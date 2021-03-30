@@ -7,7 +7,7 @@
         <div id="clearButtons">
           <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Delete This Pathway</v-btn>
           <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize mr-2">Clear All Pathways</v-btn>
-          <v-btn @click="makeCoursesEditable()" color="#c65353" depressed :to="{name: 'home'}" class="white--text text-capitalize">Edit Pathway</v-btn>
+          <v-btn @click="makeCoursesEditable()" color="#c65353" depressed class="white--text text-capitalize">Edit Pathway</v-btn>
         </div>
         <div id="pathwaysNavigation" class="mr-4">
           <div v-if="getOptions.length > 0">
@@ -20,22 +20,20 @@
     </v-container>
     
     <v-container fluid v-if="getOptions.length == 0"> 
-      <!-- If no Pathways have been specified yet [TO BE CODED] -->
-      <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever -->
+      <!-- If no Pathways have been specified yet -->
+      <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever if no pathways stored -->
 
       <v-container fill-height>
-          <v-row justify="center" align="center">
-              <v-col sm="4" class= "font-weight-regular  pa-8">
-                  <p> This place seems pretty lonely. </p>
+          <v-row justify="center" align="center" class= "pt-10">
+              <v-col sm="4" class= "font-weight-regular pt-10 pa-8">
+                  <p class= "headline" > This place seems pretty lonely. </p>
 
-                  <span> You can add Pathways from the </span>
-                  <span class= "font-weight-black">Add Pathways </span>
-                  <span class= "font-weight-regular">section.</span>
+                  <span class = "headline"> You can add Pathways from the </span>
+                  <span class= "headline font-weight-black">Add Pathways </span>
+                  <span class= "headline">section.</span>
               </v-col>
           </v-row>
       </v-container>
-
-
     </v-container>
 
 
@@ -156,7 +154,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['clear', 'removePath']),
+    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'clear', 'removePath']),
     goToNextPathway() {
       if (this.i == this.getOptions.length - 1) {
         this.i = 0
@@ -185,9 +183,25 @@ export default {
       }
     },
     makeCoursesEditable(){
+      this.$store.editingCourses = true
+      this.$store.targetEditIndex = this.i
       this.$root.$emit('makeFirstCourseEditable', true)
       this.$root.$emit('makeSecondCourseEditable', true)
       this.$root.$emit('makeThirdCourseEditable', true)
+      this.setSelectedCourse1(this.getOptions[this.i][1])
+      this.setSelectedCourse2(this.getOptions[this.i][2])
+      this.setSelectedCourse3(this.getOptions[this.i][3])
+      this.$toast.clear()
+      this.$toast.info("Press the save button in the lower\nright to finish editing your pathway.", {
+        color: "#4FDEF5",
+        position: "top-right",
+        timeout: 4000,
+        pauseOnFocusLoss: true,
+        hideProgressBar: true,
+        rtl: false,
+        closeButton: "button",
+      });
+      this.$router.push('home');
     }
   },
   computed: {
