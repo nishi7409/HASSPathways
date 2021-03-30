@@ -10,38 +10,32 @@
 
             <v-btn @click="clearProgress()" color="#c65353" depressed class="white--text text-capitalize button ml-2 mr-2">Clear</v-btn>
 
-            <v-stepper-step 
-            :step="1"
-            :complete="numberOfCoursesSelected > 0"
-            @click="goToCourse(1)"
-            :editable='firstCourseEditable'
-            color="#c65353"
-            >
-            {{coursesList.firstCourse}}
+            <v-stepper-step :step="1" :complete="numberOfCoursesSelected > 0" @click="goToCourse(1)" :editable='firstCourseEditable' edit-icon="done" v-if= "this.current != 1" color="#c65353">
+            {{coursesList.firstCourse}} <!-- Normal view -->
+            </v-stepper-step>
+
+            <v-stepper-step :step="1" :complete="numberOfCoursesSelected > 0" @click="goToCourse(1)" :editable='firstCourseEditable' edit-icon="create" v-if= "this.current == 1" color="#919191">
+            {{coursesList.firstCourse}} <!-- Selected view -->
             </v-stepper-step>
 
             <v-divider></v-divider>
 
-            <v-stepper-step 
-            :step="2"
-            :complete="numberOfCoursesSelected > 1"
-            @click="goToCourse(2)"
-            :editable='secondCourseEditable'
-            color="#c65353"
-            >
-            {{coursesList.secondCourse}}
+            <v-stepper-step :step="2" :complete="numberOfCoursesSelected > 1" @click="goToCourse(2)" :editable='secondCourseEditable' edit-icon="done" v-if= "this.current != 2" color="#c65353">
+            {{coursesList.secondCourse}} <!-- Normal view -->
+            </v-stepper-step>
+
+            <v-stepper-step :step="2" :complete="numberOfCoursesSelected > 1" @click="goToCourse(2)" :editable='secondCourseEditable' edit-icon="create" v-if= "this.current == 2" color="#919191">
+            {{coursesList.secondCourse}} <!-- Selected view -->
             </v-stepper-step>
 
             <v-divider></v-divider>
 
-            <v-stepper-step 
-            :step="3"
-            :complete="numberOfCoursesSelected > 2"
-            @click="goToCourse(3)"
-            :editable='thirdCourseEditable'
-            color="#c65353"
-            >
-            {{coursesList.thirdCourse}}
+            <v-stepper-step :step="3" :complete="numberOfCoursesSelected > 2" @click="goToCourse(3)" :editable='thirdCourseEditable' edit-icon="done" v-if= "this.current != 3" color="#c65353">
+            {{coursesList.thirdCourse}} <!-- Normal view -->
+            </v-stepper-step>
+
+            <v-stepper-step :step="3" :complete="numberOfCoursesSelected > 2" @click="goToCourse(3)" :editable='thirdCourseEditable' edit-icon="create" v-if= "this.current == 3" color="#919191">
+            {{coursesList.thirdCourse}} <!-- Selected view -->
             </v-stepper-step>
 
           </v-stepper-header>
