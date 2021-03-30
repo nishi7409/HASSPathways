@@ -4,6 +4,8 @@ import vuetify from './plugins/vuetify';
 import router from './router';
 import Vuex from 'vuex';
 import Toast from "vue-toastification";
+import createPersistedState from 'vuex-persistedstate'
+
 import "vue-toastification/dist/index.css";
 
 Vue.use(Toast, {
@@ -45,6 +47,7 @@ const store = new Vuex.Store({
       options: []
     }
   },
+  plugins: [createPersistedState()],
   mutations: {
     initializeStore(state) {
       if (localStorage.getItem('options')) {
@@ -180,7 +183,7 @@ const store = new Vuex.Store({
       }
     },
     getOptions: state => {
-      return state.shoppingCart.options;
+      return store.state.shoppingCart.options;
     },
   }
 })
@@ -191,6 +194,8 @@ new Vue({
   router,
   vuetify,
   store,
-  beforeCreate() { this.$store.commit('initializeStore') },
+  initializeStore() { 
+    store.commit('initializeStore'); 
+  },
   render: h => h(App)
 }).$mount('#app')
