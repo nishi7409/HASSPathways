@@ -9,7 +9,7 @@ This project was developed to help students navigate through Rensselaer Polytech
 
 # Administrator Information
 #### Data Sheet
-Update later
+https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97qN8w/edit?usp=sharing
 
 #### Fill Database
 Update later
