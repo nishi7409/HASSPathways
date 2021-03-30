@@ -183,6 +183,7 @@ const store = new Vuex.Store({
       }
     },
     getOptions: state => {
+      console.log(state)
       return store.state.shoppingCart.options;
     },
   }
