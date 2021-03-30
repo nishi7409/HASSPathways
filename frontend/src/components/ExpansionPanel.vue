@@ -2,11 +2,6 @@
 
 <template>
   <div>
-    <div>
-      <v-card flat class="ml-3 pt-5 pb-1 text-middle" v-if= "this.$store.editingCourses == true"> <!--  v-if= "courseEditStatus == true" -->
-        <span class= "pt-3 headline font-weight-bold">Editing Pathway </span>
-      </v-card>
-    </div>
     <ProgressBar/>
     
     <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
@@ -106,7 +101,6 @@ export default {
         // If the pathway already exists reject save
         if (this.pathwayExist([this.$store.getters.firstCourse, this.$store.getters.secondCourse, this.$store.getters.thirdCourse])) {
           if (this.$store.editingCourses == true){
-            this.removePath(this.$store.targetEditIndex)
             this.$store.editingCourses = false
             this.$store.targetEditIndex = -1
           }

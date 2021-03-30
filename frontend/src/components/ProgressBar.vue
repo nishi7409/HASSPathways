@@ -1,6 +1,11 @@
 <template>
 
     <div class="progress">
+      <div>
+        <v-card flat class="pl-3 pt-5 pb-1 text-middle" v-if= "this.$store.editingCourses == true"> <!--  v-if= "courseEditStatus == true" -->
+          <span class= "pt-3 headline font-weight-bold">Editing Pathway </span>
+        </v-card>
+      </div>
 
       <div id="stepper">
 

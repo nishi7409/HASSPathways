@@ -20,8 +20,8 @@
     </v-container>
     
     <v-container fluid v-if="getOptions.length == 0"> 
-      <!-- If no Pathways have been specified yet [TO BE CODED] -->
-      <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever -->
+      <!-- If no Pathways have been specified yet -->
+      <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever if no pathways stored -->
 
       <v-container fill-height>
           <v-row justify="center" align="center" class= "pt-10">
@@ -34,8 +34,6 @@
               </v-col>
           </v-row>
       </v-container>
-
-
     </v-container>
 
 
