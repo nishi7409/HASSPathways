@@ -37,11 +37,11 @@
       <v-layout column>
         <div>
 
-          We love feedback!
+          We love feedback! Come visit our 
           <a href="https://github.com/nishi7409/HASSPathways/issues" target="_blank" style="text-decoration: none">
 
             <span style="color: #c65353">
-              Github Repo
+              Github Repository
               <i style="color: #c65353" class="fab fa-github"></i>
             </span>
 
