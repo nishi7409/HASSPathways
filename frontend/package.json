@@ -11,10 +11,12 @@
     "core-js": "^3.9.1",
     "node-sass": "^4.14.1",
     "vue": "^2.6.12",
+    "vue-cookies": "^1.7.4",
     "vue-router": "^3.3.2",
     "vue-toastification": "^1.7.11",
     "vuetify": "^2.4.8",
-    "vuex": "^3.6.0"
+    "vuex": "^3.6.0",
+    "vuex-persistedstate": "^4.0.0-beta.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.12",

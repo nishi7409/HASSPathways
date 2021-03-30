@@ -1,568 +1,1566 @@
 [
 	{
-		"model": "api.Pathway",
-		"pk": 0,
-		"fields" :{
-			"name": "Artifical Intelligence",
-			"desc": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and pkeas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
-			"classes": [
-				1972,
-				1140,
-				1235
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 1,
-		"fields" :{
-			"name": "Arts History, Theory, and Criticism",
-			"desc": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
-			"classes": [
-				1080,
-				1300,
-				1170,
-				1700
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 2,
-		"fields" :{
-			"name": "Behavioral and Cognitive Neuroscience",
-			"desc": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
-			"classes": [
-
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 3,
-		"fields" :{
-			"name": "Chinese Language",
-			"desc": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 4,
-		"fields" :{
-			"name": "Creative Design and Innovation",
-			"desc": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
-			"classes": [
-				1170,
-				1700,
-				1969,
-				1964
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 5,
-		"fields" :{
-			"name": "Design, Innovation, and Society",
-			"desc": "The pathway in Design, Innovation, and Society (DIS) provpkes creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based classes that address real-world social and environmental challenges.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 6,
-		"fields" :{
-			"name": "Economics",
-			"desc": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
-			"classes": [
-				1200
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 7,
-		"fields" :{
-			"name": "Economics of Banking and Finance",
-			"desc": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of indivpkuals, firms, and the economy.",
-			"classes": [
-				1200
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 8,
-		"fields" :{
-			"name": "Economics of Biotech and Medical Markets",
-			"desc": "Study different types of markets related to pharmaceuticals, medical devices, and healthcare. Students are prepared to use theory, econometric models, and data to study the role of R&D, patents, innovation, and policies in healthcare markets, and in pharmaceuticals and medical devices.",
-			"classes": [
-				1200
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 9,
-		"fields" :{
-			"name": "Economics of Policy and Regulations",
-			"desc": "Study different types of regulations and economic policy measures, and their impact on indivpkuals, markets, and the economy. Students are prepared to use economic models, quantitative methods, and data to assess different types of regulations and policies, and their impact.",
-			"classes": [
-				1200
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 10,
-		"fields" :{
-			"name": "Economics of Quantitative Modeling",
-			"desc": "Study different types of mathematical models and econometric techniques used in Economics. Students are prepared to use economic theory, and econometric and statistical methods to study behavior of indivpkuals and firms in the economy.",
-			"classes": [
-				1200
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 11,
-		"fields" :{
-			"name": "Economics of Technology and Innovation",
-			"desc": "Study different types of economic models related to innovation and new technologies. Students are prepared to use economic theory, econometric and statistical methods, and data to examine patents, R&D, and innovation more broadly, as well as in specific industries in the economy.",
-			"classes": [
-				1200
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 12,
-		"fields" :{
-			"name": "Electronic Arts",
-			"desc": "This pathway allows students to study a range of approaches to electronic, or digital arts, such as digital imaging, graphic storytelling, interactive media, and 3D animation. This immersive study will give students a comprehensive view of how to use digital tools to tell stories, and to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
-			"classes": [
-				1987,
-				1964
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 13,
-		"fields" :{
-			"name": "Environmental Futures",
-			"desc": "The future seems up for grabs as climate change challenges human and nonhuman societies to meet basic needs for clean air, water, soil, food, and energy. How will we adapt, reduce harm, or mitigate the problems of the past and present? This pathway involves classes in sustainability, defined as the means to ensure the well-being of the planet and quality of life of present and future generations. classes integrate research and insights from the social sciences, arts, and humanities to pursue a healthy environment, economic prosperity, and social justice by building on the present to inform the future.",
-			"classes": [
-				1110,
-				1200,
-				1240,
-				1350,
-				1720,
-				1961
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 14,
-		"fields" :{
-			"name": "Ethics, Integrity, and Social Responsibility",
-			"desc": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.",
-			"classes": [
-				1140,
-				1150,
-				1350,
-				1961
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 15,
-		"fields" :{
-			"name": "Extent and Limits of Rationality",
-			"desc": "Humans can do, and have done, some really stuppk things: we are not as rational as we would like to think, and we are subject to scores of cognitive and social biases. That sapk, however, we also have the power to correct for these, and to do good and constructive work. Let's see how we can harness our cognitive and social powers for the good. How can critical thinking be used constructively? How can we learn from our past mistakes? How can social institutions and policies be set up to ensure that we will make wise decisions and create a world that lasts into the extended future?",
-			"classes": [
-				1140,
-				1200,
-				1235,
-				1180
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 16,
-		"fields" :{
-			"name": "Fact and Fiction",
-			"desc": "A pathway for those who are curious about what makes something fake or factual and how such concepts are evolving in contemporary political and popular culture. Students will learn how to think more precisely and analytically about the distinctions between fact, fiction, truth, and reality.",
-			"classes": [
-				1300,
-				1560,
-				1976,
-				1964
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 17,
-		"fields" :{
-			"name": "Foreign Language",
-			"desc": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same foreign language.",
-			"classes": [
-
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 18,
-		"fields" :{
-			"name": "Game Studies",
-			"desc": "This pathway explores the design, creation, and analysis of games.  Students completing this pathway will develop depth in creative and critical thinking, technological proficiency and multicultural awareness.",
-			"classes": [
-
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 19,
-		"fields" :{
-			"name": "Gender, Race, Sexuality, Ethnicity and Social Change",
-			"desc": "This pathway enables students to cultivate an appreciation of how diverse pkentities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.",
-			"classes": [
-				1150,
-				1300,
-				1560,
-				1666,
-				1710
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 20,
-		"fields" :{
-			"name": "Graphic Design",
-			"desc": "Study Graphic Design through the integration of theory and practice, in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols and images.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 21,
-		"fields" :{
-			"name": "History",
-			"desc": "The pathway in History is designed for students interested in US and world history. classes primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.",
-			"classes": [
-				1410,
-				1500,
-				1964,
-				1978
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 22,
-		"fields" :{
-			"name": "Information Technology and Web Sciences",
-			"desc": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provpkes in our lives and workplaces.  Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered deisgn issues to make technology more usable.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 23,
-		"fields" :{
-			"name": "Interactive Media/Data Design",
-			"desc": "The Interactive Media/Data Design pathway covers communication design theory and practice, interaction design theory and practice, and information design to prepare students for creating different forms of interactive, multimedia communication and data representation. Students use critical thinking, creative thinking, multimedia design, and data representation to develop effective forms of communication in diverse global contexts.",
-			"classes": [
-				1560
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 24,
-		"fields" :{
-			"name": "Law and Policy",
-			"desc": "The Law and Policy pathway is designed for students interested in the design of policy and legislation, and students on a pre-law track. Skills and knowledge may be applied to fields such as environment and climate change, technological innovation, public health law, or intellectual property law.",
-			"classes": [
-				1350,
-				1500
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 25,
-		"fields" :{
-			"name": "Linguistics",
-			"desc": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You’ll also learn how to effectively communicate and handle foreign languages.",
-			"classes": [
-
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 26,
-		"fields" :{
-			"name": "Literature and Creative Writing",
-			"desc": "The Literature and Creative Writing Pathway offers discussion-oriented classes across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
-			"classes": [
-				1976,
-				1978
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 27,
-		"fields" :{
-			"name": "Living in a World of Data",
-			"desc": "We live in the age of information ... and misinformation ... of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds ... and of rushing to judgment on viral vpkeos.  We better all develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding our collective awareness driving our decisions and affecting the world around us.",
-			"classes": [
-				1140,
-				1150,
-				1200
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 28,
-		"fields" :{
-			"name": "Logical Thinking",
-			"desc": "This Pathway is for students with an interest in symbolic logic, and the connections between formal logic and mathematics, computer science, Artificial Intelligence, and the human mind.",
-			"classes": [
-				1235
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 29,
-		"fields" :{
-			"name": "Media and Culture",
-			"desc": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and indivpkual pkentities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.",
-			"classes": [
-				1560,
-				1987,
-				1964,
-				1958,
-				1978
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 30,
-		"fields" :{
-			"name": "Mind, Brain, and Intelligence",
-			"desc": "Discover Cognitive Science: a young but fast-growing field focused on the study of mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artificial intelligence.",
-			"classes": [
-				1140,
-				1972,
-				1235
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 31,
-		"fields" :{
-			"name": "Music and Culture",
-			"desc": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
-			"classes": [
-				1080,
-				1700,
-				1710,
-				1958
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 32,
-		"fields" :{
-			"name": "Music Composition and Production",
-			"desc": "Students learn to compose music starting with the Western Classical tradition then branching out to modern and experimental methods.  Students also learn to program and apply modern information technology to music creation and production.",
-			"classes": [
-				1080,
-				1700,
-				1710,
-				1958
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 33,
-		"fields" :{
-			"name": "Music Performance",
-			"desc": "Students learn to perform focal and instrumental music from a variety of styles, Classical to Afro-Cuban to experimental.",
-			"classes": [
-				1080,
-				1710
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 34,
-		"fields" :{
-			"name": "Philosophy",
-			"desc": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions, about enduring and contemporary problems in ethics, science, technology, religion, and politics — including some of the biggest challenges that humanity currently faces.",
-			"classes": [
-				1150,
-				1235
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 35,
-		"fields" :{
-			"name": "Public Health",
-			"desc": "The pathway in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important classes for students on a pre-medical track.",
-			"classes": [
-				1150,
-				1410
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 36,
-		"fields" :{
-			"name": "Science, Technology, and Society",
-			"desc": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 37,
-		"fields" :{
-			"name": "Strategic Communication",
-			"desc": "This pathway is designed to train versatile, critical, and self-possessed 21st- century communicators. Students who successfully complete this pathway will demonstrate the ability to make focused, audience-appropriate arguments; communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts; and respond creatively to the analytical demands involved with developing, arranging, and revising pkeas and arguments.",
-			"classes": [
-				1560
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 38,
-		"fields" :{
-			"name": "Studio Arts",
-			"desc": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history and theory in the visual arts.  Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color, 2 and 3D Design, and learn to articulate pkeas about their own, other students’, and historical works through class discussions and critiques.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 39,
-		"fields" :{
-			"name": "Sustainability",
-			"desc": "The pathway in Sustainability focuses on the interactions between various systems - social, political, cultural, economic, technological and ecological - that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems.",
-			"classes": [
-				1110,
-				1240,
-				1961
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 40,
-		"fields" :{
-			"name": "Thinking with Science",
-			"desc": "This pathway offers instruction in pkentifying and understanding the methods and media for scientific knowledge is dissemination. Students who successfully complete this pathway will demonstrate the ability to critique how textual and social representations create diverse and competing receptions of scientific knowledge; analyze the social construction of scientific knowledge; and solve problems through disseminating scientific knowledge across a variety of social and rhetorical contexts.",
-			"classes": [
-				1175
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 41,
-		"fields" :{
-			"name": "Transfer Student Arts and Humanities",
-			"desc": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the arts and humanities to be applied toward a pathway.  Coursework may include a mix of transfer classes that come in as electives or classes taken at Rensselaer.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 42,
-		"fields" :{
-			"name": "Transfer Student Social Science",
-			"desc": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the social sciences to be applied toward a pathway.  Coursework may include a mix of transfer classes that come in as electives or classes taken at Rensselaer.",
-			"classes": [
-				
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 43,
-		"fields" :{
-			"name": "Understanding Human Behavior",
-			"desc": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society.  In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
-			"classes": [
-				1975
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 44,
-		"fields" :{
-			"name": "Vpkeo, Performance, and Social Impact",
-			"desc": "This pathway allows students to study vpkeo, performance and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in vpkeo/television and/or performance; and communicate through visual as well as audio mediums. Strategically situating art, media and technology in a social context, students engage in creative practice designed to make change from the local to the global.",
-			"classes": [
-				1300,
-				1987,
-				1964,
-				1958
-			]
-		}
-	},
-	{
-		"model": "api.Pathway",
-		"pk": 45,
-		"fields" :{
-			"name": "Well-being: Body and Mind",
-			"desc": "How do we maintain a sense of well-being in our lives? Each person’s path to well-being in body and mind is unique—arising from an awareness of our needs, goals and what we find fulfilling. The Well-being Interdisciplinary Pathway includes a wpke variety of classes that explore the nature of what it is to be human and to orient ourselves in the world, to have relationships, make decisions, be creative, and make discoveries.",
-			"classes": [
-				1110,
-				1140,
-				1175,
-				1700,
-				1720,
-				1180,
-				1975
-			]
-		}
+	"model": "database.pathway",
+	"pk": 5,
+	"fields": {
+	"pathName": "Creative Design And Innovation",
+	"pathDescript": "Creative Design and Innovation",
+	"priority1": [
+	17,
+	18,
+	41,
+	42,
+	43,
+	44,
+	45,
+	46,
+	47,
+	48
+	],
+	"priority2": [
+	4,
+	49,
+	50,
+	51,
+	52,
+	53,
+	54,
+	55,
+	56,
+	57,
+	58,
+	59,
+	60,
+	61,
+	62,
+	63,
+	64,
+	65,
+	66
+	],
+	"priority3": [
+	4,
+	49,
+	50,
+	51,
+	52,
+	53,
+	54,
+	55,
+	56,
+	57,
+	58,
+	59,
+	60,
+	61,
+	62,
+	63,
+	64,
+	65,
+	66
+	]
 	}
-]
+	},
+	{
+	"model": "database.pathway",
+	"pk": 13,
+	"fields": {
+	"pathName": "Economics Of Technology & Innovation",
+	"pathDescript": "Economics of Technology & Innovation",
+	"priority1": [
+	72,
+	73
+	],
+	"priority2": [
+	78,
+	96,
+	113
+	],
+	"priority3": [
+	78,
+	96,
+	113
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 1,
+	"fields": {
+	"pathName": "Artificial Intelligence",
+	"pathDescript": "Artificial Intelligence",
+	"priority1": [
+	1,
+	2,
+	3
+	],
+	"priority2": [
+	4
+	],
+	"priority3": [
+	5,
+	6,
+	7,
+	8,
+	9,
+	10,
+	11,
+	12,
+	13
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 6,
+	"fields": {
+	"pathName": "Design, Innovation, And Society",
+	"pathDescript": "Design, Innovation, and Society",
+	"priority1": [
+	67
+	],
+	"priority2": [
+	68
+	],
+	"priority3": [
+	69,
+	70,
+	71
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 39,
+	"fields": {
+	"pathName": "Understanding Human Behavior",
+	"pathDescript": "Understanding Human Behavior",
+	"priority1": [
+	23
+	],
+	"priority2": [
+	24,
+	29,
+	164,
+	255,
+	256,
+	316,
+	317,
+	318,
+	319,
+	320,
+	321,
+	322,
+	323,
+	324,
+	325,
+	326,
+	327,
+	328
+	],
+	"priority3": [
+	24,
+	29,
+	164,
+	255,
+	256,
+	316,
+	317,
+	318,
+	319,
+	320,
+	321,
+	322,
+	323,
+	324,
+	325,
+	326,
+	327,
+	328
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 21,
+	"fields": {
+	"pathName": "Gender, Race, Sexuality, Ethnicity, And Social Change",
+	"pathDescript": "Gender, Race, Sexuality, Ethnicity, and Social Change",
+	"priority1": [
+	16,
+	48,
+	145,
+	168,
+	199,
+	200,
+	201,
+	202
+	],
+	"priority2": [
+	134,
+	178,
+	203,
+	204,
+	205,
+	206,
+	207,
+	208,
+	209
+	],
+	"priority3": [
+	134,
+	178,
+	203,
+	204,
+	205,
+	206,
+	207,
+	208,
+	209
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 2,
+	"fields": {
+	"pathName": "Arts History, Theory, And Criticism",
+	"pathDescript": "Arts History, Theory, and Criticism",
+	"priority1": [
+	14,
+	15,
+	16,
+	17,
+	18,
+	19
+	],
+	"priority2": [
+	20,
+	21
+	],
+	"priority3": [
+	22
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 25,
+	"fields": {
+	"pathName": "Interactive Media/Data Design",
+	"pathDescript": "Interactive Media/Data Design",
+	"priority1": [
+	160,
+	168,
+	210,
+	212,
+	213,
+	216,
+	235,
+	236,
+	237,
+	238
+	],
+	"priority2": [
+	160,
+	168,
+	210,
+	212,
+	213,
+	216,
+	235,
+	236,
+	237,
+	238
+	],
+	"priority3": [
+	160,
+	168,
+	210,
+	212,
+	213,
+	216,
+	235,
+	236,
+	237,
+	238
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 29,
+	"fields": {
+	"pathName": "Logical Thinking",
+	"pathDescript": "Logical Thinking",
+	"priority1": [
+	1,
+	3,
+	13,
+	161,
+	162,
+	163,
+	259,
+	260,
+	261
+	],
+	"priority2": [
+	1,
+	3,
+	13,
+	161,
+	162,
+	163,
+	259,
+	260,
+	261
+	],
+	"priority3": [
+	1,
+	3,
+	13,
+	161,
+	162,
+	163,
+	259,
+	260,
+	261
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 17,
+	"fields": {
+	"pathName": "Extent And Limits Of Rationality",
+	"pathDescript": "Extent and Limits of Rationality",
+	"priority1": [
+	1,
+	72,
+	156,
+	157,
+	158,
+	159
+	],
+	"priority2": [
+	4,
+	13,
+	89,
+	94,
+	160,
+	161,
+	162,
+	163,
+	164,
+	165,
+	166,
+	167
+	],
+	"priority3": [
+	4,
+	13,
+	89,
+	94,
+	160,
+	161,
+	162,
+	163,
+	164,
+	165,
+	166,
+	167
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 14,
+	"fields": {
+	"pathName": "Electronic Arts",
+	"pathDescript": "Electronic Arts",
+	"priority1": [
+	41,
+	46,
+	47,
+	114,
+	115,
+	116
+	],
+	"priority2": [
+	52,
+	56,
+	117,
+	118,
+	119,
+	120,
+	121,
+	122,
+	123,
+	124
+	],
+	"priority3": [
+	52,
+	56,
+	117,
+	118,
+	119,
+	120,
+	121,
+	122,
+	123,
+	124
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 33,
+	"fields": {
+	"pathName": "Philosophy",
+	"pathDescript": "Philosophy",
+	"priority1": [
+	3,
+	145,
+	146,
+	161,
+	162,
+	163,
+	174,
+	278,
+	279,
+	280
+	],
+	"priority2": [
+	136,
+	182,
+	259,
+	281,
+	282,
+	283,
+	284,
+	285
+	],
+	"priority3": [
+	136,
+	182,
+	259,
+	281,
+	282,
+	283,
+	284,
+	285
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 3,
+	"fields": {
+	"pathName": "Behavioral And Cognitive Neuroscience",
+	"pathDescript": "Behavioral and Cognitive Neuroscience",
+	"priority1": [
+	23
+	],
+	"priority2": [
+	24,
+	25,
+	26,
+	27,
+	28,
+	29,
+	30,
+	31,
+	32,
+	33,
+	34,
+	35
+	],
+	"priority3": [ ]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 26,
+	"fields": {
+	"pathName": "Linguistics",
+	"pathDescript": "Linguistics",
+	"priority1": [
+	239,
+	243
+	],
+	"priority2": [
+	9,
+	203,
+	205,
+	240,
+	241,
+	242
+	],
+	"priority3": [
+	9,
+	203,
+	205,
+	240,
+	241,
+	242
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 22,
+	"fields": {
+	"pathName": "Graphic Design",
+	"pathDescript": "Graphic Design",
+	"priority1": [
+	45,
+	59,
+	61,
+	63,
+	160,
+	168,
+	210,
+	211,
+	212,
+	213,
+	214,
+	215,
+	216
+	],
+	"priority2": [
+	45,
+	59,
+	61,
+	63,
+	160,
+	168,
+	210,
+	211,
+	212,
+	213,
+	214,
+	215,
+	216
+	],
+	"priority3": [
+	45,
+	59,
+	61,
+	63,
+	160,
+	168,
+	210,
+	211,
+	212,
+	213,
+	214,
+	215,
+	216
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 4,
+	"fields": {
+	"pathName": "Chinese Language",
+	"pathDescript": "Chinese Language",
+	"priority1": [
+	36,
+	37,
+	38
+	],
+	"priority2": [
+	37,
+	38,
+	39,
+	40
+	],
+	"priority3": [
+	38,
+	39,
+	40
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 41,
+	"fields": {
+	"pathName": "Well-Being: Body And Mind",
+	"pathDescript": "Well-being: Body and Mind",
+	"priority1": [
+	1,
+	18,
+	24,
+	125,
+	129,
+	159,
+	293,
+	310,
+	332
+	],
+	"priority2": [
+	29,
+	32,
+	33,
+	34,
+	35,
+	187,
+	232,
+	254,
+	283,
+	333,
+	334,
+	335,
+	336,
+	337,
+	338,
+	339
+	],
+	"priority3": [
+	29,
+	32,
+	33,
+	34,
+	35,
+	187,
+	232,
+	254,
+	283,
+	333,
+	334,
+	335,
+	336,
+	337,
+	338,
+	339
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 37,
+	"fields": {
+	"pathName": "Sustainability",
+	"pathDescript": "Sustainability",
+	"priority1": [
+	126,
+	127,
+	131,
+	149,
+	150,
+	299
+	],
+	"priority2": [
+	286
+	],
+	"priority3": [
+	65,
+	66,
+	139,
+	140,
+	141,
+	152,
+	224,
+	300,
+	301,
+	302,
+	303,
+	304,
+	305,
+	306,
+	307,
+	308,
+	309
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 34,
+	"fields": {
+	"pathName": "Science, Technology, And Society",
+	"pathDescript": "Science, Technology, and Society",
+	"priority1": [
+	48,
+	149,
+	150,
+	227,
+	228
+	],
+	"priority2": [
+	153,
+	207,
+	208,
+	221,
+	286,
+	287,
+	288
+	],
+	"priority3": [
+	153,
+	207,
+	208,
+	221,
+	286,
+	287,
+	288
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 30,
+	"fields": {
+	"pathName": "Media And Culture",
+	"pathDescript": "Media and Culture",
+	"priority1": [
+	46,
+	47,
+	48,
+	160,
+	169,
+	171,
+	172,
+	173,
+	175,
+	177,
+	178,
+	179,
+	204,
+	262,
+	263,
+	264,
+	265,
+	266,
+	267,
+	268,
+	269
+	],
+	"priority2": [
+	46,
+	47,
+	48,
+	160,
+	169,
+	171,
+	172,
+	173,
+	175,
+	177,
+	178,
+	179,
+	204,
+	262,
+	263,
+	264,
+	265,
+	266,
+	267,
+	268,
+	269
+	],
+	"priority3": [
+	46,
+	47,
+	48,
+	160,
+	169,
+	171,
+	172,
+	173,
+	175,
+	177,
+	178,
+	179,
+	204,
+	262,
+	263,
+	264,
+	265,
+	266,
+	267,
+	268,
+	269
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 15,
+	"fields": {
+	"pathName": "Environmental Futures",
+	"pathDescript": "Environmental Futures",
+	"priority1": [
+	44,
+	72,
+	125,
+	126,
+	127,
+	128,
+	129,
+	130,
+	131
+	],
+	"priority2": [
+	65,
+	66,
+	90,
+	132,
+	133,
+	134,
+	135,
+	136,
+	137,
+	138,
+	139,
+	140,
+	141,
+	142,
+	143,
+	144
+	],
+	"priority3": [
+	65,
+	66,
+	90,
+	132,
+	133,
+	134,
+	135,
+	136,
+	137,
+	138,
+	139,
+	140,
+	141,
+	142,
+	143,
+	144
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 7,
+	"fields": {
+	"pathName": "Economics",
+	"pathDescript": "Economics",
+	"priority1": [
+	72,
+	73
+	],
+	"priority2": [
+	74,
+	75,
+	76
+	],
+	"priority3": [
+	77,
+	78,
+	79,
+	80,
+	81,
+	82,
+	83,
+	84,
+	85,
+	86,
+	87,
+	88,
+	89,
+	90,
+	91,
+	92,
+	93,
+	94,
+	95,
+	96,
+	97,
+	98,
+	99,
+	100,
+	101,
+	102,
+	103,
+	104,
+	105,
+	106,
+	107,
+	108,
+	109
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 18,
+	"fields": {
+	"pathName": "Fact And Fiction",
+	"pathDescript": "Fact and Fiction",
+	"priority1": [
+	16,
+	42,
+	146,
+	168,
+	169,
+	170,
+	171,
+	172,
+	173,
+	174
+	],
+	"priority2": [
+	151,
+	161,
+	162,
+	175,
+	176,
+	177,
+	178,
+	179,
+	180,
+	181,
+	182,
+	183,
+	184,
+	185,
+	186,
+	187,
+	188
+	],
+	"priority3": [
+	151,
+	161,
+	162,
+	175,
+	176,
+	177,
+	178,
+	179,
+	180,
+	181,
+	182,
+	183,
+	184,
+	185,
+	186,
+	187,
+	188
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 27,
+	"fields": {
+	"pathName": "Literature And Creative Writing",
+	"pathDescript": "Literature and Creative Writing",
+	"priority1": [
+	61,
+	173,
+	177,
+	181,
+	187,
+	188,
+	216,
+	238,
+	244,
+	245,
+	246,
+	247,
+	248,
+	249,
+	250,
+	251,
+	252,
+	253,
+	254
+	],
+	"priority2": [
+	61,
+	173,
+	177,
+	181,
+	187,
+	188,
+	216,
+	238,
+	244,
+	245,
+	246,
+	247,
+	248,
+	249,
+	250,
+	251,
+	252,
+	253,
+	254
+	],
+	"priority3": [
+	61,
+	173,
+	177,
+	181,
+	187,
+	188,
+	216,
+	238,
+	244,
+	245,
+	246,
+	247,
+	248,
+	249,
+	250,
+	251,
+	252,
+	253,
+	254
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 23,
+	"fields": {
+	"pathName": "History",
+	"pathDescript": "History",
+	"priority1": [
+	127,
+	149,
+	150,
+	173,
+	202,
+	217,
+	218,
+	219,
+	220
+	],
+	"priority2": [
+	221
+	],
+	"priority3": [
+	140,
+	141,
+	183,
+	184,
+	222,
+	223,
+	224,
+	225,
+	226
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 8,
+	"fields": {
+	"pathName": "Economics Of Banking & Finance",
+	"pathDescript": "Economics of Banking & Finance",
+	"priority1": [
+	72,
+	73
+	],
+	"priority2": [
+	80,
+	100,
+	110
+	],
+	"priority3": [
+	80,
+	100,
+	110
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 40,
+	"fields": {
+	"pathName": "Video, Performance, And Social Practice",
+	"pathDescript": "Video, Performance, and Social Practice",
+	"priority1": [
+	16,
+	42,
+	44,
+	47,
+	115,
+	159,
+	169,
+	264
+	],
+	"priority2": [
+	21,
+	151,
+	175,
+	176,
+	313,
+	329,
+	330,
+	331
+	],
+	"priority3": [
+	22,
+	56,
+	151,
+	313,
+	330
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 19,
+	"fields": {
+	"pathName": "Foreign Language",
+	"pathDescript": "Foreign Language",
+	"priority1": [
+	189,
+	190
+	],
+	"priority2": [
+	191,
+	192
+	],
+	"priority3": [
+	38,
+	39,
+	40,
+	193,
+	194
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 20,
+	"fields": {
+	"pathName": "Game Studies",
+	"pathDescript": "Game Studies",
+	"priority1": [
+	195
+	],
+	"priority2": [
+	196,
+	197,
+	198
+	],
+	"priority3": [
+	196,
+	197,
+	198
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 9,
+	"fields": {
+	"pathName": "Economics Of Decision-Making",
+	"pathDescript": "Economics of Decision-Making",
+	"priority1": [
+	72,
+	73
+	],
+	"priority2": [
+	74,
+	89,
+	94,
+	98,
+	100,
+	102
+	],
+	"priority3": [
+	74,
+	89,
+	94,
+	98,
+	100,
+	102
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 16,
+	"fields": {
+	"pathName": "Ethics, Integrity, And Social Responsibility",
+	"pathDescript": "Ethics, Integrity, and Social Responsibility",
+	"priority1": [
+	1,
+	128,
+	131,
+	145,
+	146,
+	147,
+	148,
+	149,
+	150
+	],
+	"priority2": [
+	132,
+	135,
+	136,
+	137,
+	138,
+	151,
+	152,
+	153,
+	154,
+	155
+	],
+	"priority3": [
+	132,
+	135,
+	136,
+	137,
+	138,
+	151,
+	152,
+	153,
+	154,
+	155
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 35,
+	"fields": {
+	"pathName": "Strategic Communication",
+	"pathDescript": "Strategic Communication",
+	"priority1": [
+	58,
+	160,
+	166,
+	205,
+	216,
+	234,
+	262,
+	268,
+	289,
+	290,
+	291,
+	292
+	],
+	"priority2": [
+	58,
+	160,
+	166,
+	205,
+	216,
+	234,
+	262,
+	268,
+	289,
+	290,
+	291,
+	292
+	],
+	"priority3": [
+	58,
+	160,
+	166,
+	205,
+	216,
+	234,
+	262,
+	268,
+	289,
+	290,
+	291,
+	292
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 10,
+	"fields": {
+	"pathName": "Economics Of Healthcare Markets",
+	"pathDescript": "Economics of Healthcare Markets",
+	"priority1": [
+	72,
+	73
+	],
+	"priority2": [
+	84,
+	94,
+	96
+	],
+	"priority3": [
+	84,
+	94,
+	96
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 31,
+	"fields": {
+	"pathName": "Mind, Brain, And Intelligence",
+	"pathDescript": "Mind, Brain, and Intelligence",
+	"priority1": [
+	4
+	],
+	"priority2": [
+	1,
+	2,
+	3,
+	13,
+	28,
+	31,
+	164,
+	256,
+	270,
+	271
+	],
+	"priority3": [
+	1,
+	2,
+	3,
+	13,
+	28,
+	31,
+	164,
+	256,
+	270,
+	271
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 24,
+	"fields": {
+	"pathName": "Information Technology And Web Sciences",
+	"pathDescript": "Information Technology and Web Sciences",
+	"priority1": [
+	227,
+	228,
+	229
+	],
+	"priority2": [
+	227,
+	228,
+	229
+	],
+	"priority3": [
+	4,
+	21,
+	72,
+	150,
+	160,
+	166,
+	210,
+	230,
+	231,
+	232,
+	233,
+	234
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 11,
+	"fields": {
+	"pathName": "Economics Of Policy & Regulations",
+	"pathDescript": "Economics of Policy & Regulations",
+	"priority1": [
+	72,
+	73
+	],
+	"priority2": [
+	82,
+	84,
+	90,
+	111
+	],
+	"priority3": [
+	82,
+	84,
+	90,
+	111
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 38,
+	"fields": {
+	"pathName": "Thinking With Science",
+	"pathDescript": "Thinking with Science",
+	"priority1": [
+	146,
+	149,
+	150,
+	310,
+	311,
+	312
+	],
+	"priority2": [
+	160,
+	161,
+	162,
+	165,
+	167,
+	181,
+	182,
+	224,
+	234,
+	281,
+	313,
+	314,
+	315
+	],
+	"priority3": [
+	160,
+	161,
+	162,
+	165,
+	167,
+	181,
+	182,
+	224,
+	234,
+	281,
+	313,
+	314,
+	315
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 12,
+	"fields": {
+	"pathName": "Economics Of Quantitative modeling",
+	"pathDescript": "Economics of Quantitative modeling",
+	"priority1": [
+	72,
+	73
+	],
+	"priority2": [
+	102,
+	104,
+	112
+	],
+	"priority3": [
+	102,
+	104,
+	112
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 28,
+	"fields": {
+	"pathName": "Living In A World Of Data",
+	"pathDescript": "Living in a World of Data",
+	"priority1": [
+	1,
+	72,
+	145,
+	146,
+	227,
+	228
+	],
+	"priority2": [
+	89,
+	94,
+	104,
+	161,
+	162,
+	212,
+	213,
+	236,
+	255,
+	256,
+	257,
+	258
+	],
+	"priority3": [
+	89,
+	94,
+	104,
+	161,
+	162,
+	212,
+	213,
+	236,
+	255,
+	256,
+	257,
+	258
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 36,
+	"fields": {
+	"pathName": "Studio Arts",
+	"pathDescript": "Studio Arts",
+	"priority1": [
+	21,
+	114
+	],
+	"priority2": [
+	49,
+	50,
+	293,
+	294
+	],
+	"priority3": [
+	54,
+	295,
+	296,
+	297,
+	298
+	]
+	}
+	},
+	{
+	"model": "database.pathway",
+	"pk": 32,
+	"fields": {
+	"pathName": "Music And Culture",
+	"pathDescript": "Music and Culture",
+	"priority1": [
+	15,
+	18,
+	46,
+	47,
+	129,
+	200,
+	264,
+	272
+	],
+	"priority2": [
+	52,
+	56,
+	273,
+	274,
+	275,
+	276,
+	277
+	],
+	"priority3": [
+	52,
+	56,
+	273,
+	274,
+	275,
+	276,
+	277
+	]
+	}
+	}
+	]
