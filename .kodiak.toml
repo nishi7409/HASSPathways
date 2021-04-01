@@ -1,0 +1,4 @@
+# .kodiak.toml
+version = 1
+
+merge_automerge_label = "dependencies"
