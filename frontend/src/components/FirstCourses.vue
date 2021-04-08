@@ -8,13 +8,13 @@
       <v-divider></v-divider>
 
       <!-- LIST OF POSSIBLE FIRST COURSES -->
-      <v-list-group color="#c65353" v-for="(course, i) in path.priority1" :key="i">
+      <v-list-group color="#c65353" v-for="(course, i) in findAllCourses(path)" :key="i">
 
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
           <v-list-item-content>
 
-            <v-list-item-title>{{ findCourse(course).fields.name }}</v-list-item-title>
+            <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name }}</v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -22,11 +22,11 @@
 
           <!-- COURSE DESCRIPTION AND BUTTON TO SELECT -->
           <v-card flat class="mt-2 mb-2" color="#dcdcdc" width="100%">
-            <v-card-text>{{ findCourse(course).fields.description }}</v-card-text>
+            <v-card-text>{{ course.fields.description }}</v-card-text>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn depressed @click="selectCourse(findCourse(course),path)" class="mr-2 mb-2 text-capitalize">
+              <v-btn depressed @click="selectCourse(course,path)" class="mr-2 mb-2 text-capitalize">
                 <span>
                   <i style="color: #c65353" class="fas fa-plus"></i>
                   Add Course
@@ -61,9 +61,16 @@ export default {
   },
   methods: {
     ...mapMutations(['setSelectedCourse1','setSelectedPathway']),
+    findAllCourses(path){
+      var courses = []
+      for (var x = 0; x<path.priority1.length; x++){
+        courses.push(this.findCourse(path.priority1[x]))
+      }
+      return courses
+    },
     selectCourse(course, path) {
       this.setSelectedPathway(path.pathName)
-      this.setSelectedCourse1(course.fields.name);
+      this.setSelectedCourse1(course);
       console.log(course)
       this.$emit('nextBucket', this.nextBucketNumber)
       this.$root.$emit('makeSecondCourseEditable', true)

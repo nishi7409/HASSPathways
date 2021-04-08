@@ -9,12 +9,12 @@
       <v-divider></v-divider>
 
       <!-- LIST OF POSSIBLE THIRD COURSES -->
-      <v-list-group color="#c65353" v-for="(course, i) in checkPriority(path)" :key="i">
+      <v-list-group color="#c65353" v-for="(course, i) in findAllCourses(path)" :key="i">
 
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
           <v-list-item-content>
-            <v-list-item-title>{{ findCourse(course).fields.name }}</v-list-item-title>
+            <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name }}</v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -22,11 +22,11 @@
 
           <!-- COURSE DESCRIPTION AND BUTTON TO SELECT -->
           <v-card flat class="mt-2 mb-2" color="#dcdcdc" width="100%">
-            <v-card-text>{{findCourse(course).fields.description}}</v-card-text>
+            <v-card-text>{{course.fields.description}}</v-card-text>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn depressed @click="selectCourse(findCourse(course))" class="mr-2 mb-2 text-capitalize">
+              <v-btn depressed @click="selectCourse(course)" class="mr-2 mb-2 text-capitalize">
                 <span>
                   <i style="color: #c65353" class="fas fa-plus"></i>
                   Add Course
@@ -48,7 +48,7 @@
 
 <script>
 
-import { mapMutations } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 import cJson from './courses.json'
 
 export default {
@@ -61,17 +61,32 @@ export default {
     }
   },
   methods: {
+    ...mapGetters(['firstCourse','secondCourse']),
     ...mapMutations(['setSelectedCourse3']),
-    selectCourse(course) {
-      this.setSelectedCourse3(course.fields.name);
-      this.$forceUpdate();
-      console.log(course)
-    },
-    checkPriority(path){
-      if (path.priority3.length == 0){
-        return path.priority2
+    findAllCourses(path){
+      var courses = []
+      for (var x = 0; x<path.priority3.length; x++){
+        courses.push(this.findCourse(path.priority3[x]))
       }
-      return path.priority3
+      return courses
+    },
+    selectCourse(course) {
+      if (course.fields.name == this.firstCourse().fields.name || course.fields.name == this.secondCourse().fields.name){
+        this.$toast.clear()
+        this.$toast.error("Can't choose a course you've already chosen!", {
+          position: "top-right",
+          timeout: 3000,
+          pauseOnFocusLoss: true,
+          hideProgressBar: true,
+          rtl: false,
+          closeButton: "button",
+        });
+      }else{
+        this.setSelectedCourse3(course);
+        this.$forceUpdate();
+        console.log(course)
+      }
+      
     },
     findCourse(course){
       var courses = this.allCourses

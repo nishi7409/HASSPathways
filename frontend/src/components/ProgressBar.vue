@@ -116,9 +116,9 @@ export default {
     },
     coursesList() {
       return {
-        firstCourse: this.firstCourse ? this.firstCourse : "No Course Selected",
-        secondCourse: this.secondCourse ? this.secondCourse : "No Course Selected",
-        thirdCourse: this.thirdCourse ? this.thirdCourse : "No Course Selected"
+        firstCourse: this.firstCourse ? this.firstCourse.fields.name : "No Course Selected",
+        secondCourse: this.secondCourse ? this.secondCourse.fields.name : "No Course Selected",
+        thirdCourse: this.thirdCourse ? this.thirdCourse.fields.name : "No Course Selected"
       }
     },
     secondEditable() {
