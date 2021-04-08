@@ -18,8 +18,9 @@
             
             <!-- BUTTONS -->
             <v-col class="text-right" id="topRightButtons">
-                <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'activity'}">My Pathways</v-btn>
-                <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="clearProgress()" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'activity'}">My Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="clearProgress()" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'explore'}">Explore Pathways</v-btn>
             </v-col>
 
           </v-layout>

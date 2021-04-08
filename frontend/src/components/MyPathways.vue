@@ -54,7 +54,7 @@
         <v-expansion-panels flat outlined dark tile accordion hover multiple class="expansion-panel overflow-y-auto">
 
           <!-- COURSE 1 EXPANSION PANEL -->
-          <v-expansion-panel>  
+          <v-expansion-panel> 
             <v-expansion-panel-header color="#c65353" id="expansion-header" class= "font-weight-black pa-8">
               {{ currentCourse.first_course.fields.prefix +" "+currentCourse.first_course.fields.ID+" – "+currentCourse.first_course.fields.name   }}
 
@@ -184,7 +184,7 @@ export default {
     },
     makeCoursesEditable() {
       this.$store.editingCourses = true
-      this.$store.targetEditIndex = this.i
+      this.$store.targetEditIndex = this.i // which pathway being edited
       this.$root.$emit('makeFirstCourseEditable', true)
       this.$root.$emit('makeSecondCourseEditable', true)
       this.$root.$emit('makeThirdCourseEditable', true)
