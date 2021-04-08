@@ -9,7 +9,7 @@
       <v-divider></v-divider>
 
       <!-- LIST OF POSSIBLE THIRD COURSES -->
-      <v-list-group color="#c65353" v-for="(course, i) in findAllCourses(path)" :key="i">
+      <v-list-group color="#c65353" v-for="(course, i) in checkPriority(path)" :key="i">
 
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
@@ -63,13 +63,6 @@ export default {
   methods: {
     ...mapGetters(['firstCourse','secondCourse']),
     ...mapMutations(['setSelectedCourse3']),
-    findAllCourses(path){
-      var courses = []
-      for (var x = 0; x<path.priority3.length; x++){
-        courses.push(this.findCourse(path.priority3[x]))
-      }
-      return courses
-    },
     selectCourse(course) {
       if (course.fields.name == this.firstCourse().fields.name || course.fields.name == this.secondCourse().fields.name){
         this.$toast.clear()
@@ -87,6 +80,20 @@ export default {
         console.log(course)
       }
       
+    },
+    checkPriority(path){
+      if (path.priority3.length == 0){
+        var courses = []
+        for (var x = 0; x<path.priority2.length; x++){
+         courses.push(this.findCourse(path.priority2[x]))
+        }
+        return courses
+      }
+      courses = []
+      for (x = 0; x<path.priority3.length; x++){
+        courses.push(this.findCourse(path.priority3[x]))
+      }
+      return courses
     },
     findCourse(course){
       var courses = this.allCourses

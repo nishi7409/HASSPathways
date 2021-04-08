@@ -7,7 +7,7 @@
         <div id="clearButtons">
           <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Delete This Pathway</v-btn>
           <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize mr-2">Clear All Pathways</v-btn>
-          <v-btn @click="makeCoursesEditable()" color="#c65353" depressed :to="{name: 'home'}" class="white--text text-capitalize">Edit Pathway</v-btn>
+          <v-btn @click="makeCoursesEditable()" color="#c65353" depressed class="white--text text-capitalize">Edit Pathway</v-btn>
         </div>
         <div id="pathwaysNavigation" class="mr-4">
           <div v-if="getOptions.length > 0">
@@ -20,22 +20,20 @@
     </v-container>
     
     <v-container fluid v-if="getOptions.length == 0"> 
-      <!-- If no Pathways have been specified yet [TO BE CODED] -->
-      <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever -->
+      <!-- If no Pathways have been specified yet -->
+      <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever if no pathways stored -->
 
       <v-container fill-height>
-          <v-row justify="center" align="center">
-              <v-col sm="4" class= "font-weight-regular  pa-8">
-                  <p> This place seems pretty lonely. </p>
+          <v-row justify="center" align="center" class= "pt-10">
+              <v-col sm="4" class= "font-weight-regular pt-10 pa-8">
+                  <p class= "headline" > This place seems pretty lonely. </p>
 
-                  <span> You can add Pathways from the </span>
-                  <span class= "font-weight-black">Add Pathways </span>
-                  <span class= "font-weight-regular">section.</span>
+                  <span class = "headline"> You can add Pathways from the </span>
+                  <span class= "headline font-weight-black">Add Pathways </span>
+                  <span class= "headline">section.</span>
               </v-col>
           </v-row>
       </v-container>
-
-
     </v-container>
 
 
@@ -58,7 +56,7 @@
           <!-- COURSE 1 EXPANSION PANEL -->
           <v-expansion-panel>  
             <v-expansion-panel-header color="#c65353" id="expansion-header" class= "font-weight-black pa-8">
-              IHSS 1140 – {{ currentCourse.first_course }}
+              {{ currentCourse.first_course.fields.prefix +" "+currentCourse.first_course.fields.ID+" – "+currentCourse.first_course.fields.name   }}
 
               <template v-slot:actions>
                 <v-icon color="white">$expand</v-icon>
@@ -76,7 +74,7 @@
               <!-- COURSE 1 DESCRIPTION -->
               <v-card flat color="#c65353" class= "mt-1" >
                 <v-card-text class= "mt-6 white--text font-weight-black">
-                  <p> COURSE DESCRIPTION </p>
+                  <p> {{currentCourse.first_course.fields.description }} </p>
                 </v-card-text>
               </v-card>
             </v-expansion-panel-content>
@@ -85,7 +83,7 @@
           <!-- COURSE 2 EXPANSION PANEL -->
           <v-expansion-panel class="mt-3">  
             <v-expansion-panel-header color="#c65353" id="expansion-header"  class= "font-weight-black pa-8">
-              COGS 2560 – {{ currentCourse.second_course }}
+            {{ currentCourse.second_course.fields.prefix +" "+currentCourse.second_course.fields.ID+" – "+currentCourse.second_course.fields.name   }}
 
               <template v-slot:actions>
                 <v-icon color="white">$expand</v-icon>
@@ -103,7 +101,7 @@
               <!-- COURSE 2 DESCRIPTION -->
               <v-card flat color="#c65353" class= "mt-1">
                 <v-card-text class="mt-6 white--text font-weight-black">
-                  <p> COURSE DESCRIPTION </p>
+                  <p> {{currentCourse.second_course.fields.description}} </p>
                 </v-card-text>
               </v-card>
             </v-expansion-panel-content>
@@ -112,7 +110,7 @@
           <!-- COURSE 3 EXPANSION PANEL -->
           <v-expansion-panel class="mt-3">  
             <v-expansion-panel-header color="#c65353" id="expansion-header" class= "font-weight-black pa-8">
-              IHSS 2560 – {{ currentCourse.third_course }}
+              {{ currentCourse.third_course.fields.prefix +" "+currentCourse.third_course.fields.ID+" – "+currentCourse.third_course.fields.name   }}
 
               <template v-slot:actions>
                 <v-icon color="white">$expand</v-icon>
@@ -130,7 +128,7 @@
               <!-- COURSE 3 DESCRIPTION -->
               <v-card flat color="#c65353" class= "mt-1">
                 <v-card-text class="mt-6 white--text font-weight-black">
-                  <p> COURSE DESCRIPTION </p>
+                  <p> {{currentCourse.third_course.fields.description}}</p>
                 </v-card-text>
               </v-card>
             </v-expansion-panel-content>
@@ -156,7 +154,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['clear', 'removePath']),
+    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'clear', 'removePath']),
     goToNextPathway() {
       if (this.i == this.getOptions.length - 1) {
         this.i = 0
@@ -184,10 +182,26 @@ export default {
         this.i -= 1
       }
     },
-    makeCoursesEditable(){
+    makeCoursesEditable() {
+      this.$store.editingCourses = true
+      this.$store.targetEditIndex = this.i
       this.$root.$emit('makeFirstCourseEditable', true)
       this.$root.$emit('makeSecondCourseEditable', true)
       this.$root.$emit('makeThirdCourseEditable', true)
+      this.setSelectedCourse1(this.getOptions[this.i][1])
+      this.setSelectedCourse2(this.getOptions[this.i][2])
+      this.setSelectedCourse3(this.getOptions[this.i][3])
+      this.$toast.clear()
+      this.$toast.info("Press the save button in the lower\nright to finish editing your pathway.", {
+        color: "#4FDEF5",
+        position: "top-right",
+        timeout: 4000,
+        pauseOnFocusLoss: true,
+        hideProgressBar: true,
+        rtl: false,
+        closeButton: "button",
+      });
+      this.$router.push('home');
     }
   },
   computed: {
@@ -210,8 +224,9 @@ export default {
           if (innerLoop === 2) secondCourse = this.$store.getters.getOptions[array_length][innerLoop]
           if (innerLoop === 3) thirdCourse = this.$store.getters.getOptions[array_length][innerLoop];
         }
+        
         var path = this.$store.getters.getOptions[array_length][0]
-        var object = {pathway: path, first_course: firstCourse, second_course: secondCourse, third_course: thirdCourse}
+        var object = {pathway: path, first_course: JSON.parse(firstCourse), second_course: JSON.parse(secondCourse), third_course: JSON.parse(thirdCourse)}
         storedCourses.push(object);
       }
 
