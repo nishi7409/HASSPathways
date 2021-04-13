@@ -134,7 +134,7 @@ def parse():
 
 
 #Main code start
-parse()
+# parse()
 
 
 
