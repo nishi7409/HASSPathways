@@ -11,7 +11,7 @@
             <!-- TITLE -->
             <v-flex md1 sm11 xs11>
               <router-link to="/home">
-                <v-img class="pl-6 pr-8 ml-4" @click="clearProgress()" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
+                <v-img class="pl-7 pr-8 ml-2" @click="clearProgress()" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
               </router-link>
             </v-flex>
             
@@ -20,7 +20,7 @@
             <v-col class="text-right" id="topRightButtons">
               <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'activity'}">My Pathways</v-btn>
               <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="clearProgress()" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
-              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'explore'}">Explore Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="runExploreNotification()" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'explore'}">Explore Pathways</v-btn>
             </v-col>
 
           </v-layout>
@@ -80,6 +80,17 @@ export default {
       this.$store.editingCourses = false
       // location.reload()
     },
+    runExploreNotification(){
+      this.$toast.info("Select the HASS classes you've already taken\nto see what pathways work best for you.", {
+        color: "#4FDEF5",
+        position: "top-right",
+        timeout: 4000,
+        pauseOnFocusLoss: true,
+        hideProgressBar: true,
+        rtl: false,
+        closeButton: "button",
+      });
+    }
   },
   mounted() {
     console.log(this.$vuetify.breakpoint)

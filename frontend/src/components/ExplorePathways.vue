@@ -2,52 +2,134 @@
   <div>
       
     <v-container fill-height>
-        <span outlined class="pl-5 pt-8 headline font-weight-black"> Explore Pathways </span>
+        <span outlined class="pt-8 headline font-weight-black"> Explore Pathways </span>
           <!-- <v-row justify="center" align="center" class= "pt-10"> -->
-        <v-row justify="center" class= "pt-5">
-            <v-col cols="6" md="4" class="ml-6">
-                <v-card class="pa-2" outlined tile>
-                Selected Courses List
-                </v-card>
+        <v-row class= "pt-7">
+            <v-col cols="6" md="4">
+
+              <v-list light outlined v-if="exploredCourses.length != 0"> 
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title>
+                      A course...
+                    </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+
+              <v-list light outlined v-if="exploredCourses.length == 0">
+                <v-list-item class="ml-15">
+                  <span class= "ml-9 font-weight-bold">
+                    No courses selected
+                  </span>
+                </v-list-item>
+              </v-list>
             </v-col>
 
             <v-col cols="12" md="7" class="ml-6">
                 <v-card class="pa-2" outlined tile>
-                <!-- .col-12 .col-md-8 -->
+                    <v-list>
+                      <v-list-group v-for="item in items" :key="item.title" v-model="item.active" :prepend-icon="item.action" no-action>
+                        <template v-slot:activator>
+                          <v-list-item-content>
+                            <v-list-item-title v-text="item.title" class= "ml-10">
+                            </v-list-item-title>
+                          </v-list-item-content>
+                        </template>
 
-                <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="pb-9 expansion-panel overflow-y-auto">
-                    <v-expansion-panel>
-                        <v-expansion-panel-header color="#c65353" id="expansion-header">
-                        Test Panel
-                        </v-expansion-panel-header>
+                        <v-list-item v-for="child in item.items" :key="child.title">
+                          <v-list-item-content>
+                            <v-list-item-title v-text="child.title">
+                              Test
+                            </v-list-item-title>
+                          </v-list-item-content>
+                          <v-list-item-icon>
+                            <v-btn>
+                              <v-icon>
+                                mdi-plus-circle
+                              </v-icon>
+                            </v-btn>
+                          </v-list-item-icon>
 
-                        <v-divider color="white"></v-divider>
-
-                    </v-expansion-panel>
-                    
-                    </v-expansion-panels>
+                        </v-list-item>
+                      </v-list-group>
+                    </v-list>
                 </v-card>
             </v-col>
             </v-row>
       </v-container>
+    <v-btn large dark fixed bottom right id= "computeBtn" @click="computePathways()" v-if="exploredCourses.length != 0" color= "#c65353" class="mt-9 mb-9 stickyButton">
+        Compute Pathways
+    </v-btn>
 
-
-
-    <v-col class="text-left">
-        test
-    </v-col>
-
-
-
-
-    <v-list>
-        test
-        test
-        test
-    </v-list>
-
-
-
-
+    <v-btn large disabled fixed bottom right id= "computeBtn" @click="computePathways()" v-if="exploredCourses.length == 0" color= "#c65353" class="mt-9 mb-9 stickyButton">
+        Compute Pathways
+    </v-btn>
   </div>
 </template>
+
+<script>
+
+export default {
+  props: ['path'],
+  data() {
+    return {
+      exploredCourses: [/*{
+          course: 'test',
+        }*/],
+      items: [
+        {
+          items: [
+            { title: '2500 –– History of Western Music' },
+            { title: '2540 –– The Multimedia Century' },
+            { title: '4130 –– New Media Theory' },
+            { title: 'etc' },
+          ],
+          title: 'ARTS',
+        },
+        {
+          active: true,
+          items: [
+            { title: '4410 –– Programming for Cognitive Science and Artificial Intelligence' },
+            { title: '4420 –– Game AI' },
+            { title: 'etc' },
+          ],
+          title: 'COGS',
+        },
+        {
+          items: [{ title: '~content~' }],
+          title: 'IHSS',
+        },
+        {
+          items: [{ title: '~content~' }],
+          title: 'LANG',
+        },
+        {
+          items: [{ title: '~content~' }],
+          title: 'PSYC',
+        },
+        {
+          items: [{ title: '~content~' }],
+          title: 'STSH',
+        },
+        {
+          items: [{ title: '~content~' }],
+          title: 'STSS',
+        },
+      ]
+    }
+  },
+  methods: {
+    computePathways(){
+      // will run when Compute Pathways button is pressed
+    },
+    filteredPrefixes() {
+      return [] // will return all courses filtered based on prefix (IHSS, COGS, etc)
+    }
+  },
+  computed: {
+  }
+}
+
+</script>
+
