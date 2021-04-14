@@ -34,8 +34,8 @@ def pathway(request):
     return HttpResponse(data)
 
 @permission_required('admin.can_add_log_entry')
-def contact_upload(request):
-    template = "contact_upload.html"
+def _upload(request):
+    template = "_upload.html"
 
     prompt = {
         'order': 'Order of the CSV should be prefix, ID, Name, Description, HI, CI, DI, Major restrictive, Fall, Spring, Summer, Pathway, Pathway description, Priority'
@@ -138,6 +138,8 @@ def contact_upload(request):
 
                 tmpPath.save()
 
-    context = {}
+    context = {
+        'success': 'Successfully uploaded!'
+    }
     return render(request, template, context)
     
