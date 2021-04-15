@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import MyPathways from './components/MyPathways.vue'
 import ExpansionPanel from './components/ExpansionPanel.vue'
 import ExplorePathways from './components/ExplorePathways.vue'
+import ResultingPathways from './components/ResultingPathways.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: "/explore",
       name: "explore",
       component: ExplorePathways,
+    },
+    {
+      path: "/result",
+      name: "result",
+      component: ResultingPathways,
     },
     {
       path: "*",

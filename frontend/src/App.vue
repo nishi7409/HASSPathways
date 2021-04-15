@@ -20,7 +20,8 @@
             <v-col class="text-right" id="topRightButtons">
               <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'activity'}">My Pathways</v-btn>
               <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="clearProgress()" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" rounded elevation="4" depressed id="button" :to="{name: 'home'}">Add Pathways</v-btn>
-              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" @click="runExploreNotification()" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'explore'}">Explore Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" v-if= "this.$route.path != '/explore'" @click="runExploreNotification()" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3">Explore Pathways</v-btn>
+              <v-btn class="hidden-sm-and-down mr-2 text-capitalize" v-if= "this.$route.path == '/explore'" @click="runExploreNotification()" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'explore'}">Explore Pathways</v-btn>
             </v-col>
 
           </v-layout>
@@ -81,6 +82,10 @@ export default {
       // location.reload()
     },
     runExploreNotification(){
+      // :to="{name: 'explore'}"
+      if (this.$route.path == "/explore") // Avoids the toast from popping up if already in Explore Pathways page and button is pressed //
+        return;
+      this.$router.push('explore');
       this.$toast.info("Select the HASS classes you've already taken\nto see what pathways work best for you.", {
         color: "#4FDEF5",
         position: "top-right",
