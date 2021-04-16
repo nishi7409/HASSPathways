@@ -23,7 +23,6 @@
           <SecondCourses @nextBucket="moveToNextBucket" v-else-if="courseNumber=='second'" :path="path"/>
           <ThirdCourses v-else-if="courseNumber=='third'" :path="path"/>
         </v-expansion-panel-content>
-
         <v-divider color="white"></v-divider>
 
       </v-expansion-panel>

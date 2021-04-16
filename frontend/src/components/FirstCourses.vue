@@ -13,8 +13,14 @@
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
           <v-list-item-content>
+            
+            <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name +" "}}
+            <v-chip v-if="course.fields.HI" style="float:right"  small color="green"  text-color="black">Hass Inquiry</v-chip>
+            <p class="pa-1" style="float:right"></p>
+            <v-chip v-if="course.fields.CI" style="float:right" small color="green"  text-color="black">Comm Intensive</v-chip>
+            <p class="pa-1" style="float:right"></p>
+            <v-chip v-if="course.fields.DI" style="float:right" small color="green"  text-color="black">DI</v-chip></v-list-item-title>
 
-            <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name }}</v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -54,6 +60,7 @@ export default {
   props: ['path'],
   data() {
     return {
+      category: '',
       bucketNumber: 'first',
       nextBucketNumber: 'second',
       allCourses: cJson
