@@ -1,0 +1,1568 @@
+[
+    {
+        "fields": {
+            "pathDescript": "Logical Thinking",
+            "pathName": "Logical Thinking",
+            "priority1": [
+                1359,
+                1357,
+                1520,
+                1616,
+                1617,
+                1618,
+                1369,
+                1518,
+                1519
+            ],
+            "priority2": [
+                1359,
+                1357,
+                1520,
+                1616,
+                1617,
+                1618,
+                1369,
+                1518,
+                1519
+            ],
+            "priority3": [
+                1357,
+                1359,
+                1369,
+                1518,
+                1519,
+                1520,
+                1616,
+                1617,
+                1618
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 193
+    },
+    {
+        "fields": {
+            "pathDescript": "Behavioral and Cognitive Neuroscience",
+            "pathName": "Behavioral And Cognitive Neuroscience",
+            "priority1": [
+                1379
+            ],
+            "priority2": [
+                1380,
+                1381,
+                1382,
+                1383,
+                1384,
+                1385,
+                1386,
+                1387,
+                1388,
+                1389,
+                1390,
+                1391
+            ],
+            "priority3": []
+        },
+        "model": "database.pathway",
+        "pk": 167
+    },
+    {
+        "fields": {
+            "pathDescript": "Economics of Banking & Finance",
+            "pathName": "Economics Of Banking & Finance",
+            "priority1": [
+                1428,
+                1429
+            ],
+            "priority2": [
+                1436,
+                1466,
+                1456
+            ],
+            "priority3": [
+                1436,
+                1456,
+                1466
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 172
+    },
+    {
+        "fields": {
+            "pathDescript": "Chinese Language",
+            "pathName": "Chinese Language",
+            "priority1": [
+                1392,
+                1393,
+                1394
+            ],
+            "priority2": [
+                1393,
+                1394,
+                1395,
+                1396
+            ],
+            "priority3": [
+                1394,
+                1395,
+                1396
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 168
+    },
+    {
+        "fields": {
+            "pathDescript": "Linguistics",
+            "pathName": "Linguistics",
+            "priority1": [
+                1596,
+                1600
+            ],
+            "priority2": [
+                1597,
+                1598,
+                1365,
+                1560,
+                1562,
+                1599
+            ],
+            "priority3": [
+                1365,
+                1560,
+                1562,
+                1597,
+                1598,
+                1599
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 190
+    },
+    {
+        "fields": {
+            "pathDescript": "Environmental Futures",
+            "pathName": "Environmental Futures",
+            "priority1": [
+                1400,
+                1481,
+                1428,
+                1482,
+                1483,
+                1484,
+                1485,
+                1486,
+                1487
+            ],
+            "priority2": [
+                1488,
+                1489,
+                1490,
+                1491,
+                1446,
+                1492,
+                1493,
+                1494,
+                1495,
+                1421,
+                1422,
+                1496,
+                1497,
+                1498,
+                1499,
+                1500
+            ],
+            "priority3": [
+                1421,
+                1422,
+                1446,
+                1488,
+                1489,
+                1490,
+                1491,
+                1492,
+                1493,
+                1494,
+                1495,
+                1496,
+                1497,
+                1498,
+                1499,
+                1500
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 179
+    },
+    {
+        "fields": {
+            "pathDescript": "Economics of Decision-Making",
+            "pathName": "Economics Of Decision-Making",
+            "priority1": [
+                1428,
+                1429
+            ],
+            "priority2": [
+                1430,
+                1445,
+                1450,
+                1454,
+                1456,
+                1458
+            ],
+            "priority3": [
+                1430,
+                1445,
+                1450,
+                1454,
+                1456,
+                1458
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 173
+    },
+    {
+        "fields": {
+            "pathDescript": "Economics of Healthcare Markets",
+            "pathName": "Economics Of Healthcare Markets",
+            "priority1": [
+                1428,
+                1429
+            ],
+            "priority2": [
+                1440,
+                1450,
+                1452
+            ],
+            "priority3": [
+                1440,
+                1450,
+                1452
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 174
+    },
+    {
+        "fields": {
+            "pathDescript": "Artificial Intelligence",
+            "pathName": "Artificial Intelligence",
+            "priority1": [
+                1357,
+                1358,
+                1359
+            ],
+            "priority2": [
+                1360
+            ],
+            "priority3": [
+                1361,
+                1362,
+                1363,
+                1364,
+                1365,
+                1366,
+                1367,
+                1368,
+                1369
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 165
+    },
+    {
+        "fields": {
+            "pathDescript": "Graphic Design",
+            "pathName": "Graphic Design",
+            "priority1": [
+                1525,
+                1401,
+                1517,
+                1415,
+                1567,
+                1417,
+                1568,
+                1569,
+                1570,
+                1419,
+                1571,
+                1572,
+                1573
+            ],
+            "priority2": [
+                1525,
+                1401,
+                1517,
+                1415,
+                1567,
+                1417,
+                1568,
+                1569,
+                1570,
+                1419,
+                1571,
+                1572,
+                1573
+            ],
+            "priority3": [
+                1401,
+                1415,
+                1417,
+                1419,
+                1517,
+                1525,
+                1567,
+                1568,
+                1569,
+                1570,
+                1571,
+                1572,
+                1573
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 186
+    },
+    {
+        "fields": {
+            "pathDescript": "Philosophy",
+            "pathName": "Philosophy",
+            "priority1": [
+                1531,
+                1635,
+                1501,
+                1502,
+                1636,
+                1359,
+                1637,
+                1518,
+                1519,
+                1520
+            ],
+            "priority2": [
+                1638,
+                1639,
+                1539,
+                1512,
+                1492,
+                1640,
+                1616,
+                1641
+            ],
+            "priority3": [
+                1492,
+                1512,
+                1539,
+                1616,
+                1638,
+                1639,
+                1640,
+                1641
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 197
+    },
+    {
+        "fields": {
+            "pathDescript": "Economics of Policy & Regulations",
+            "pathName": "Economics Of Policy & Regulations",
+            "priority1": [
+                1428,
+                1429
+            ],
+            "priority2": [
+                1438,
+                1440,
+                1446,
+                1467
+            ],
+            "priority3": [
+                1438,
+                1440,
+                1446,
+                1467
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 175
+    },
+    {
+        "fields": {
+            "pathDescript": "Understanding Human Behavior",
+            "pathName": "Understanding Human Behavior",
+            "priority1": [
+                1379
+            ],
+            "priority2": [
+                1380,
+                1612,
+                1672,
+                1673,
+                1674,
+                1675,
+                1676,
+                1677,
+                1613,
+                1521,
+                1678,
+                1679,
+                1385,
+                1680,
+                1681,
+                1682,
+                1683,
+                1684
+            ],
+            "priority3": [
+                1380,
+                1385,
+                1521,
+                1612,
+                1613,
+                1672,
+                1673,
+                1674,
+                1675,
+                1676,
+                1677,
+                1678,
+                1679,
+                1680,
+                1681,
+                1682,
+                1683,
+                1684
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 203
+    },
+    {
+        "fields": {
+            "pathDescript": "Economics of Quantitative Modeling",
+            "pathName": "Economics Of Quantitative Modeling",
+            "priority1": [
+                1428,
+                1429
+            ],
+            "priority2": [
+                1468,
+                1458,
+                1460
+            ],
+            "priority3": [
+                1458,
+                1460,
+                1468
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 176
+    },
+    {
+        "fields": {
+            "pathDescript": "Arts History, Theory, and Criticism",
+            "pathName": "Arts History, Theory, And Criticism",
+            "priority1": [
+                1370,
+                1371,
+                1372,
+                1373,
+                1374,
+                1375
+            ],
+            "priority2": [
+                1376,
+                1377
+            ],
+            "priority3": [
+                1378
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 166
+    },
+    {
+        "fields": {
+            "pathDescript": "Creative Design and Innovation",
+            "pathName": "Creative Design And Innovation",
+            "priority1": [
+                1397,
+                1398,
+                1399,
+                1400,
+                1373,
+                1401,
+                1374,
+                1402,
+                1403,
+                1404
+            ],
+            "priority2": [
+                1405,
+                1406,
+                1407,
+                1408,
+                1409,
+                1410,
+                1411,
+                1412,
+                1360,
+                1413,
+                1414,
+                1415,
+                1416,
+                1417,
+                1418,
+                1419,
+                1420,
+                1421,
+                1422
+            ],
+            "priority3": [
+                1360,
+                1405,
+                1406,
+                1407,
+                1408,
+                1409,
+                1410,
+                1411,
+                1412,
+                1413,
+                1414,
+                1415,
+                1416,
+                1417,
+                1418,
+                1419,
+                1420,
+                1421,
+                1422
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 169
+    },
+    {
+        "fields": {
+            "pathDescript": "Fact and Fiction",
+            "pathName": "Fact And Fiction",
+            "priority1": [
+                1398,
+                1502,
+                1372,
+                1525,
+                1526,
+                1527,
+                1528,
+                1529,
+                1530,
+                1531
+            ],
+            "priority2": [
+                1532,
+                1507,
+                1533,
+                1534,
+                1535,
+                1536,
+                1537,
+                1538,
+                1518,
+                1519,
+                1539,
+                1540,
+                1541,
+                1542,
+                1543,
+                1544,
+                1545
+            ],
+            "priority3": [
+                1507,
+                1518,
+                1519,
+                1532,
+                1533,
+                1534,
+                1535,
+                1536,
+                1537,
+                1538,
+                1539,
+                1540,
+                1541,
+                1542,
+                1543,
+                1544,
+                1545
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 182
+    },
+    {
+        "fields": {
+            "pathDescript": "Economics of Technology & Innovation",
+            "pathName": "Economics Of Technology & Innovation",
+            "priority1": [
+                1428,
+                1429
+            ],
+            "priority2": [
+                1434,
+                1452,
+                1469
+            ],
+            "priority3": [
+                1434,
+                1452,
+                1469
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 177
+    },
+    {
+        "fields": {
+            "pathDescript": "Design, Innovation, and Society",
+            "pathName": "Design, Innovation, And Society",
+            "priority1": [
+                1423
+            ],
+            "priority2": [
+                1424
+            ],
+            "priority3": [
+                1425,
+                1426,
+                1427
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 170
+    },
+    {
+        "fields": {
+            "pathDescript": "Ethics, Integrity, and Social Responsibility",
+            "pathName": "Ethics, Integrity, And Social Responsibility",
+            "priority1": [
+                1357,
+                1501,
+                1502,
+                1484,
+                1503,
+                1487,
+                1504,
+                1505,
+                1506
+            ],
+            "priority2": [
+                1488,
+                1491,
+                1507,
+                1492,
+                1508,
+                1493,
+                1494,
+                1509,
+                1510,
+                1511,
+                1512
+            ],
+            "priority3": [
+                1488,
+                1491,
+                1492,
+                1493,
+                1494,
+                1507,
+                1508,
+                1509,
+                1510,
+                1511,
+                1512
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 180
+    },
+    {
+        "fields": {
+            "pathDescript": "Media and Culture",
+            "pathName": "Media And Culture",
+            "priority1": [
+                1619,
+                1526,
+                1620,
+                1528,
+                1529,
+                1402,
+                1403,
+                1530,
+                1404,
+                1621,
+                1532,
+                1534,
+                1622,
+                1535,
+                1517,
+                1623,
+                1624,
+                1536,
+                1561,
+                1625,
+                1626
+            ],
+            "priority2": [
+                1619,
+                1526,
+                1620,
+                1528,
+                1529,
+                1402,
+                1403,
+                1530,
+                1404,
+                1621,
+                1532,
+                1534,
+                1622,
+                1535,
+                1517,
+                1623,
+                1624,
+                1536,
+                1561,
+                1625,
+                1626
+            ],
+            "priority3": [
+                1402,
+                1403,
+                1404,
+                1517,
+                1526,
+                1528,
+                1529,
+                1530,
+                1532,
+                1534,
+                1535,
+                1536,
+                1561,
+                1619,
+                1620,
+                1621,
+                1622,
+                1623,
+                1624,
+                1625,
+                1626
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 194
+    },
+    {
+        "fields": {
+            "pathDescript": "Literature and Creative Writing",
+            "pathName": "Literature And Creative Writing",
+            "priority1": [
+                1601,
+                1530,
+                1534,
+                1417,
+                1602,
+                1603,
+                1604,
+                1605,
+                1606,
+                1607,
+                1538,
+                1608,
+                1609,
+                1573,
+                1610,
+                1611,
+                1544,
+                1545,
+                1595
+            ],
+            "priority2": [
+                1601,
+                1530,
+                1534,
+                1417,
+                1602,
+                1603,
+                1604,
+                1605,
+                1606,
+                1607,
+                1538,
+                1608,
+                1609,
+                1573,
+                1610,
+                1611,
+                1544,
+                1545,
+                1595
+            ],
+            "priority3": [
+                1417,
+                1530,
+                1534,
+                1538,
+                1544,
+                1545,
+                1573,
+                1595,
+                1601,
+                1602,
+                1603,
+                1604,
+                1605,
+                1606,
+                1607,
+                1608,
+                1609,
+                1610,
+                1611
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 191
+    },
+    {
+        "fields": {
+            "pathDescript": "Foreign Language",
+            "pathName": "Foreign Language",
+            "priority1": [
+                1546,
+                1547
+            ],
+            "priority2": [
+                1548,
+                1549
+            ],
+            "priority3": [
+                1394,
+                1395,
+                1396,
+                1550,
+                1551
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 183
+    },
+    {
+        "fields": {
+            "pathDescript": "Sustainability",
+            "pathName": "Sustainability",
+            "priority1": [
+                1655,
+                1482,
+                1483,
+                1487,
+                1505,
+                1506
+            ],
+            "priority2": [
+                1642
+            ],
+            "priority3": [
+                1421,
+                1422,
+                1495,
+                1496,
+                1497,
+                1508,
+                1581,
+                1656,
+                1657,
+                1658,
+                1659,
+                1660,
+                1661,
+                1662,
+                1663,
+                1664,
+                1665
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 201
+    },
+    {
+        "fields": {
+            "pathDescript": "History",
+            "pathName": "History",
+            "priority1": [
+                1483,
+                1574,
+                1575,
+                1576,
+                1577,
+                1559,
+                1530,
+                1505,
+                1506
+            ],
+            "priority2": [
+                1578
+            ],
+            "priority3": [
+                1496,
+                1497,
+                1540,
+                1541,
+                1579,
+                1580,
+                1581,
+                1582,
+                1583
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 187
+    },
+    {
+        "fields": {
+            "pathDescript": "Electronic Arts",
+            "pathName": "Electronic Arts",
+            "priority1": [
+                1397,
+                1470,
+                1471,
+                1472,
+                1402,
+                1403
+            ],
+            "priority2": [
+                1473,
+                1474,
+                1475,
+                1476,
+                1408,
+                1477,
+                1478,
+                1479,
+                1480,
+                1412
+            ],
+            "priority3": [
+                1408,
+                1412,
+                1473,
+                1474,
+                1475,
+                1476,
+                1477,
+                1478,
+                1479,
+                1480
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 178
+    },
+    {
+        "fields": {
+            "pathDescript": "Game Studies",
+            "pathName": "Game Studies",
+            "priority1": [
+                1552
+            ],
+            "priority2": [
+                1553,
+                1554,
+                1555
+            ],
+            "priority3": [
+                1553,
+                1554,
+                1555
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 184
+    },
+    {
+        "fields": {
+            "pathDescript": "Science, Technology, and Society",
+            "pathName": "Science, Technology, And Society",
+            "priority1": [
+                1584,
+                1585,
+                1404,
+                1505,
+                1506
+            ],
+            "priority2": [
+                1578,
+                1642,
+                1564,
+                1565,
+                1509,
+                1643,
+                1644
+            ],
+            "priority3": [
+                1509,
+                1564,
+                1565,
+                1578,
+                1642,
+                1643,
+                1644
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 198
+    },
+    {
+        "fields": {
+            "pathDescript": "Extent and Limits of Rationality",
+            "pathName": "Extent And Limits Of Rationality",
+            "priority1": [
+                1357,
+                1428,
+                1513,
+                1514,
+                1515,
+                1516
+            ],
+            "priority2": [
+                1360,
+                1517,
+                1445,
+                1450,
+                1518,
+                1519,
+                1520,
+                1369,
+                1521,
+                1522,
+                1523,
+                1524
+            ],
+            "priority3": [
+                1360,
+                1369,
+                1445,
+                1450,
+                1517,
+                1518,
+                1519,
+                1520,
+                1521,
+                1522,
+                1523,
+                1524
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 181
+    },
+    {
+        "fields": {
+            "pathDescript": "Well-being: Body and Mind",
+            "pathName": "Well-Being: Body And Mind",
+            "priority1": [
+                1649,
+                1481,
+                1357,
+                1666,
+                1374,
+                1485,
+                1516,
+                1380,
+                1688
+            ],
+            "priority2": [
+                1689,
+                1690,
+                1512,
+                1589,
+                1691,
+                1692,
+                1385,
+                1388,
+                1389,
+                1390,
+                1391,
+                1693,
+                1694,
+                1611,
+                1544,
+                1695
+            ],
+            "priority3": [
+                1385,
+                1388,
+                1389,
+                1390,
+                1391,
+                1512,
+                1544,
+                1589,
+                1611,
+                1689,
+                1690,
+                1691,
+                1692,
+                1693,
+                1694,
+                1695
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 205
+    },
+    {
+        "fields": {
+            "pathDescript": "Mind, Brain, and Intelligence",
+            "pathName": "Mind, Brain, And Intelligence",
+            "priority1": [
+                1360
+            ],
+            "priority2": [
+                1357,
+                1358,
+                1359,
+                1384,
+                1387,
+                1627,
+                1369,
+                1613,
+                1521,
+                1628
+            ],
+            "priority3": [
+                1357,
+                1358,
+                1359,
+                1369,
+                1384,
+                1387,
+                1521,
+                1613,
+                1627,
+                1628
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 195
+    },
+    {
+        "fields": {
+            "pathDescript": "Information Technology and Web Sciences",
+            "pathName": "Information Technology And Web Sciences",
+            "priority1": [
+                1584,
+                1585,
+                1586
+            ],
+            "priority2": [
+                1584,
+                1585,
+                1586
+            ],
+            "priority3": [
+                1360,
+                1377,
+                1428,
+                1506,
+                1517,
+                1523,
+                1567,
+                1587,
+                1588,
+                1589,
+                1590,
+                1591
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 188
+    },
+    {
+        "fields": {
+            "pathDescript": "Economics",
+            "pathName": "Economics",
+            "priority1": [
+                1428,
+                1429
+            ],
+            "priority2": [
+                1430,
+                1431,
+                1432
+            ],
+            "priority3": [
+                1433,
+                1434,
+                1435,
+                1436,
+                1437,
+                1438,
+                1439,
+                1440,
+                1441,
+                1442,
+                1443,
+                1444,
+                1445,
+                1446,
+                1447,
+                1448,
+                1449,
+                1450,
+                1451,
+                1452,
+                1453,
+                1454,
+                1455,
+                1456,
+                1457,
+                1458,
+                1459,
+                1460,
+                1461,
+                1462,
+                1463,
+                1464,
+                1465
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 171
+    },
+    {
+        "fields": {
+            "pathDescript": "Gender, Race, Sexuality, Ethnicity, and Social Change",
+            "pathName": "Gender, Race, Sexuality, Ethnicity, And Social Change",
+            "priority1": [
+                1501,
+                1372,
+                1525,
+                1556,
+                1557,
+                1558,
+                1559,
+                1404
+            ],
+            "priority2": [
+                1490,
+                1560,
+                1535,
+                1561,
+                1562,
+                1563,
+                1564,
+                1565,
+                1566
+            ],
+            "priority3": [
+                1490,
+                1535,
+                1560,
+                1561,
+                1562,
+                1563,
+                1564,
+                1565,
+                1566
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 185
+    },
+    {
+        "fields": {
+            "pathDescript": "Living in a World of Data",
+            "pathName": "Living In A World Of Data",
+            "priority1": [
+                1357,
+                1501,
+                1502,
+                1428,
+                1584,
+                1585
+            ],
+            "priority2": [
+                1593,
+                1569,
+                1570,
+                1445,
+                1450,
+                1460,
+                1518,
+                1519,
+                1612,
+                1613,
+                1614,
+                1615
+            ],
+            "priority3": [
+                1445,
+                1450,
+                1460,
+                1518,
+                1519,
+                1569,
+                1570,
+                1593,
+                1612,
+                1613,
+                1614,
+                1615
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 192
+    },
+    {
+        "fields": {
+            "pathDescript": "Strategic Communication",
+            "pathName": "Strategic Communication",
+            "priority1": [
+                1645,
+                1646,
+                1517,
+                1414,
+                1625,
+                1562,
+                1619,
+                1647,
+                1573,
+                1591,
+                1523,
+                1648
+            ],
+            "priority2": [
+                1645,
+                1646,
+                1517,
+                1414,
+                1625,
+                1562,
+                1619,
+                1647,
+                1573,
+                1591,
+                1523,
+                1648
+            ],
+            "priority3": [
+                1414,
+                1517,
+                1523,
+                1562,
+                1573,
+                1591,
+                1619,
+                1625,
+                1645,
+                1646,
+                1647,
+                1648
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 199
+    },
+    {
+        "fields": {
+            "pathDescript": "Video, Performance, and Social Practice",
+            "pathName": "Video, Performance, And Social Practice",
+            "priority1": [
+                1398,
+                1372,
+                1526,
+                1471,
+                1400,
+                1516,
+                1403,
+                1621
+            ],
+            "priority2": [
+                1685,
+                1377,
+                1532,
+                1686,
+                1669,
+                1507,
+                1687,
+                1533
+            ],
+            "priority3": [
+                1378,
+                1412,
+                1507,
+                1669,
+                1686
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 204
+    },
+    {
+        "fields": {
+            "pathDescript": "Interactive Media/Data Design",
+            "pathName": "Interactive Media/Data Design",
+            "priority1": [
+                1525,
+                1517,
+                1567,
+                1592,
+                1593,
+                1569,
+                1594,
+                1595,
+                1570,
+                1573
+            ],
+            "priority2": [
+                1525,
+                1517,
+                1567,
+                1592,
+                1593,
+                1569,
+                1594,
+                1595,
+                1570,
+                1573
+            ],
+            "priority3": [
+                1517,
+                1525,
+                1567,
+                1569,
+                1570,
+                1573,
+                1592,
+                1593,
+                1594,
+                1595
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 189
+    },
+    {
+        "fields": {
+            "pathDescript": "Thinking with Science",
+            "pathName": "Thinking With Science",
+            "priority1": [
+                1502,
+                1666,
+                1667,
+                1668,
+                1505,
+                1506
+            ],
+            "priority2": [
+                1669,
+                1670,
+                1517,
+                1538,
+                1518,
+                1519,
+                1638,
+                1539,
+                1581,
+                1522,
+                1591,
+                1671,
+                1524
+            ],
+            "priority3": [
+                1517,
+                1518,
+                1519,
+                1522,
+                1524,
+                1538,
+                1539,
+                1581,
+                1591,
+                1638,
+                1669,
+                1670,
+                1671
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 202
+    },
+    {
+        "fields": {
+            "pathDescript": "Music and Culture",
+            "pathName": "Music And Culture",
+            "priority1": [
+                1629,
+                1371,
+                1374,
+                1557,
+                1485,
+                1402,
+                1403,
+                1621
+            ],
+            "priority2": [
+                1630,
+                1631,
+                1632,
+                1408,
+                1633,
+                1634,
+                1412
+            ],
+            "priority3": [
+                1408,
+                1412,
+                1630,
+                1631,
+                1632,
+                1633,
+                1634
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 196
+    },
+    {
+        "fields": {
+            "pathDescript": "Studio Arts",
+            "pathName": "Studio Arts",
+            "priority1": [
+                1470,
+                1377
+            ],
+            "priority2": [
+                1649,
+                1650,
+                1405,
+                1406
+            ],
+            "priority3": [
+                1410,
+                1651,
+                1652,
+                1653,
+                1654
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 200
+    }
+]

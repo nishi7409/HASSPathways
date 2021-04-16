@@ -14,7 +14,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django import forms
-import json
+import json as simplejson
 import requests
 
 import csv, io
@@ -25,7 +25,6 @@ from .models import Course, Pathway
 def course(request):
     data = Course.objects.all()
     data = serializers.serialize("json", data)
-    # return(request, '')
     return HttpResponse(data)
 
 def pathway(request):
@@ -137,6 +136,20 @@ def _upload(request):
                     tmpPath.priority3.add(Course.objects.get(prefix = col[0].strip(), ID = col[1].strip() ,name = col[2].strip().title()))
 
                 tmpPath.save()
+
+    data = Course.objects.all()
+    data = serializers.serialize("json", data)
+    courseDataFile = open('CourseData.json', 'w')
+    courseDataFile.truncate()
+    courseDataFile.write(json.dumps(json.loads(data), indent=4, sort_keys=True))
+    courseDataFile.close()
+
+    data = Pathway.objects.all()
+    data = serializers.serialize("json", data)
+    pathwayDataFile = open('PathwayData.json', 'w')
+    pathwayDataFile.truncate()
+    pathwayDataFile.write(json.dumps(json.loads(data), indent=4, sort_keys=True))
+    pathwayDataFile.close()
 
     context = {
         'success': 'Successfully uploaded!'
