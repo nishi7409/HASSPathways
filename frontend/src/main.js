@@ -109,7 +109,7 @@ const store = new Vuex.Store({
     },
     saveButton(state) {
       console.log("Saved button")
-      state.shoppingCart.options[state.count] = [state.currentSelection.pathway, localStorage.getItem('course1'), localStorage.getItem('course2'), localStorage.getItem('course3')];
+      state.shoppingCart.options[state.count] = [state.currentSelection.pathway, JSON.parse(localStorage.getItem('course1')), JSON.parse(localStorage.getItem('course2')), JSON.parse(localStorage.getItem('course3'))];
       state.count += 1;
       state.currentSelection.pathway = null;
       state.currentSelection.course1 = null

@@ -65,7 +65,7 @@
 
             <v-expansion-panel-content color= "white">
               <v-card-subtitle class= "pb-0 pl-1">
-                <v-chip small color="red" class="mr-2 mt-2" text-color="black">Required</v-chip>
+                <v-chip v-if="currentCourse.first_course.fields.HI" small color="green" class="mr-2 mt-2" text-color="black">HASS Inquiry</v-chip>
                 <v-chip small color="red" class="mr-2 mt-2" text-color="black">Major Restricted</v-chip>
                 <v-chip small color="green" class="mr-2 mt-2" text-color="black">Gateway Course</v-chip>
                 <v-chip small color="green" class="mr-2 mt-2" text-color="black">HASS Inquiry</v-chip>
@@ -226,8 +226,8 @@ export default {
         }
         
         var path = this.$store.getters.getOptions[array_length][0]
-        var object = {pathway: path, first_course: JSON.parse(firstCourse), second_course: JSON.parse(secondCourse), third_course: JSON.parse(thirdCourse)}
-        storedCourses.push(object);
+       var object = {pathway: path, first_course: firstCourse, second_course: secondCourse, third_course: thirdCourse}
+       storedCourses.push(object);
       }
 
       console.log(storedCourses)
