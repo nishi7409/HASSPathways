@@ -44,7 +44,8 @@
 <script>
 
 import { mapGetters, mapMutations } from 'vuex'
-import cJson from './courses.json'
+import cJson from '../../../JSONfiles/courses.json'
+
 
 export default {
   props: ['path'],

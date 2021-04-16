@@ -44,8 +44,8 @@ import ProgressBar from './ProgressBar.vue'
 import FirstCourses from './FirstCourses'
 import SecondCourses from './SecondCourses'
 import ThirdCourses from './ThirdCourses'
-import pJson from './JSON/pathways.json'
-import cJson from './courses.json'
+import pJson from '../../../JSONfiles/pathways.json'
+import cJson from '../../../JSONfiles/courses.json'
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
