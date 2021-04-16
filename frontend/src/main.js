@@ -27,8 +27,8 @@ Vue.use(Vuex)
 // I'm just going to import the json files in order to make a working prototype
 // not sure if this is bad design
 
-import courses from "../../database/Courses_v2.json"
-import pathways from "../../database/Pathways_v2.json"
+import courses from "../../JSONfiles/courses.json"
+import pathways from "../../JSONfiles/pathways.json"
 
 const store = new Vuex.Store({
   state: {
