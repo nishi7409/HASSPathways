@@ -41,6 +41,8 @@ const store = new Vuex.Store({
       course2: null,
       course3: null
     },
+    editingCourses: false,
+    targetEditIndex: -1,
     // shopping cart starts out as an empty object
     // we just copy application states as the user saves them
     shoppingCart: {
@@ -183,6 +185,7 @@ const store = new Vuex.Store({
       }
     },
     getOptions: state => {
+      console.log(state)
       return store.state.shoppingCart.options;
     },
   }

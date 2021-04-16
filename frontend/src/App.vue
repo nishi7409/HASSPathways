@@ -11,10 +11,11 @@
             <!-- TITLE -->
             <v-flex md1 sm11 xs11>
               <router-link to="/home">
-                <v-img class="pl-6 pr-8 ml-4" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
+                <v-img class="pl-6 pr-8 ml-4" @click="clearProgress()" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
               </router-link>
             </v-flex>
-
+            
+            
             <!-- BUTTONS -->
             <v-col class="text-right" id="topRightButtons">
                 <v-btn class="hidden-sm-and-down text-capitalize" rounded elevation="4" depressed id="button" active-class="v-btn--active toolbar-btn-active blue-grey lighten-3" :to="{name: 'activity'}">My Pathways</v-btn>
@@ -76,6 +77,8 @@ export default {
     },
     clearProgress() {
       this.$root.$emit('resetProgress')
+      this.$store.editingCourses = false
+      // location.reload()
     },
   },
   mounted() {
