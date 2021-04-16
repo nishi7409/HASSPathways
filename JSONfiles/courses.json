@@ -14,7 +14,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4068
+        "pk": 4746
     },
     {
         "fields": {
@@ -31,7 +31,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4069
+        "pk": 4747
     },
     {
         "fields": {
@@ -48,7 +48,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4070
+        "pk": 4748
     },
     {
         "fields": {
@@ -65,7 +65,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4071
+        "pk": 4749
     },
     {
         "fields": {
@@ -82,7 +82,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4072
+        "pk": 4750
     },
     {
         "fields": {
@@ -99,7 +99,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4073
+        "pk": 4751
     },
     {
         "fields": {
@@ -116,7 +116,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4074
+        "pk": 4752
     },
     {
         "fields": {
@@ -133,7 +133,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4075
+        "pk": 4753
     },
     {
         "fields": {
@@ -150,7 +150,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4076
+        "pk": 4754
     },
     {
         "fields": {
@@ -167,7 +167,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4077
+        "pk": 4755
     },
     {
         "fields": {
@@ -184,7 +184,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4078
+        "pk": 4756
     },
     {
         "fields": {
@@ -201,7 +201,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4079
+        "pk": 4757
     },
     {
         "fields": {
@@ -218,7 +218,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4080
+        "pk": 4758
     },
     {
         "fields": {
@@ -235,7 +235,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4081
+        "pk": 4759
     },
     {
         "fields": {
@@ -252,7 +252,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4082
+        "pk": 4760
     },
     {
         "fields": {
@@ -269,7 +269,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4083
+        "pk": 4761
     },
     {
         "fields": {
@@ -286,7 +286,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4084
+        "pk": 4762
     },
     {
         "fields": {
@@ -303,41 +303,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4085
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4330,
-            "description": "This course will examine a wide range of financial markets and institutions and the micro-and macroeconomic forces that relate to them. Topics include the use of derivative securities such as future, options, and swap agreements, and their roles in distributing financial risk. The course will be driven by textbook readings, supplemented by current news stories, articles from the financial press, and research articles.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Economics Of Financial Institutions & Markets",
-            "prefix": "ECON",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4177
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1720,
-            "description": "Music and Nature explores the intersections between music and nature from a variety of perspectives. Music will be approached as artistic expression as well as a form of knowledge that can heighten our sensitivity and awareness of the environment and natural processes. Music and Nature incorporates reading and writing assignments, individual and group creative projects.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Music And Nature",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4196
+        "pk": 4763
     },
     {
         "fields": {
@@ -354,7 +320,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4086
+        "pk": 4764
     },
     {
         "fields": {
@@ -371,7 +337,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4087
+        "pk": 4765
     },
     {
         "fields": {
@@ -388,7 +354,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4088
+        "pk": 4766
     },
     {
         "fields": {
@@ -405,7 +371,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4089
+        "pk": 4767
     },
     {
         "fields": {
@@ -422,7 +388,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4090
+        "pk": 4768
     },
     {
         "fields": {
@@ -439,7 +405,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4091
+        "pk": 4769
     },
     {
         "fields": {
@@ -456,7 +422,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4092
+        "pk": 4770
     },
     {
         "fields": {
@@ -473,7 +439,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4093
+        "pk": 4771
     },
     {
         "fields": {
@@ -490,7 +456,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4094
+        "pk": 4772
     },
     {
         "fields": {
@@ -507,7 +473,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4095
+        "pk": 4773
     },
     {
         "fields": {
@@ -524,7 +490,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4096
+        "pk": 4774
     },
     {
         "fields": {
@@ -541,7 +507,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4097
+        "pk": 4775
     },
     {
         "fields": {
@@ -558,7 +524,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4098
+        "pk": 4776
     },
     {
         "fields": {
@@ -575,7 +541,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4099
+        "pk": 4777
     },
     {
         "fields": {
@@ -592,7 +558,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4100
+        "pk": 4778
     },
     {
         "fields": {
@@ -609,7 +575,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4101
+        "pk": 4779
     },
     {
         "fields": {
@@ -626,7 +592,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4102
+        "pk": 4780
     },
     {
         "fields": {
@@ -643,7 +609,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4103
+        "pk": 4781
     },
     {
         "fields": {
@@ -660,7 +626,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4104
+        "pk": 4782
     },
     {
         "fields": {
@@ -677,7 +643,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4105
+        "pk": 4783
     },
     {
         "fields": {
@@ -694,7 +660,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4106
+        "pk": 4784
     },
     {
         "fields": {
@@ -711,7 +677,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4107
+        "pk": 4785
     },
     {
         "fields": {
@@ -728,7 +694,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4108
+        "pk": 4786
     },
     {
         "fields": {
@@ -745,7 +711,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4109
+        "pk": 4787
     },
     {
         "fields": {
@@ -762,7 +728,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4110
+        "pk": 4788
     },
     {
         "fields": {
@@ -779,7 +745,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4111
+        "pk": 4789
     },
     {
         "fields": {
@@ -796,7 +762,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4112
+        "pk": 4790
     },
     {
         "fields": {
@@ -813,7 +779,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4113
+        "pk": 4791
     },
     {
         "fields": {
@@ -830,7 +796,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4114
+        "pk": 4792
     },
     {
         "fields": {
@@ -847,41 +813,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4115
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1966,
-            "description": "Description",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Music And Protest",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4197
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 19,
-            "description": "Description",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Designing Climate Justice",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4198
+        "pk": 4793
     },
     {
         "fields": {
@@ -898,7 +830,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4116
+        "pk": 4794
     },
     {
         "fields": {
@@ -915,7 +847,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4117
+        "pk": 4795
     },
     {
         "fields": {
@@ -932,7 +864,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4118
+        "pk": 4796
     },
     {
         "fields": {
@@ -949,24 +881,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4119
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1560,
-            "description": "A survey of the historical origins and cultural impact of several mass media, including television, film, radio, the Internet, and print media. The course aims to increase media literacy through analysis of specific media products as well as discussion of broad topics such as: advertising and commercialization; politics and censorship; gender, race, and social identity.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Media & Society",
-            "prefix": "IHSS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4236
+        "pk": 4797
     },
     {
         "fields": {
@@ -983,7 +898,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4120
+        "pk": 4798
     },
     {
         "fields": {
@@ -1000,7 +915,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4121
+        "pk": 4799
     },
     {
         "fields": {
@@ -1017,24 +932,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4122
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1973,
-            "description": "Description",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "News Media, Culture & Politics",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4237
+        "pk": 4800
     },
     {
         "fields": {
@@ -1051,7 +949,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4123
+        "pk": 4801
     },
     {
         "fields": {
@@ -1068,7 +966,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4124
+        "pk": 4802
     },
     {
         "fields": {
@@ -1085,24 +983,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4125
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1976,
-            "description": "Description",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Fiction: From Film To The Internet",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4238
+        "pk": 4803
     },
     {
         "fields": {
@@ -1119,7 +1000,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4126
+        "pk": 4804
     },
     {
         "fields": {
@@ -1136,41 +1017,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4127
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 19,
-            "description": "Description",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Documentary In The 21St Century",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4239
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 19,
-            "description": "Description",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Documentary:  Whose Narrative?",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4240
+        "pk": 4805
     },
     {
         "fields": {
@@ -1187,24 +1034,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4128
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 19,
-            "description": "Description",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "The American Dream",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4241
+        "pk": 4806
     },
     {
         "fields": {
@@ -1221,7 +1051,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4129
+        "pk": 4807
     },
     {
         "fields": {
@@ -1238,7 +1068,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4130
+        "pk": 4808
     },
     {
         "fields": {
@@ -1255,7 +1085,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4131
+        "pk": 4809
     },
     {
         "fields": {
@@ -1272,7 +1102,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4132
+        "pk": 4810
     },
     {
         "fields": {
@@ -1289,24 +1119,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4133
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4310,
-            "description": "Market-based economies depend upon legal systems that establish and protect property rights. In this and many other instances the law is designed to encourage and support economic activity; in others it is designed to restrain certain types of otherwise rational economic behavior. This course will apply fundamental economic concepts, such as supply and demand, competition, monopoly, externalities, and Pareto efficiency to a range of legal topics, including contracts, torts, criminal, and intellectual property law to explain the economic motivation and consequences of the legal framework. For those students considering law school, this course offers an exposure to many of the legal concepts found in the first year law school curriculum.",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Law & Economics",
-            "prefix": "ECON",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4178
+        "pk": 4811
     },
     {
         "fields": {
@@ -1323,7 +1136,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4134
+        "pk": 4812
     },
     {
         "fields": {
@@ -1340,7 +1153,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4135
+        "pk": 4813
     },
     {
         "fields": {
@@ -1357,7 +1170,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4136
+        "pk": 4814
     },
     {
         "fields": {
@@ -1374,7 +1187,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4137
+        "pk": 4815
     },
     {
         "fields": {
@@ -1391,7 +1204,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4138
+        "pk": 4816
     },
     {
         "fields": {
@@ -1408,7 +1221,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4139
+        "pk": 4817
     },
     {
         "fields": {
@@ -1425,245 +1238,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4140
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4280,
-            "description": "Examine advanced econometric and statistical methods for the analysis of high-dimensional data, otherwise known as \u201cBig Data.\u201d In this setting, detailed information for each unit of observation informs machine learning techniques such as classification and regression trees; random forests; penalized regressions; and boosted estimation. These prediction methods are then utilized to improve causal modeling, with applications in the study of healthcare demand and supply modeling, and behavior of consumers and businesses.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Econometric Methods\u2013Big Data",
-            "prefix": "ECON",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4179
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4430,
-            "description": "Dynamic models of national and international economic growth are introduced and analyzed.  Technological innovation is central to growth, and models consider the endogenous determinants of technological innovation and diffusion.  National institutions that affect growth, such as law, education, and infrastructure, are considered. Variation in intellectual property rights across countries are examined, together with their effects on economic growth and development. Theories of growth are compared to empirical fact.",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Economics Of Growth And Innovation",
-            "prefix": "ECON",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4180
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 1050,
-            "description": "A survey of visual arts from Paleolithic Era to today. Materials are presented in a form accessible to students without previous knowledge of Art History.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Arts History",
-            "prefix": "ARTS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4181
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1030,
-            "description": "Television is considered a defining social, political and cultural feature of consumer culture. Television is morphing into something more expansive and diverse. In this course, we will study the impact of television and learn to make it. Through hands-on experience, students produce and direct their own multi-camera projects. Students work on technical and creative aspects of production. Students learn to operate studio gear including green screen, live switcher, cameras, audio, teleprompter, lights, etc.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Behind The Television Screen",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4182
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1040,
-            "description": "Documentary in the 21st Century: Identity Production is a production course investigating the course of documentary history leading to a focus on digital media representations today. This course will incorporate critical thinking with production.  With focus on aesthetic and formal considerations, students will be asked to produce a series of multimedia projects investigating their vision of themselves in the world.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Documentary In The 21St Century",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4183
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 2040,
-            "description": "Intermediate Digital Imaging is a hands-on studio course exploring the use of computer technologies in making visual art. A study of contemporary issues in digital media and photography facilitates individual innovation and experimentation. Digital imaging and input/output techniques are employed in terms of giving visual form to ideas and personal expression in private and public settings.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Intermediate Digital Imaging",
-            "prefix": "ARTS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4184
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 2060,
-            "description": "2D Experimental Animation is an introduction to animation as an art form. Most of this course will be traditional assignments designed to encourage spontaneous creativity, explore animation concepts, and learn animation terminology. Assignments will build a solid foundation for entrance into 3D Animation. This course will also be a historical and theoretical investigation with screenings and readings followed with discussion.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "2D Experimental Animation",
-            "prefix": "ARTS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4185
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 2070,
-            "description": "A studio arts course exploring the fundamental concepts, techniques, styles, and mechanics used in the creation of graphic narrative. Contents to be covered include the fundamentals of sequential art, the purposes and formats of storyboards, basic terminology and concepts used in storyboarding, and the applications of storyboard techniques. Key visual storytelling structures are explored for the following industry applications: comics, animated films, graphic novels, commercials, documentaries, live action feature films, and video gaming.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Graphic Storytelling",
-            "prefix": "ARTS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4186
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 2230,
-            "description": "A foundational course in concepts and techniques in digital 3D, for animation, games, and digital art. This course focuses on methods and aesthetics in creating digital 3D objects, spaces, and characters, including modeling, texturing, and lighting, as preparation for further courses in the 3D Animation curriculum.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "3D Bootcamp",
-            "prefix": "ARTS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4187
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4060,
-            "description": "An introduction to the technical techniques and principles of computer animation with a focus on rigging, skinning, character fx, particle simulations, compositioning and rendering. Lectures, discussion, and exposure to contemporary work enable students to develop skills in this rapidly evolving field.",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "3D Visual Effects",
-            "prefix": "ARTS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4188
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4070,
-            "description": "An intermediate hands-on studio course in 3D computer animation, acting, dialog, cinematography, and story building.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "3D Animation",
-            "prefix": "ARTS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4189
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4090,
-            "description": "This course is primarily concerned with learning how to build any interactive experience or artwork from concept to completion. It will introduce open-source, cross-platform programming libraries and tools used by artists and programmers to create interactive experiences and artworks for museum installations, festivals, VJ-ing, projection mapping, interactive experiences/artworks, and more. It will then start to address the questions: Is code an art form? What is interactive art? Is software art?",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Art, Code, & Interactivity",
-            "prefix": "ARTS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4190
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4860,
-            "description": "This upper level studio and seminar explores individual visual arts projects contributing to thesis or dissertation development. Topics in creative personal expression in imaging, installation, digital/traditional mixed media and emerging genres will be studied drawing from issues raised in class projects. Advanced studies may include high resolution digital photography, montage, archival printing, gesture drawing, painting, assemblage, processing, stencil art, projection, and evolving genres which lead to an independent final project and web portfolio.",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Advanced Digital Imaging",
-            "prefix": "ARTS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4191
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1110,
-            "description": "This course focuses on the social and ecological aspects of humans in the natural world. It emphasizes critical thinking about where humans come from and where they are going as a species. The course draws on historical perspectives and addresses contemporary issues such as climate change, national energy resources, and the local foods movement. The course includes readings as well as student projects, field trips, guest lectures, and \u201cethnographic\u201d assignments about this consumer society.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Nature & Society",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4192
+        "pk": 4818
     },
     {
         "fields": {
@@ -1680,24 +1255,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4141
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1240,
-            "description": "Students in this course participate in a series of class debates, presenting and cross-examining the arguments of those who have a stake in various environmental controversies (about energy, toxic chemicals, consumption, etc.). Students also work in groups to design a proposal for a project to help solve an environmental problem. Throughout the course, students are encouraged to develop their own environmental values and ideas. This is a communication-intensive course.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Sustainability Debates",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4193
+        "pk": 4819
     },
     {
         "fields": {
@@ -1714,7 +1272,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4142
+        "pk": 4820
     },
     {
         "fields": {
@@ -1731,7 +1289,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4143
+        "pk": 4821
     },
     {
         "fields": {
@@ -1748,7 +1306,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4144
+        "pk": 4822
     },
     {
         "fields": {
@@ -1765,7 +1323,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4145
+        "pk": 4823
     },
     {
         "fields": {
@@ -1782,7 +1340,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4146
+        "pk": 4824
     },
     {
         "fields": {
@@ -1799,7 +1357,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4147
+        "pk": 4825
     },
     {
         "fields": {
@@ -1816,7 +1374,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4148
+        "pk": 4826
     },
     {
         "fields": {
@@ -1833,7 +1391,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4149
+        "pk": 4827
     },
     {
         "fields": {
@@ -1850,7 +1408,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4150
+        "pk": 4828
     },
     {
         "fields": {
@@ -1867,7 +1425,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4151
+        "pk": 4829
     },
     {
         "fields": {
@@ -1884,7 +1442,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4152
+        "pk": 4830
     },
     {
         "fields": {
@@ -1901,7 +1459,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4153
+        "pk": 4831
     },
     {
         "fields": {
@@ -1918,7 +1476,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4154
+        "pk": 4832
     },
     {
         "fields": {
@@ -1935,7 +1493,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4155
+        "pk": 4833
     },
     {
         "fields": {
@@ -1952,24 +1510,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4156
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 2800,
-            "description": "An introduction to psychology as applied to sport; the topics covered include history of sport behavior, principles of learning and their application, anxiety and arousal, motivation, leadership, cohesion, audience effects, aggression, personality assessment, female athletes, youth in sport, coach behavior, and physical activity for all.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Introduction To Sports Psychology",
-            "prefix": "PSYC",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4384
+        "pk": 4834
     },
     {
         "fields": {
@@ -1986,7 +1527,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4157
+        "pk": 4835
     },
     {
         "fields": {
@@ -2003,7 +1544,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4158
+        "pk": 4836
     },
     {
         "fields": {
@@ -2020,24 +1561,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4159
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 2000,
-            "description": "Any 2000-level psychology elective",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Psychology Elective",
-            "prefix": "PSYC",
-            "spring": 1,
-            "summer": 1
-        },
-        "model": "database.course",
-        "pk": 4385
+        "pk": 4837
     },
     {
         "fields": {
@@ -2054,7 +1578,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4160
+        "pk": 4838
     },
     {
         "fields": {
@@ -2071,7 +1595,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4161
+        "pk": 4839
     },
     {
         "fields": {
@@ -2088,7 +1612,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4162
+        "pk": 4840
     },
     {
         "fields": {
@@ -2105,7 +1629,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4163
+        "pk": 4841
     },
     {
         "fields": {
@@ -2122,7 +1646,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4164
+        "pk": 4842
     },
     {
         "fields": {
@@ -2139,24 +1663,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4165
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1320,
-            "description": "This course examines the emergence of environmental consciousness in the United States throughout the 20th century. Students in this course will study the original writings of some of the most important thinkers and activists in the history of environmentalism, examine the social contexts in which their ideas formed, and consider their relevance to contemporary sustainability issues.",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "A Century Of Environmental Thought",
-            "prefix": "IHSS",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4194
+        "pk": 4843
     },
     {
         "fields": {
@@ -2173,7 +1680,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4166
+        "pk": 4844
     },
     {
         "fields": {
@@ -2190,7 +1697,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4167
+        "pk": 4845
     },
     {
         "fields": {
@@ -2207,24 +1714,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4168
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 1,
-            "ID": 1350,
-            "description": "This course examines the interconnections between values and law, seeking to understand how these affect and are affected by science and technology by examining such topics as computers and privacy, medical malpractice, abortion, and other legal conflicts surrounding new reproductive technologies, problems of expert witnesses, sexual harassment, patent infringement, auto safety litigation, and siting of hazardous facilities, among others.",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "Law, Value, And Public Policy",
-            "prefix": "IHSS",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4195
+        "pk": 4846
     },
     {
         "fields": {
@@ -2241,7 +1731,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4169
+        "pk": 4847
     },
     {
         "fields": {
@@ -2258,7 +1748,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4170
+        "pk": 4848
     },
     {
         "fields": {
@@ -2275,7 +1765,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4171
+        "pk": 4849
     },
     {
         "fields": {
@@ -2292,7 +1782,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4172
+        "pk": 4850
     },
     {
         "fields": {
@@ -2309,7 +1799,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4173
+        "pk": 4851
     },
     {
         "fields": {
@@ -2326,7 +1816,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4174
+        "pk": 4852
     },
     {
         "fields": {
@@ -2343,7 +1833,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4175
+        "pk": 4853
     },
     {
         "fields": {
@@ -2360,7 +1850,381 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4176
+        "pk": 4854
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4330,
+            "description": "This course will examine a wide range of financial markets and institutions and the micro-and macroeconomic forces that relate to them. Topics include the use of derivative securities such as future, options, and swap agreements, and their roles in distributing financial risk. The course will be driven by textbook readings, supplemented by current news stories, articles from the financial press, and research articles.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Economics Of Financial Institutions & Markets",
+            "prefix": "ECON",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4855
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4310,
+            "description": "Market-based economies depend upon legal systems that establish and protect property rights. In this and many other instances the law is designed to encourage and support economic activity; in others it is designed to restrain certain types of otherwise rational economic behavior. This course will apply fundamental economic concepts, such as supply and demand, competition, monopoly, externalities, and Pareto efficiency to a range of legal topics, including contracts, torts, criminal, and intellectual property law to explain the economic motivation and consequences of the legal framework. For those students considering law school, this course offers an exposure to many of the legal concepts found in the first year law school curriculum.",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Law & Economics",
+            "prefix": "ECON",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4856
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4280,
+            "description": "Examine advanced econometric and statistical methods for the analysis of high-dimensional data, otherwise known as \u201cBig Data.\u201d In this setting, detailed information for each unit of observation informs machine learning techniques such as classification and regression trees; random forests; penalized regressions; and boosted estimation. These prediction methods are then utilized to improve causal modeling, with applications in the study of healthcare demand and supply modeling, and behavior of consumers and businesses.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Econometric Methods\u2013Big Data",
+            "prefix": "ECON",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4857
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4430,
+            "description": "Dynamic models of national and international economic growth are introduced and analyzed.  Technological innovation is central to growth, and models consider the endogenous determinants of technological innovation and diffusion.  National institutions that affect growth, such as law, education, and infrastructure, are considered. Variation in intellectual property rights across countries are examined, together with their effects on economic growth and development. Theories of growth are compared to empirical fact.",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Economics Of Growth And Innovation",
+            "prefix": "ECON",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4858
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 1050,
+            "description": "A survey of visual arts from Paleolithic Era to today. Materials are presented in a form accessible to students without previous knowledge of Art History.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Arts History",
+            "prefix": "ARTS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4859
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1030,
+            "description": "Television is considered a defining social, political and cultural feature of consumer culture. Television is morphing into something more expansive and diverse. In this course, we will study the impact of television and learn to make it. Through hands-on experience, students produce and direct their own multi-camera projects. Students work on technical and creative aspects of production. Students learn to operate studio gear including green screen, live switcher, cameras, audio, teleprompter, lights, etc.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Behind The Television Screen",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4860
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1040,
+            "description": "Documentary in the 21st Century: Identity Production is a production course investigating the course of documentary history leading to a focus on digital media representations today. This course will incorporate critical thinking with production.  With focus on aesthetic and formal considerations, students will be asked to produce a series of multimedia projects investigating their vision of themselves in the world.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Documentary In The 21St Century",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4861
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2040,
+            "description": "Intermediate Digital Imaging is a hands-on studio course exploring the use of computer technologies in making visual art. A study of contemporary issues in digital media and photography facilitates individual innovation and experimentation. Digital imaging and input/output techniques are employed in terms of giving visual form to ideas and personal expression in private and public settings.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Intermediate Digital Imaging",
+            "prefix": "ARTS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4862
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2060,
+            "description": "2D Experimental Animation is an introduction to animation as an art form. Most of this course will be traditional assignments designed to encourage spontaneous creativity, explore animation concepts, and learn animation terminology. Assignments will build a solid foundation for entrance into 3D Animation. This course will also be a historical and theoretical investigation with screenings and readings followed with discussion.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "2D Experimental Animation",
+            "prefix": "ARTS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4863
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2070,
+            "description": "A studio arts course exploring the fundamental concepts, techniques, styles, and mechanics used in the creation of graphic narrative. Contents to be covered include the fundamentals of sequential art, the purposes and formats of storyboards, basic terminology and concepts used in storyboarding, and the applications of storyboard techniques. Key visual storytelling structures are explored for the following industry applications: comics, animated films, graphic novels, commercials, documentaries, live action feature films, and video gaming.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Graphic Storytelling",
+            "prefix": "ARTS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4864
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2230,
+            "description": "A foundational course in concepts and techniques in digital 3D, for animation, games, and digital art. This course focuses on methods and aesthetics in creating digital 3D objects, spaces, and characters, including modeling, texturing, and lighting, as preparation for further courses in the 3D Animation curriculum.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "3D Bootcamp",
+            "prefix": "ARTS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4865
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4060,
+            "description": "An introduction to the technical techniques and principles of computer animation with a focus on rigging, skinning, character fx, particle simulations, compositioning and rendering. Lectures, discussion, and exposure to contemporary work enable students to develop skills in this rapidly evolving field.",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "3D Visual Effects",
+            "prefix": "ARTS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4866
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4070,
+            "description": "An intermediate hands-on studio course in 3D computer animation, acting, dialog, cinematography, and story building.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "3D Animation",
+            "prefix": "ARTS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4867
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4090,
+            "description": "This course is primarily concerned with learning how to build any interactive experience or artwork from concept to completion. It will introduce open-source, cross-platform programming libraries and tools used by artists and programmers to create interactive experiences and artworks for museum installations, festivals, VJ-ing, projection mapping, interactive experiences/artworks, and more. It will then start to address the questions: Is code an art form? What is interactive art? Is software art?",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Art, Code, & Interactivity",
+            "prefix": "ARTS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4868
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4860,
+            "description": "This upper level studio and seminar explores individual visual arts projects contributing to thesis or dissertation development. Topics in creative personal expression in imaging, installation, digital/traditional mixed media and emerging genres will be studied drawing from issues raised in class projects. Advanced studies may include high resolution digital photography, montage, archival printing, gesture drawing, painting, assemblage, processing, stencil art, projection, and evolving genres which lead to an independent final project and web portfolio.",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Advanced Digital Imaging",
+            "prefix": "ARTS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4869
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1110,
+            "description": "This course focuses on the social and ecological aspects of humans in the natural world. It emphasizes critical thinking about where humans come from and where they are going as a species. The course draws on historical perspectives and addresses contemporary issues such as climate change, national energy resources, and the local foods movement. The course includes readings as well as student projects, field trips, guest lectures, and \u201cethnographic\u201d assignments about this consumer society.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Nature & Society",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4870
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1240,
+            "description": "Students in this course participate in a series of class debates, presenting and cross-examining the arguments of those who have a stake in various environmental controversies (about energy, toxic chemicals, consumption, etc.). Students also work in groups to design a proposal for a project to help solve an environmental problem. Throughout the course, students are encouraged to develop their own environmental values and ideas. This is a communication-intensive course.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Sustainability Debates",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4871
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1320,
+            "description": "This course examines the emergence of environmental consciousness in the United States throughout the 20th century. Students in this course will study the original writings of some of the most important thinkers and activists in the history of environmentalism, examine the social contexts in which their ideas formed, and consider their relevance to contemporary sustainability issues.",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "A Century Of Environmental Thought",
+            "prefix": "IHSS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4872
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1350,
+            "description": "This course examines the interconnections between values and law, seeking to understand how these affect and are affected by science and technology by examining such topics as computers and privacy, medical malpractice, abortion, and other legal conflicts surrounding new reproductive technologies, problems of expert witnesses, sexual harassment, patent infringement, auto safety litigation, and siting of hazardous facilities, among others.",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Law, Value, And Public Policy",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4873
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1720,
+            "description": "Music and Nature explores the intersections between music and nature from a variety of perspectives. Music will be approached as artistic expression as well as a form of knowledge that can heighten our sensitivity and awareness of the environment and natural processes. Music and Nature incorporates reading and writing assignments, individual and group creative projects.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Music And Nature",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4874
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1966,
+            "description": "Description",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Music And Protest",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4875
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 19,
+            "description": "Description",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Designing Climate Justice",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4876
     },
     {
         "fields": {
@@ -2377,7 +2241,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4199
+        "pk": 4877
     },
     {
         "fields": {
@@ -2394,7 +2258,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4200
+        "pk": 4878
     },
     {
         "fields": {
@@ -2411,7 +2275,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4201
+        "pk": 4879
     },
     {
         "fields": {
@@ -2428,7 +2292,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4202
+        "pk": 4880
     },
     {
         "fields": {
@@ -2445,7 +2309,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4203
+        "pk": 4881
     },
     {
         "fields": {
@@ -2462,7 +2326,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4204
+        "pk": 4882
     },
     {
         "fields": {
@@ -2479,7 +2343,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4205
+        "pk": 4883
     },
     {
         "fields": {
@@ -2496,7 +2360,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4206
+        "pk": 4884
     },
     {
         "fields": {
@@ -2513,7 +2377,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4207
+        "pk": 4885
     },
     {
         "fields": {
@@ -2530,41 +2394,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4208
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4530,
-            "description": "What is science, what is technology, and how have these two fields of inquiry evolved over time? This course examines these questions by studying the history of various scientific fields and technologies. In addition to tracing the historical evolution of the topics studied, the course will consider how social, political, economic and cultural factors helped to shape \u2013 and were in turn shaped by \u2013 advances in science and technology. The course will also reflect upon the relationship between science and technology on the one hand, and \u201cprogress\u201d on the other.",
-            "fall": 0,
-            "major_retrictive": 0,
-            "name": "History Of Science And Technology",
-            "prefix": "STSH",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4233
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 2340,
-            "description": "This course focuses on developing public speaking skills and critical listening abilities. Guided by rhetorical theory, theories of persuasion, and argumentation theory, students prepare several oral presentations, engage in extemporaneous speaking exercises, and criticize other performances.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Speech Communication",
-            "prefix": "WRIT",
-            "spring": 1,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4234
+        "pk": 4886
     },
     {
         "fields": {
@@ -2581,7 +2411,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4209
+        "pk": 4887
     },
     {
         "fields": {
@@ -2598,7 +2428,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4210
+        "pk": 4888
     },
     {
         "fields": {
@@ -2615,7 +2445,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4211
+        "pk": 4889
     },
     {
         "fields": {
@@ -2632,7 +2462,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4212
+        "pk": 4890
     },
     {
         "fields": {
@@ -2649,7 +2479,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4213
+        "pk": 4891
     },
     {
         "fields": {
@@ -2666,7 +2496,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4214
+        "pk": 4892
     },
     {
         "fields": {
@@ -2683,7 +2513,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4215
+        "pk": 4893
     },
     {
         "fields": {
@@ -2700,7 +2530,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4216
+        "pk": 4894
     },
     {
         "fields": {
@@ -2717,7 +2547,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4217
+        "pk": 4895
     },
     {
         "fields": {
@@ -2734,7 +2564,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4218
+        "pk": 4896
     },
     {
         "fields": {
@@ -2751,24 +2581,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4219
-    },
-    {
-        "fields": {
-            "CI": 0,
-            "DI": 0,
-            "HI": 0,
-            "ID": 4550,
-            "description": "Make things happen: start a business, raise funds, solicit work, support research, win a place on a conference program, take initiative, change the way things are done around here. This course will teach students how to write proposals that persuade. Students will learn to turn situations into occasions for proposing, write a variety of proposals, locate Request for Proposals, develop a work plan for feasible projects that come in on-time and on-budget, use networks to strengthen proposals, detail a budget, and edit for clarity and grace.",
-            "fall": 1,
-            "major_retrictive": 0,
-            "name": "Proposing And Persuading",
-            "prefix": "WRIT",
-            "spring": 0,
-            "summer": 0
-        },
-        "model": "database.course",
-        "pk": 4235
+        "pk": 4897
     },
     {
         "fields": {
@@ -2785,7 +2598,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4220
+        "pk": 4898
     },
     {
         "fields": {
@@ -2802,7 +2615,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4221
+        "pk": 4899
     },
     {
         "fields": {
@@ -2819,7 +2632,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4222
+        "pk": 4900
     },
     {
         "fields": {
@@ -2836,7 +2649,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4223
+        "pk": 4901
     },
     {
         "fields": {
@@ -2853,7 +2666,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4224
+        "pk": 4902
     },
     {
         "fields": {
@@ -2870,7 +2683,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4225
+        "pk": 4903
     },
     {
         "fields": {
@@ -2887,7 +2700,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4226
+        "pk": 4904
     },
     {
         "fields": {
@@ -2904,7 +2717,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4227
+        "pk": 4905
     },
     {
         "fields": {
@@ -2921,7 +2734,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4228
+        "pk": 4906
     },
     {
         "fields": {
@@ -2938,7 +2751,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4229
+        "pk": 4907
     },
     {
         "fields": {
@@ -2955,7 +2768,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4230
+        "pk": 4908
     },
     {
         "fields": {
@@ -2972,7 +2785,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4231
+        "pk": 4909
     },
     {
         "fields": {
@@ -2989,7 +2802,160 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4232
+        "pk": 4910
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4530,
+            "description": "What is science, what is technology, and how have these two fields of inquiry evolved over time? This course examines these questions by studying the history of various scientific fields and technologies. In addition to tracing the historical evolution of the topics studied, the course will consider how social, political, economic and cultural factors helped to shape \u2013 and were in turn shaped by \u2013 advances in science and technology. The course will also reflect upon the relationship between science and technology on the one hand, and \u201cprogress\u201d on the other.",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "History Of Science And Technology",
+            "prefix": "STSH",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4911
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2340,
+            "description": "This course focuses on developing public speaking skills and critical listening abilities. Guided by rhetorical theory, theories of persuasion, and argumentation theory, students prepare several oral presentations, engage in extemporaneous speaking exercises, and criticize other performances.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Speech Communication",
+            "prefix": "WRIT",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4912
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4550,
+            "description": "Make things happen: start a business, raise funds, solicit work, support research, win a place on a conference program, take initiative, change the way things are done around here. This course will teach students how to write proposals that persuade. Students will learn to turn situations into occasions for proposing, write a variety of proposals, locate Request for Proposals, develop a work plan for feasible projects that come in on-time and on-budget, use networks to strengthen proposals, detail a budget, and edit for clarity and grace.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Proposing And Persuading",
+            "prefix": "WRIT",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4913
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1560,
+            "description": "A survey of the historical origins and cultural impact of several mass media, including television, film, radio, the Internet, and print media. The course aims to increase media literacy through analysis of specific media products as well as discussion of broad topics such as: advertising and commercialization; politics and censorship; gender, race, and social identity.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Media & Society",
+            "prefix": "IHSS",
+            "spring": 1,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4914
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1973,
+            "description": "Description",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "News Media, Culture & Politics",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4915
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 1976,
+            "description": "Description",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Fiction: From Film To The Internet",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4916
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 19,
+            "description": "Description",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Documentary In The 21St Century",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4917
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 19,
+            "description": "Description",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "Documentary:  Whose Narrative?",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4918
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 1,
+            "ID": 19,
+            "description": "Description",
+            "fall": 0,
+            "major_retrictive": 0,
+            "name": "The American Dream",
+            "prefix": "IHSS",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 4919
     },
     {
         "fields": {
@@ -3006,7 +2972,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4242
+        "pk": 4920
     },
     {
         "fields": {
@@ -3023,7 +2989,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4243
+        "pk": 4921
     },
     {
         "fields": {
@@ -3040,7 +3006,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4244
+        "pk": 4922
     },
     {
         "fields": {
@@ -3057,7 +3023,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4245
+        "pk": 4923
     },
     {
         "fields": {
@@ -3074,7 +3040,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4246
+        "pk": 4924
     },
     {
         "fields": {
@@ -3091,7 +3057,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4247
+        "pk": 4925
     },
     {
         "fields": {
@@ -3108,7 +3074,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4248
+        "pk": 4926
     },
     {
         "fields": {
@@ -3125,7 +3091,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4249
+        "pk": 4927
     },
     {
         "fields": {
@@ -3142,7 +3108,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4250
+        "pk": 4928
     },
     {
         "fields": {
@@ -3159,7 +3125,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4251
+        "pk": 4929
     },
     {
         "fields": {
@@ -3176,7 +3142,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4252
+        "pk": 4930
     },
     {
         "fields": {
@@ -3193,7 +3159,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4253
+        "pk": 4931
     },
     {
         "fields": {
@@ -3210,7 +3176,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4254
+        "pk": 4932
     },
     {
         "fields": {
@@ -3227,7 +3193,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4255
+        "pk": 4933
     },
     {
         "fields": {
@@ -3244,7 +3210,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4256
+        "pk": 4934
     },
     {
         "fields": {
@@ -3261,7 +3227,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4257
+        "pk": 4935
     },
     {
         "fields": {
@@ -3278,7 +3244,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4258
+        "pk": 4936
     },
     {
         "fields": {
@@ -3295,7 +3261,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4259
+        "pk": 4937
     },
     {
         "fields": {
@@ -3312,7 +3278,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4260
+        "pk": 4938
     },
     {
         "fields": {
@@ -3329,7 +3295,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4261
+        "pk": 4939
     },
     {
         "fields": {
@@ -3346,7 +3312,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4262
+        "pk": 4940
     },
     {
         "fields": {
@@ -3363,7 +3329,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4263
+        "pk": 4941
     },
     {
         "fields": {
@@ -3380,7 +3346,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4264
+        "pk": 4942
     },
     {
         "fields": {
@@ -3397,7 +3363,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4265
+        "pk": 4943
     },
     {
         "fields": {
@@ -3414,7 +3380,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4266
+        "pk": 4944
     },
     {
         "fields": {
@@ -3431,7 +3397,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4267
+        "pk": 4945
     },
     {
         "fields": {
@@ -3448,7 +3414,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4268
+        "pk": 4946
     },
     {
         "fields": {
@@ -3465,7 +3431,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4269
+        "pk": 4947
     },
     {
         "fields": {
@@ -3482,7 +3448,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4270
+        "pk": 4948
     },
     {
         "fields": {
@@ -3499,7 +3465,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4271
+        "pk": 4949
     },
     {
         "fields": {
@@ -3516,7 +3482,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4272
+        "pk": 4950
     },
     {
         "fields": {
@@ -3533,7 +3499,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4273
+        "pk": 4951
     },
     {
         "fields": {
@@ -3550,7 +3516,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4274
+        "pk": 4952
     },
     {
         "fields": {
@@ -3567,7 +3533,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4275
+        "pk": 4953
     },
     {
         "fields": {
@@ -3584,7 +3550,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4276
+        "pk": 4954
     },
     {
         "fields": {
@@ -3601,7 +3567,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4277
+        "pk": 4955
     },
     {
         "fields": {
@@ -3618,7 +3584,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4278
+        "pk": 4956
     },
     {
         "fields": {
@@ -3635,7 +3601,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4279
+        "pk": 4957
     },
     {
         "fields": {
@@ -3652,7 +3618,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4280
+        "pk": 4958
     },
     {
         "fields": {
@@ -3669,7 +3635,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4281
+        "pk": 4959
     },
     {
         "fields": {
@@ -3686,7 +3652,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4282
+        "pk": 4960
     },
     {
         "fields": {
@@ -3703,7 +3669,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4283
+        "pk": 4961
     },
     {
         "fields": {
@@ -3720,7 +3686,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4284
+        "pk": 4962
     },
     {
         "fields": {
@@ -3737,7 +3703,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4285
+        "pk": 4963
     },
     {
         "fields": {
@@ -3754,7 +3720,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4286
+        "pk": 4964
     },
     {
         "fields": {
@@ -3771,7 +3737,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4287
+        "pk": 4965
     },
     {
         "fields": {
@@ -3788,7 +3754,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4288
+        "pk": 4966
     },
     {
         "fields": {
@@ -3805,7 +3771,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4289
+        "pk": 4967
     },
     {
         "fields": {
@@ -3822,7 +3788,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4290
+        "pk": 4968
     },
     {
         "fields": {
@@ -3839,7 +3805,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4291
+        "pk": 4969
     },
     {
         "fields": {
@@ -3856,7 +3822,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4292
+        "pk": 4970
     },
     {
         "fields": {
@@ -3873,7 +3839,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4293
+        "pk": 4971
     },
     {
         "fields": {
@@ -3890,7 +3856,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4294
+        "pk": 4972
     },
     {
         "fields": {
@@ -3907,7 +3873,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4295
+        "pk": 4973
     },
     {
         "fields": {
@@ -3924,7 +3890,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4296
+        "pk": 4974
     },
     {
         "fields": {
@@ -3941,7 +3907,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4297
+        "pk": 4975
     },
     {
         "fields": {
@@ -3958,7 +3924,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4298
+        "pk": 4976
     },
     {
         "fields": {
@@ -3975,7 +3941,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4299
+        "pk": 4977
     },
     {
         "fields": {
@@ -3992,7 +3958,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4300
+        "pk": 4978
     },
     {
         "fields": {
@@ -4009,7 +3975,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4301
+        "pk": 4979
     },
     {
         "fields": {
@@ -4026,7 +3992,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4302
+        "pk": 4980
     },
     {
         "fields": {
@@ -4043,7 +4009,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4303
+        "pk": 4981
     },
     {
         "fields": {
@@ -4060,7 +4026,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4304
+        "pk": 4982
     },
     {
         "fields": {
@@ -4077,7 +4043,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4305
+        "pk": 4983
     },
     {
         "fields": {
@@ -4094,7 +4060,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4306
+        "pk": 4984
     },
     {
         "fields": {
@@ -4111,7 +4077,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4307
+        "pk": 4985
     },
     {
         "fields": {
@@ -4128,7 +4094,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4308
+        "pk": 4986
     },
     {
         "fields": {
@@ -4145,7 +4111,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4309
+        "pk": 4987
     },
     {
         "fields": {
@@ -4162,7 +4128,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4310
+        "pk": 4988
     },
     {
         "fields": {
@@ -4179,7 +4145,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4311
+        "pk": 4989
     },
     {
         "fields": {
@@ -4196,7 +4162,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4312
+        "pk": 4990
     },
     {
         "fields": {
@@ -4213,7 +4179,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4313
+        "pk": 4991
     },
     {
         "fields": {
@@ -4230,7 +4196,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4314
+        "pk": 4992
     },
     {
         "fields": {
@@ -4247,7 +4213,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4315
+        "pk": 4993
     },
     {
         "fields": {
@@ -4264,7 +4230,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4316
+        "pk": 4994
     },
     {
         "fields": {
@@ -4281,7 +4247,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4317
+        "pk": 4995
     },
     {
         "fields": {
@@ -4298,7 +4264,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4318
+        "pk": 4996
     },
     {
         "fields": {
@@ -4315,7 +4281,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4319
+        "pk": 4997
     },
     {
         "fields": {
@@ -4332,7 +4298,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4320
+        "pk": 4998
     },
     {
         "fields": {
@@ -4349,7 +4315,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4321
+        "pk": 4999
     },
     {
         "fields": {
@@ -4366,7 +4332,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4322
+        "pk": 5000
     },
     {
         "fields": {
@@ -4383,7 +4349,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4323
+        "pk": 5001
     },
     {
         "fields": {
@@ -4400,7 +4366,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4324
+        "pk": 5002
     },
     {
         "fields": {
@@ -4417,7 +4383,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4325
+        "pk": 5003
     },
     {
         "fields": {
@@ -4434,7 +4400,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4326
+        "pk": 5004
     },
     {
         "fields": {
@@ -4451,7 +4417,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4327
+        "pk": 5005
     },
     {
         "fields": {
@@ -4468,7 +4434,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4328
+        "pk": 5006
     },
     {
         "fields": {
@@ -4485,7 +4451,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4329
+        "pk": 5007
     },
     {
         "fields": {
@@ -4502,7 +4468,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4330
+        "pk": 5008
     },
     {
         "fields": {
@@ -4519,7 +4485,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4331
+        "pk": 5009
     },
     {
         "fields": {
@@ -4536,7 +4502,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4332
+        "pk": 5010
     },
     {
         "fields": {
@@ -4553,7 +4519,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4333
+        "pk": 5011
     },
     {
         "fields": {
@@ -4570,7 +4536,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4334
+        "pk": 5012
     },
     {
         "fields": {
@@ -4587,7 +4553,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4335
+        "pk": 5013
     },
     {
         "fields": {
@@ -4604,7 +4570,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4336
+        "pk": 5014
     },
     {
         "fields": {
@@ -4621,7 +4587,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4337
+        "pk": 5015
     },
     {
         "fields": {
@@ -4638,7 +4604,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4338
+        "pk": 5016
     },
     {
         "fields": {
@@ -4655,7 +4621,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4339
+        "pk": 5017
     },
     {
         "fields": {
@@ -4672,7 +4638,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4340
+        "pk": 5018
     },
     {
         "fields": {
@@ -4689,7 +4655,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4341
+        "pk": 5019
     },
     {
         "fields": {
@@ -4706,7 +4672,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4342
+        "pk": 5020
     },
     {
         "fields": {
@@ -4723,7 +4689,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4343
+        "pk": 5021
     },
     {
         "fields": {
@@ -4740,7 +4706,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4344
+        "pk": 5022
     },
     {
         "fields": {
@@ -4757,7 +4723,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4345
+        "pk": 5023
     },
     {
         "fields": {
@@ -4774,7 +4740,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4346
+        "pk": 5024
     },
     {
         "fields": {
@@ -4791,7 +4757,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4347
+        "pk": 5025
     },
     {
         "fields": {
@@ -4808,7 +4774,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4348
+        "pk": 5026
     },
     {
         "fields": {
@@ -4825,7 +4791,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4349
+        "pk": 5027
     },
     {
         "fields": {
@@ -4842,7 +4808,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4350
+        "pk": 5028
     },
     {
         "fields": {
@@ -4859,7 +4825,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4351
+        "pk": 5029
     },
     {
         "fields": {
@@ -4876,7 +4842,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4352
+        "pk": 5030
     },
     {
         "fields": {
@@ -4893,7 +4859,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4353
+        "pk": 5031
     },
     {
         "fields": {
@@ -4910,7 +4876,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4354
+        "pk": 5032
     },
     {
         "fields": {
@@ -4927,7 +4893,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4355
+        "pk": 5033
     },
     {
         "fields": {
@@ -4944,7 +4910,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4356
+        "pk": 5034
     },
     {
         "fields": {
@@ -4961,7 +4927,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4357
+        "pk": 5035
     },
     {
         "fields": {
@@ -4978,7 +4944,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4358
+        "pk": 5036
     },
     {
         "fields": {
@@ -4995,7 +4961,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4359
+        "pk": 5037
     },
     {
         "fields": {
@@ -5012,7 +4978,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4360
+        "pk": 5038
     },
     {
         "fields": {
@@ -5029,7 +4995,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4361
+        "pk": 5039
     },
     {
         "fields": {
@@ -5046,7 +5012,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4362
+        "pk": 5040
     },
     {
         "fields": {
@@ -5063,7 +5029,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4363
+        "pk": 5041
     },
     {
         "fields": {
@@ -5080,7 +5046,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4364
+        "pk": 5042
     },
     {
         "fields": {
@@ -5097,7 +5063,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4365
+        "pk": 5043
     },
     {
         "fields": {
@@ -5114,7 +5080,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4366
+        "pk": 5044
     },
     {
         "fields": {
@@ -5131,7 +5097,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4367
+        "pk": 5045
     },
     {
         "fields": {
@@ -5148,7 +5114,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4368
+        "pk": 5046
     },
     {
         "fields": {
@@ -5165,7 +5131,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4369
+        "pk": 5047
     },
     {
         "fields": {
@@ -5182,7 +5148,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4370
+        "pk": 5048
     },
     {
         "fields": {
@@ -5199,7 +5165,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4371
+        "pk": 5049
     },
     {
         "fields": {
@@ -5216,7 +5182,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4372
+        "pk": 5050
     },
     {
         "fields": {
@@ -5233,7 +5199,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4373
+        "pk": 5051
     },
     {
         "fields": {
@@ -5250,7 +5216,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4374
+        "pk": 5052
     },
     {
         "fields": {
@@ -5267,7 +5233,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4375
+        "pk": 5053
     },
     {
         "fields": {
@@ -5284,7 +5250,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4376
+        "pk": 5054
     },
     {
         "fields": {
@@ -5301,7 +5267,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4377
+        "pk": 5055
     },
     {
         "fields": {
@@ -5318,7 +5284,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4378
+        "pk": 5056
     },
     {
         "fields": {
@@ -5335,7 +5301,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4379
+        "pk": 5057
     },
     {
         "fields": {
@@ -5352,7 +5318,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4380
+        "pk": 5058
     },
     {
         "fields": {
@@ -5369,7 +5335,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4381
+        "pk": 5059
     },
     {
         "fields": {
@@ -5386,7 +5352,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4382
+        "pk": 5060
     },
     {
         "fields": {
@@ -5403,7 +5369,24 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4383
+        "pk": 5061
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2000,
+            "description": "Any 2000-level psychology elective",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Psychology Elective",
+            "prefix": "PSYC",
+            "spring": 1,
+            "summer": 1
+        },
+        "model": "database.course",
+        "pk": 5063
     },
     {
         "fields": {
@@ -5420,7 +5403,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4386
+        "pk": 5064
     },
     {
         "fields": {
@@ -5437,7 +5420,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4387
+        "pk": 5065
     },
     {
         "fields": {
@@ -5454,7 +5437,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4388
+        "pk": 5066
     },
     {
         "fields": {
@@ -5471,7 +5454,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4389
+        "pk": 5067
     },
     {
         "fields": {
@@ -5488,7 +5471,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4390
+        "pk": 5068
     },
     {
         "fields": {
@@ -5505,7 +5488,24 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4391
+        "pk": 5069
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2800,
+            "description": "An introduction to psychology as applied to sport; the topics covered include history of sport behavior, principles of learning and their application, anxiety and arousal, motivation, leadership, cohesion, audience effects, aggression, personality assessment, female athletes, youth in sport, coach behavior, and physical activity for all.",
+            "fall": 1,
+            "major_retrictive": 0,
+            "name": "Introduction To Sports Psychology",
+            "prefix": "PSYC",
+            "spring": 0,
+            "summer": 0
+        },
+        "model": "database.course",
+        "pk": 5062
     },
     {
         "fields": {
@@ -5522,7 +5522,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4392
+        "pk": 5070
     },
     {
         "fields": {
@@ -5539,7 +5539,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4393
+        "pk": 5071
     },
     {
         "fields": {
@@ -5556,7 +5556,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4394
+        "pk": 5072
     },
     {
         "fields": {
@@ -5573,7 +5573,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4395
+        "pk": 5073
     },
     {
         "fields": {
@@ -5590,7 +5590,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4396
+        "pk": 5074
     },
     {
         "fields": {
@@ -5607,7 +5607,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4397
+        "pk": 5075
     },
     {
         "fields": {
@@ -5624,7 +5624,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4398
+        "pk": 5076
     },
     {
         "fields": {
@@ -5641,7 +5641,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4399
+        "pk": 5077
     },
     {
         "fields": {
@@ -5658,7 +5658,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4400
+        "pk": 5078
     },
     {
         "fields": {
@@ -5675,7 +5675,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4401
+        "pk": 5079
     },
     {
         "fields": {
@@ -5692,7 +5692,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4402
+        "pk": 5080
     },
     {
         "fields": {
@@ -5709,7 +5709,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4403
+        "pk": 5081
     },
     {
         "fields": {
@@ -5726,7 +5726,7 @@
             "summer": 1
         },
         "model": "database.course",
-        "pk": 4404
+        "pk": 5082
     },
     {
         "fields": {
@@ -5743,7 +5743,7 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4405
+        "pk": 5083
     },
     {
         "fields": {
@@ -5760,6 +5760,6 @@
             "summer": 0
         },
         "model": "database.course",
-        "pk": 4406
+        "pk": 5084
     }
 ]

@@ -1,9 +1,7 @@
-{% if messages %}
-  {% for message in messages %}
+{% if success %}
     <div>
-      <strong>{{message|safe}}</strong>
+      <strong>{{success}}</strong>
     </div>
-  {% endfor %}
 {% else %}
 {{order}}
 <form method="post" enctype="multipart/form-data">
