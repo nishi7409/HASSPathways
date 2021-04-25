@@ -3,8 +3,32 @@
 <template>
   <div>
     <ProgressBar/>
-    
-    <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
+        <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel pt-15" v-if= "this.$store.editingCourses == true">
+        <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
+          
+          <v-expansion-panel-header color="#c65353" id="expansion-header">
+            {{ path.pathName }}
+            <template v-slot:actions>
+              <v-icon color="white">$expand</v-icon>
+            </template>
+          </v-expansion-panel-header>
+
+          <v-expansion-panel-content>
+            <v-card flat color="#dcdcdc">
+              <v-card-text class="mt-4">{{ path.pathDescript }}</v-card-text>
+            </v-card>
+
+            <FirstCourses @nextBucket="moveToNextBucket" v-if="courseNumber=='first'" :path="path"/>
+            <SecondCourses @nextBucket="moveToNextBucket" v-else-if="courseNumber=='second'" :path="path"/>
+            <ThirdCourses v-else-if="courseNumber=='third'" :path="path"/>
+          </v-expansion-panel-content>
+          <v-divider color="white"></v-divider>
+
+        </v-expansion-panel>
+        
+      </v-expansion-panels>
+
+    <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto" v-if= "this.$store.editingCourses != true">
       <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
         
         <v-expansion-panel-header color="#c65353" id="expansion-header">
@@ -66,7 +90,7 @@ export default {
     }
   },
   methods: {
-    ...mapGetters(['thirdCourse',`secondCourse`,`firstCourse`]),
+    ...mapGetters(['course1',`course2`,`course3`]),
     ...mapMutations(['setSelectedPathway','saveButton', 'removePath']),
     pathwayExist(courseCombo){
       for (var i = 0; i < this.$store.getters.getOptions.length; i++) {
@@ -81,7 +105,6 @@ export default {
       return false
     },
     savePathway(){
-      console.log(localStorage.getItem('course1'))
       // If the third course has been chosen or not
       if (this.$store.getters.thirdCourse){
         // If the pathway already exists reject save

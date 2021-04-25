@@ -68,7 +68,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['setSelectedCourse1','setSelectedPathway']),
+    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'setSelectedPathway']),
     findAllCourses(path){
       var courses = []
       for (var x = 0; x<path.priority1.length; x++){
@@ -79,6 +79,10 @@ export default {
     selectCourse(course, path) {
       this.setSelectedPathway(path.pathName)
       this.setSelectedCourse1(course);
+      if (this.$store.editingCourses){
+        this.setSelectedCourse2(null);
+        this.setSelectedCourse3(null);
+      }
       console.log(course)
       this.$emit('nextBucket', this.nextBucketNumber)
       this.$root.$emit('makeSecondCourseEditable', true)

@@ -77,7 +77,7 @@ export default {
     clearProgress() {
       this.$root.$emit('resetProgress')
       this.$store.editingCourses = false
-      // location.reload()
+      location.reload()
     },
   },
   mounted() {

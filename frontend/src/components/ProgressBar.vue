@@ -66,7 +66,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'incrementCount']),
+    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'incrementCount', 'goToCourse']),
     clearProgress() {
       console.log("clear progress")
       this.setSelectedCourse1(null)
@@ -145,6 +145,9 @@ export default {
     }
   },
   mounted() {
+    this.$root.$on('editAtFirstCourse', () => {
+      this.goToCourse(1);
+    }),
     this.$root.$on('resetProgress', () => {
       this.clearProgress()
     }),

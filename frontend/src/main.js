@@ -47,7 +47,8 @@ const store = new Vuex.Store({
     // we just copy application states as the user saves them
     shoppingCart: {
       options: []
-    }
+    },
+    current: 1
   },
   plugins: [createPersistedState()],
   mutations: {

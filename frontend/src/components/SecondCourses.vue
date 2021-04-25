@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     ...mapGetters(['firstCourse','secondCourse']),
-    ...mapMutations(['setSelectedCourse2']),
+    ...mapMutations(['setSelectedCourse2', 'setSelectedCourse3']),
     findAllCourses(path){
       var courses = []
       for (var x = 0; x<path.priority2.length; x++){
@@ -80,6 +80,9 @@ export default {
         });
       }else{
         this.setSelectedCourse2(course);
+        if (this.$store.editingCourses){
+          this.setSelectedCourse3(null);
+        }
         console.log(course)
         this.$emit('nextBucket', this.nextBucketNumber)
         this.$root.$emit('makeThirdCourseEditable', true)

@@ -45,7 +45,7 @@
             Pathway
           </span>
           <p class="headline font-weight-black"> 
-            {{ currentCourse.pathway.name }}
+            {{ currentCourse.pathway }}
           </p>
         </div>
 
@@ -183,6 +183,7 @@ export default {
       }
     },
     makeCoursesEditable() {
+      this.$root.$emit('editAtFirstCourse')
       this.$store.editingCourses = true
       this.$store.targetEditIndex = this.i
       this.$root.$emit('makeFirstCourseEditable', true)
