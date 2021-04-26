@@ -19,7 +19,8 @@
             <p class="pa-1" style="float:right"></p>
             <v-chip v-if="course.fields.CI" style="float:right" small color="green"  text-color="black">Comm Intensive</v-chip>
             <p class="pa-1" style="float:right"></p>
-            <v-chip v-if="course.fields.DI" style="float:right" small color="green"  text-color="black">DI</v-chip></v-list-item-title>
+            <v-chip v-if="course.fields.DI" style="float:right" small color="green"  text-color="black">DI</v-chip>
+            </v-list-item-title>
 
           </v-list-item-content>
         </template>
@@ -54,8 +55,7 @@
 <script>
 
 import { mapMutations } from 'vuex'
-import cJson from '../../../JSONfiles/courses.json'
-
+import cJson from './courses.json'
 
 export default {
   props: ['path'],
