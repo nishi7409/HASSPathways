@@ -47,7 +47,8 @@ const store = new Vuex.Store({
     // we just copy application states as the user saves them
     shoppingCart: {
       options: []
-    }
+    },
+    current: 1
   },
   plugins: [createPersistedState()],
   mutations: {
@@ -82,39 +83,35 @@ const store = new Vuex.Store({
         state.currentSelection.course3 = localStorage.getItem('course3')
       }
     },
-    test(){
-      alert('hi')
-    },
     setSelectedPathway(state, pathwayID) {
       state.currentSelection.pathway = pathwayID;
 
       // save in localStorage
       localStorage.setItem('pathway', pathwayID)
     },
-    setSelectedCourse1(state, courseName) {
-      state.currentSelection.course1 = courseName;
+    setSelectedCourse1(state, course) {
+      state.currentSelection.course1 = course;
 
       // save in localStorage
-      localStorage.setItem('course1', courseName)
+      localStorage.setItem('course1',  JSON.stringify(course))
     
     },
-    setSelectedCourse2(state, courseName) {
-      state.currentSelection.course2 = courseName;
-
+    setSelectedCourse2(state, course) {
+      state.currentSelection.course2 = course;
       // save in localStorage
-      localStorage.setItem('course2', courseName)
+      localStorage.setItem('course2',  JSON.stringify(course))
     },
-    setSelectedCourse3(state, courseName) {
-       state.currentSelection.course3 = courseName;
+    setSelectedCourse3(state, course) {
+       state.currentSelection.course3 = course;
 
       // save in localStorage
-      localStorage.setItem('course3', courseName)
+      localStorage.setItem('course3',  JSON.stringify(course))
+      console.log(localStorage.getItem('course3'))
     },
     saveButton(state) {
       console.log("Saved button")
-      state.shoppingCart.options[state.count] = [state.currentSelection.pathway, localStorage.getItem('course1'), localStorage.getItem('course2'), localStorage.getItem('course3')];
+      state.shoppingCart.options[state.count] = [state.currentSelection.pathway, JSON.parse(localStorage.getItem('course1')), JSON.parse(localStorage.getItem('course2')), JSON.parse(localStorage.getItem('course3'))];
       state.count += 1;
-      console.log(state.shoppingCart.options.length)
       state.currentSelection.pathway = null;
       state.currentSelection.course1 = null
       state.currentSelection.course2 = null;

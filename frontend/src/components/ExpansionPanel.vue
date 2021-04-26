@@ -3,12 +3,36 @@
 <template>
   <div>
     <ProgressBar/>
-    
-    <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto">
+        <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel pt-15" v-if= "this.$store.editingCourses == true">
+        <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
+          
+          <v-expansion-panel-header color="#c65353" id="expansion-header">
+            {{ path.pathName }}
+            <template v-slot:actions>
+              <v-icon color="white">$expand</v-icon>
+            </template>
+          </v-expansion-panel-header>
+
+          <v-expansion-panel-content>
+            <v-card flat color="#dcdcdc">
+              <v-card-text class="mt-4">{{ path.pathDescript }}</v-card-text>
+            </v-card>
+
+            <FirstCourses @nextBucket="moveToNextBucket" v-if="courseNumber=='first'" :path="path"/>
+            <SecondCourses @nextBucket="moveToNextBucket" v-else-if="courseNumber=='second'" :path="path"/>
+            <ThirdCourses v-else-if="courseNumber=='third'" :path="path"/>
+          </v-expansion-panel-content>
+          <v-divider color="white"></v-divider>
+
+        </v-expansion-panel>
+        
+      </v-expansion-panels>
+
+    <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto" v-if= "this.$store.editingCourses != true">
       <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
         
         <v-expansion-panel-header color="#c65353" id="expansion-header">
-          {{ path.name }}
+          {{ path.pathName }}
           <template v-slot:actions>
             <v-icon color="white">$expand</v-icon>
           </template>
@@ -16,14 +40,13 @@
 
         <v-expansion-panel-content>
           <v-card flat color="#dcdcdc">
-            <v-card-text class="mt-4">{{ path.pathDescription }}</v-card-text>
+            <v-card-text class="mt-4">{{ path.pathDescript }}</v-card-text>
           </v-card>
 
           <FirstCourses @nextBucket="moveToNextBucket" v-if="courseNumber=='first'" :path="path"/>
           <SecondCourses @nextBucket="moveToNextBucket" v-else-if="courseNumber=='second'" :path="path"/>
           <ThirdCourses v-else-if="courseNumber=='third'" :path="path"/>
         </v-expansion-panel-content>
-
         <v-divider color="white"></v-divider>
 
       </v-expansion-panel>
@@ -45,6 +68,8 @@ import ProgressBar from './ProgressBar.vue'
 import FirstCourses from './FirstCourses'
 import SecondCourses from './SecondCourses'
 import ThirdCourses from './ThirdCourses'
+import pJson from '../../../JSONfiles/pathways.json'
+import cJson from '../../../JSONfiles/courses.json'
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
@@ -56,23 +81,8 @@ export default {
   },
   data() {
     return {
-      pathways: [
-        { name: 'Artificial Intelligence', pathDescription: "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.", Courses: ["Minds and Machines", "AI and Society", "Are Humans Rational?"], secondCourses: ["Introduction to Cognitive Science"], thirdCourses: ["Cognitive Modeling, Programming for Cognitive Science and AI", "Game AI", "Intelligent Virtual Agents", "Language Endowed Intelligent Agents", "Learning and Advanced Game AI"] },
-        { name: 'Chinese Language', pathDescription: "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.", Courses: ["AI and Society", "2", "3", "4"], secondCourses: ["Introduction to Cognitive Science"] },
-        { name: 'History', pathDescription: "The pathway in History is designed for students interested in US and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.", Courses: ["AI and Society", "2", "3", "4"], secondCourses: ["1"] },
-        { name: 'Creative Design and Innovation', pathDescription: "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.", Courses: ["1", "2", "3", "4"] },
-        { name: 'Arts History, Theory, and Criticism' },
-        { name: 'Behavioral and Cognitive Neuroscience' },
-        { name: 'Design, Innovation, and Society' },
-        { name: 'Economics' },
-        { name: 'Economics of Banking & Finance' },
-        { name: 'Other' },
-        { name: 'Other' },
-        { name: 'Other' },
-        { name: 'Other' },
-        { name: 'Other' },
-        { name: 'Other' }
-      ],
+      pathways: pJson,
+      coursesJson: cJson,
       courseNumber: 'first',
       savedCourses: [],
       filter: '',
@@ -80,13 +90,13 @@ export default {
     }
   },
   methods: {
-    ...mapGetters(['thirdCourse',`secondCourse`,`firstCourse`]),
+    ...mapGetters(['course1',`course2`,`course3`]),
     ...mapMutations(['setSelectedPathway','saveButton', 'removePath']),
     pathwayExist(courseCombo){
       for (var i = 0; i < this.$store.getters.getOptions.length; i++) {
-        if (this.$store.getters.getOptions[i][1] == courseCombo[0] &&
-          this.$store.getters.getOptions[i][2] == courseCombo[1] &&
-          this.$store.getters.getOptions[i][3] == courseCombo[2]) {
+        if (this.$store.getters.getOptions[i][1] == courseCombo[0].fields.name &&
+          this.$store.getters.getOptions[i][2] == courseCombo[1].fields.name &&
+          this.$store.getters.getOptions[i][3] == courseCombo[2].fields.name) {
             console.log("exists")
             return true
         }
@@ -95,7 +105,6 @@ export default {
       return false
     },
     savePathway(){
-      console.log(localStorage.getItem('course1'))
       // If the third course has been chosen or not
       if (this.$store.getters.thirdCourse){
         // If the pathway already exists reject save
@@ -145,8 +154,9 @@ export default {
       this.$root.$emit(`closePanels`)
     },
     selectPathway(path) {
-      console.log(path.name)
-      this.setSelectedPathway(path)
+      
+      this.setSelectedPathway(path.pathName)
+      console.log(this.$store.getters.pathway)
     },
     moveToNextBucket(course) {
       this.courseNumber = course
@@ -174,47 +184,21 @@ export default {
   computed: {
     ...mapGetters(['pathway', 'firstCourse', 'secondCourse', 'thirdCourse']),
     filteredPathways() {
-      var items = this.pathways
+      var pathwayObj = this.pathways
+      //var allCourses = this.coursesJson
       var result = []
-
-      for (var key in items) {
-        var item = items[key]
-        var courses = item.Courses
-        var secondCourses = item.secondCourses
-
-        if (courses != null) {
-          for (var i = 0; i < courses.length; i++) {
-            var course = courses[i]          
-            if (course == this.filter) {
-              result[key] = item
-            }
+      //Loop through pathway objects
+      for (var modelKey in pathwayObj) {
+        if (this.courseNumber != "first"){
+          if (pathwayObj[modelKey].fields.pathName == this.$store.getters.pathway){
+            result[0] = pathwayObj[modelKey].fields
           }
-        }
-
-        if (courses != null) {
-          for (i = 0; i < courses.length; i++) {
-            course = courses[i]
-            if (course == this.$store.getters.firstCourse) {
-              result[key] = item
-            }
-          }
-        }
-
-        if (secondCourses != null) {
-          for (i = 0; i < secondCourses.length; i++) {
-            course = secondCourses[i]
-            if (course == this.$store.getters.secondCourse) {
-              result[key] = item
-            }
-          }
+        }else{
+          var model = pathwayObj[modelKey].fields
+          result[modelKey] = model 
         }
       }
-
-      if (result.length != 0) {
-        return result
-      }
-
-      return items
+    return result
     },
     bucketNumber() {
       if (this.$store.getters.firstCourse != null) {

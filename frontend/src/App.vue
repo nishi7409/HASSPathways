@@ -10,7 +10,7 @@
 
             <!-- TITLE -->
             <v-flex md1 sm11 xs11>
-              <router-link to="/home">
+              <router-link to="">
                 <v-img class="pl-6 pr-8 ml-4" @click="clearProgress()" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
               </router-link>
             </v-flex>
@@ -32,17 +32,17 @@
       <router-view></router-view>
     </v-content>
     
-    <!-- FOOTER -->
+    <!-- FOOTER
     <v-footer app>
 
       <v-layout column>
         <div>
 
-          We love feedback!
+          We love feedback! Come visit our 
           <a href="https://github.com/nishi7409/HASSPathways/issues" target="_blank" style="text-decoration: none">
 
             <span style="color: #c65353">
-              Github Repo
+              Github Repository
               <i style="color: #c65353" class="fab fa-github"></i>
             </span>
 
@@ -55,7 +55,7 @@
 
       <div>HASS Pathways &copy; {{ new Date().getFullYear() }}</div>
 
-    </v-footer>
+    </v-footer> -->
 
   </v-app>
 
@@ -67,7 +67,6 @@ export default {
   name: 'App',
   data: () => ({
     deleteClicked: false,
-    items: ['Minds and Machines', 'AI and Society', 'Are Humans Rational?', 'Chinese 1', 'Chinese 2', 'Chinese 3', 'Chinese 4', 'etc'],
     searchInput: "",
     extension: ""
   }),
@@ -78,7 +77,7 @@ export default {
     clearProgress() {
       this.$root.$emit('resetProgress')
       this.$store.editingCourses = false
-      // location.reload()
+      location.reload()
     },
   },
   mounted() {

@@ -66,7 +66,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'incrementCount']),
+    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'incrementCount', 'goToCourse']),
     clearProgress() {
       console.log("clear progress")
       this.setSelectedCourse1(null)
@@ -114,9 +114,9 @@ export default {
     },
     coursesList() {
       return {
-        firstCourse: this.firstCourse ? this.firstCourse : "No Course Selected",
-        secondCourse: this.secondCourse ? this.secondCourse : "No Course Selected",
-        thirdCourse: this.thirdCourse ? this.thirdCourse : "No Course Selected"
+        firstCourse: this.firstCourse ? this.firstCourse.fields.name : "No Course Selected",
+        secondCourse: this.secondCourse ? this.secondCourse.fields.name : "No Course Selected",
+        thirdCourse: this.thirdCourse ? this.thirdCourse.fields.name : "No Course Selected"
       }
     },
     secondEditable() {
@@ -145,6 +145,9 @@ export default {
     }
   },
   mounted() {
+    this.$root.$on('editAtFirstCourse', () => {
+      this.goToCourse(1);
+    }),
     this.$root.$on('resetProgress', () => {
       this.clearProgress()
     }),
