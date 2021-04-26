@@ -15,11 +15,13 @@
           <v-list-item-content>
             
             <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name +" "}}
-            <v-chip v-if="course.fields.HI" style="float:right"  small color="green"  text-color="black">Hass Inquiry</v-chip>
-            <p class="pa-1" style="float:right"></p>
-            <v-chip v-if="course.fields.CI" style="float:right" small color="green"  text-color="black">Comm Intensive</v-chip>
-            <p class="pa-1" style="float:right"></p>
-            <v-chip v-if="course.fields.DI" style="float:right" small color="green"  text-color="black">DI</v-chip>
+            <v-chip v-if="course.fields.major_restrictive" medium color="red" class="mr-2" text-color="white">Major Restricted</v-chip>
+            <v-chip v-if="course.fields.CI" style="float:right"  medium color="black" class="mr-2" text-color="white">Communication Intensive</v-chip>
+            <v-chip v-if="course.fields.HI" style="float:right" medium color="#87AEE8" class="mr-2" text-color="#000000">HASS Inquiry</v-chip>
+            <v-chip v-if="course.fields.DI" style="float:right" medium color="#ff63bc" class="mr-2" text-color="black">Data Intensive</v-chip>
+            <v-chip v-if="course.fields.fall" style="float:right" medium color="#ff8247" class="mr-2" text-color="black">Fall</v-chip>
+            <v-chip v-if="course.fields.spring" style="float:right" medium color="#54ff7c" class="mr-2" text-color="black">Spring</v-chip>
+            <v-chip v-if="course.fields.summer" style="float:right" medium color="#ffeb54" class="mr-2" text-color="black">Summer</v-chip>
             </v-list-item-title>
 
           </v-list-item-content>
@@ -68,7 +70,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['setSelectedCourse1','setSelectedPathway']),
+    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'setSelectedPathway']),
     findAllCourses(path){
       var courses = []
       for (var x = 0; x<path.priority1.length; x++){
@@ -79,6 +81,10 @@ export default {
     selectCourse(course, path) {
       this.setSelectedPathway(path.pathName)
       this.setSelectedCourse1(course);
+      if (this.$store.editingCourses){
+        this.setSelectedCourse2(null);
+        this.setSelectedCourse3(null);
+      }
       console.log(course)
       this.$emit('nextBucket', this.nextBucketNumber)
       this.$root.$emit('makeSecondCourseEditable', true)

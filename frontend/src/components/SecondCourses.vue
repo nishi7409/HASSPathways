@@ -12,7 +12,15 @@
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
           <v-list-item-content>
-            <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name }}</v-list-item-title>
+            <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name +" "}}
+            <v-chip v-if="course.fields.major_restrictive" medium color="red" class="mr-2" text-color="white">Major Restricted</v-chip>
+            <v-chip v-if="course.fields.CI" style="float:right"  medium color="black" class="mr-2" text-color="white">Communication Intensive</v-chip>
+            <v-chip v-if="course.fields.HI" style="float:right" medium color="#87AEE8" class="mr-2" text-color="#000000">HASS Inquiry</v-chip>
+            <v-chip v-if="course.fields.DI" style="float:right" medium color="#ff63bc" class="mr-2" text-color="black">Data Intensive</v-chip>
+            <v-chip v-if="course.fields.fall" style="float:right" medium color="#ff8247" class="mr-2" text-color="black">Fall</v-chip>
+            <v-chip v-if="course.fields.spring" style="float:right" medium color="#54ff7c" class="mr-2" text-color="black">Spring</v-chip>
+            <v-chip v-if="course.fields.summer" style="float:right" medium color="#ffeb54" class="mr-2" text-color="black">Summer</v-chip>
+            </v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -59,7 +67,7 @@ export default {
   },
   methods: {
     ...mapGetters(['firstCourse','secondCourse']),
-    ...mapMutations(['setSelectedCourse2']),
+    ...mapMutations(['setSelectedCourse2', 'setSelectedCourse3']),
     findAllCourses(path){
       var courses = []
       for (var x = 0; x<path.priority2.length; x++){
@@ -80,6 +88,9 @@ export default {
         });
       }else{
         this.setSelectedCourse2(course);
+        if (this.$store.editingCourses){
+          this.setSelectedCourse3(null);
+        }
         console.log(course)
         this.$emit('nextBucket', this.nextBucketNumber)
         this.$root.$emit('makeThirdCourseEditable', true)
