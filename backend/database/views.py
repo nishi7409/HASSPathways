@@ -13,6 +13,7 @@ from django.contrib.auth import logout as django_logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+import os
 from django import forms
 import json as simplejson
 import requests
@@ -139,14 +140,15 @@ def _upload(request):
 
     data = Course.objects.all()
     data = serializers.serialize("json", data)
-    courseDataFile = open('CourseData.json', 'w')
+    root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/../JSONfiles/"
+    courseDataFile = open(root_folder_jsonfiles+"courses.json", 'w')
     courseDataFile.truncate()
     courseDataFile.write(json.dumps(json.loads(data), indent=4, sort_keys=True))
     courseDataFile.close()
 
     data = Pathway.objects.all()
     data = serializers.serialize("json", data)
-    pathwayDataFile = open('PathwayData.json', 'w')
+    pathwayDataFile = open(root_folder_jsonfiles+"pathways.json", 'w')
     pathwayDataFile.truncate()
     pathwayDataFile.write(json.dumps(json.loads(data), indent=4, sort_keys=True))
     pathwayDataFile.close()
