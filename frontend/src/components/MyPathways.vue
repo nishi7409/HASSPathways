@@ -164,7 +164,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'clear', 'removePath']),
+    ...mapMutations(['setSelectedPathway','setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'clear', 'removePath']),
     goToNextPathway() {
       if (this.i == this.getOptions.length - 1) {
         this.i = 0
@@ -199,6 +199,7 @@ export default {
       this.$root.$emit('makeFirstCourseEditable', true)
       this.$root.$emit('makeSecondCourseEditable', true)
       this.$root.$emit('makeThirdCourseEditable', true)
+      this.setSelectedPathway(this.getOptions[this.i][0])
       this.setSelectedCourse1(this.getOptions[this.i][1])
       this.setSelectedCourse2(this.getOptions[this.i][2])
       this.setSelectedCourse3(this.getOptions[this.i][3])
