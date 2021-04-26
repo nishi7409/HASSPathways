@@ -10,7 +10,7 @@
 
             <!-- TITLE -->
             <v-flex md1 sm11 xs11>
-              <router-link to="/home">
+              <router-link to="">
                 <v-img class="pl-6 pr-8 ml-4" @click="clearProgress()" height=60 width=40 :src="require('./assets/logo.png')"></v-img>
               </router-link>
             </v-flex>
@@ -32,7 +32,7 @@
       <router-view></router-view>
     </v-content>
     
-    <!-- FOOTER -->
+    <!-- FOOTER
     <v-footer app>
 
       <v-layout column>
@@ -55,7 +55,7 @@
 
       <div>HASS Pathways &copy; {{ new Date().getFullYear() }}</div>
 
-    </v-footer>
+    </v-footer> -->
 
   </v-app>
 
