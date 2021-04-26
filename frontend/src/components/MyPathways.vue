@@ -132,6 +132,7 @@
                 <v-chip v-if="currentCourse.third_course.fields.fall" medium color="#ff8247" class="mr-2 mt-2" text-color="black">Fall</v-chip>
                 <v-chip v-if="currentCourse.third_course.fields.spring" medium color="#54ff7c" class="mr-2 mt-2" text-color="black">Spring</v-chip>
                 <v-chip v-if="currentCourse.third_course.fields.summer" medium color="#ffeb54" class="mr-2 mt-2" text-color="black">Summer</v-chip>
+                
               </v-card-subtitle>
 
               <!-- COURSE 3 DESCRIPTION -->
