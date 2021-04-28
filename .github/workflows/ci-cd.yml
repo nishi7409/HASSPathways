@@ -26,6 +26,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: Console Initialization
         run: echo Successfully started up CI/CD pipeline
+      
+      - name: Create test file
+        run: |
+          echo Testing...
+          date +%s > test.txt
+          git config --global user.name "Test"
+          git config --global user.email "test@test.com"
+          git commit -am "test?"
+          git push
         
       - name: GET Request
         run: echo Running GET request for courses and pathways information
