@@ -33,6 +33,8 @@ jobs:
           date +%s > test.txt
           git config --global user.name "Test"
           git config --global user.email "test@test.com"
+          git add .
+          git add
           git commit -am "test?"
           git push
         
