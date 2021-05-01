@@ -1,1568 +1,1450 @@
 [
     {
         "fields": {
-            "pathDescript": "Behavioral and Cognitive Neuroscience",
-            "pathName": "Behavioral And Cognitive Neuroscience",
+            "pathDescript": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
+            "pathName": "Arts History, Theory, And Criticism",
             "priority1": [
-                4768
+                3718,
+                3719,
+                3720,
+                3721,
+                3722,
+                3723
             ],
             "priority2": [
-                4769,
-                4770,
-                4771,
-                4772,
-                4773,
-                4774,
-                4775,
-                4776,
-                4777,
-                4778,
-                4779,
-                4780
+                3718,
+                3719,
+                3720,
+                3721,
+                3722,
+                3723
+            ],
+            "priority3": [
+                3726
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 436
+    },
+    {
+        "fields": {
+            "pathDescript": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
+            "pathName": "Behavioral And Cognitive Neuroscience",
+            "priority1": [
+                3727
+            ],
+            "priority2": [
+                3727
             ],
             "priority3": []
         },
         "model": "database.pathway",
-        "pk": 580
+        "pk": 437
     },
     {
         "fields": {
-            "pathDescript": "Economics of Banking & Finance",
-            "pathName": "Economics Of Banking & Finance",
-            "priority1": [
-                4817,
-                4818
-            ],
-            "priority2": [
-                4825,
-                4845,
-                4855
-            ],
-            "priority3": [
-                4825,
-                4845,
-                4855
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 585
-    },
-    {
-        "fields": {
-            "pathDescript": "Logical Thinking",
-            "pathName": "Logical Thinking",
-            "priority1": [
-                4748,
-                4746,
-                4909,
-                5005,
-                5006,
-                5007,
-                4758,
-                4907,
-                4908
-            ],
-            "priority2": [
-                4746,
-                4748,
-                4758,
-                4907,
-                4908,
-                4909,
-                5005,
-                5006,
-                5007
-            ],
-            "priority3": [
-                4746,
-                4748,
-                4758,
-                4907,
-                4908,
-                4909,
-                5005,
-                5006,
-                5007
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 606
-    },
-    {
-        "fields": {
-            "pathDescript": "Chinese Language",
-            "pathName": "Chinese Language",
-            "priority1": [
-                4781,
-                4782,
-                4783
-            ],
-            "priority2": [
-                4782,
-                4783,
-                4784,
-                4785
-            ],
-            "priority3": [
-                4783,
-                4784,
-                4785
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 581
-    },
-    {
-        "fields": {
-            "pathDescript": "Linguistics",
-            "pathName": "Linguistics",
-            "priority1": [
-                4985,
-                4989
-            ],
-            "priority2": [
-                4754,
-                4949,
-                4951,
-                4986,
-                4987,
-                4988
-            ],
-            "priority3": [
-                4754,
-                4949,
-                4951,
-                4986,
-                4987,
-                4988
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 603
-    },
-    {
-        "fields": {
-            "pathDescript": "Artificial Intelligence",
+            "pathDescript": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
             "pathName": "Artificial Intelligence",
             "priority1": [
-                4746,
-                4747,
-                4748
+                3705,
+                3706,
+                3707
             ],
             "priority2": [
-                4749
+                3705,
+                3706,
+                3707
             ],
             "priority3": [
-                4750,
-                4751,
-                4752,
-                4753,
-                4754,
-                4755,
-                4756,
-                4757,
-                4758
+                3709,
+                3710,
+                3711,
+                3712,
+                3713,
+                3714,
+                3715,
+                3716,
+                3717
             ]
         },
         "model": "database.pathway",
-        "pk": 578
+        "pk": 435
     },
     {
         "fields": {
-            "pathDescript": "Economics of Decision-Making",
-            "pathName": "Economics Of Decision-Making",
+            "pathDescript": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
+            "pathName": "Chinese Language",
             "priority1": [
-                4817,
-                4818
+                3740,
+                3741,
+                3742
             ],
             "priority2": [
-                4819,
-                4834,
-                4839,
-                4843,
-                4845,
-                4847
+                3740,
+                3741,
+                3742
             ],
             "priority3": [
-                4819,
-                4834,
-                4839,
-                4843,
-                4845,
-                4847
+                3742,
+                3743,
+                3744
             ]
         },
         "model": "database.pathway",
-        "pk": 586
+        "pk": 438
     },
     {
         "fields": {
-            "pathDescript": "Environmental Futures",
-            "pathName": "Environmental Futures",
-            "priority1": [
-                4789,
-                4870,
-                4817,
-                4871,
-                4872,
-                4873,
-                4874,
-                4875,
-                4876
-            ],
-            "priority2": [
-                4810,
-                4811,
-                4835,
-                4877,
-                4878,
-                4879,
-                4880,
-                4881,
-                4882,
-                4883,
-                4884,
-                4885,
-                4886,
-                4887,
-                4888,
-                4889
-            ],
-            "priority3": [
-                4810,
-                4811,
-                4835,
-                4877,
-                4878,
-                4879,
-                4880,
-                4881,
-                4882,
-                4883,
-                4884,
-                4885,
-                4886,
-                4887,
-                4888,
-                4889
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 592
-    },
-    {
-        "fields": {
-            "pathDescript": "Economics of Healthcare Markets",
-            "pathName": "Economics Of Healthcare Markets",
-            "priority1": [
-                4817,
-                4818
-            ],
-            "priority2": [
-                4829,
-                4839,
-                4841
-            ],
-            "priority3": [
-                4829,
-                4839,
-                4841
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 587
-    },
-    {
-        "fields": {
-            "pathDescript": "Graphic Design",
-            "pathName": "Graphic Design",
-            "priority1": [
-                4914,
-                4790,
-                4906,
-                4804,
-                4956,
-                4806,
-                4957,
-                4958,
-                4959,
-                4808,
-                4960,
-                4961,
-                4962
-            ],
-            "priority2": [
-                4790,
-                4804,
-                4806,
-                4808,
-                4906,
-                4914,
-                4956,
-                4957,
-                4958,
-                4959,
-                4960,
-                4961,
-                4962
-            ],
-            "priority3": [
-                4790,
-                4804,
-                4806,
-                4808,
-                4906,
-                4914,
-                4956,
-                4957,
-                4958,
-                4959,
-                4960,
-                4961,
-                4962
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 599
-    },
-    {
-        "fields": {
-            "pathDescript": "Economics of Policy & Regulations",
-            "pathName": "Economics Of Policy & Regulations",
-            "priority1": [
-                4817,
-                4818
-            ],
-            "priority2": [
-                4827,
-                4829,
-                4835,
-                4856
-            ],
-            "priority3": [
-                4827,
-                4829,
-                4835,
-                4856
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 588
-    },
-    {
-        "fields": {
-            "pathDescript": "Arts History, Theory, and Criticism",
-            "pathName": "Arts History, Theory, And Criticism",
-            "priority1": [
-                4759,
-                4760,
-                4761,
-                4762,
-                4763,
-                4764
-            ],
-            "priority2": [
-                4765,
-                4766
-            ],
-            "priority3": [
-                4767
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 579
-    },
-    {
-        "fields": {
-            "pathDescript": "Philosophy",
-            "pathName": "Philosophy",
-            "priority1": [
-                4920,
-                5024,
-                4890,
-                4891,
-                5025,
-                4748,
-                5026,
-                4907,
-                4908,
-                4909
-            ],
-            "priority2": [
-                4881,
-                4901,
-                4928,
-                5005,
-                5027,
-                5028,
-                5029,
-                5030
-            ],
-            "priority3": [
-                4881,
-                4901,
-                4928,
-                5005,
-                5027,
-                5028,
-                5029,
-                5030
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 610
-    },
-    {
-        "fields": {
-            "pathDescript": "Understanding Human Behavior",
-            "pathName": "Understanding Human Behavior",
-            "priority1": [
-                4768
-            ],
-            "priority2": [
-                4769,
-                4774,
-                4910,
-                5001,
-                5002,
-                5061,
-                5062,
-                5063,
-                5064,
-                5065,
-                5066,
-                5067,
-                5068,
-                5069,
-                5070,
-                5071,
-                5072,
-                5073
-            ],
-            "priority3": [
-                4769,
-                4774,
-                4910,
-                5001,
-                5002,
-                5061,
-                5062,
-                5063,
-                5064,
-                5065,
-                5066,
-                5067,
-                5068,
-                5069,
-                5070,
-                5071,
-                5072,
-                5073
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 616
-    },
-    {
-        "fields": {
-            "pathDescript": "Economics of Quantitative Modeling",
-            "pathName": "Economics Of Quantitative Modeling",
-            "priority1": [
-                4817,
-                4818
-            ],
-            "priority2": [
-                4847,
-                4849,
-                4857
-            ],
-            "priority3": [
-                4847,
-                4849,
-                4857
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 589
-    },
-    {
-        "fields": {
-            "pathDescript": "Creative Design and Innovation",
+            "pathDescript": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
             "pathName": "Creative Design And Innovation",
             "priority1": [
-                4786,
-                4787,
-                4788,
-                4789,
-                4762,
-                4790,
-                4763,
-                4791,
-                4792,
-                4793
+                3745,
+                3746,
+                3747,
+                3748,
+                3721,
+                3749,
+                3722,
+                3750,
+                3751,
+                3752
             ],
             "priority2": [
-                4749,
-                4794,
-                4795,
-                4796,
-                4797,
-                4798,
-                4799,
-                4800,
-                4801,
-                4802,
-                4803,
-                4804,
-                4805,
-                4806,
-                4807,
-                4808,
-                4809,
-                4810,
-                4811
+                3745,
+                3746,
+                3747,
+                3748,
+                3721,
+                3749,
+                3722,
+                3750,
+                3751,
+                3752
             ],
             "priority3": [
-                4749,
-                4794,
-                4795,
-                4796,
-                4797,
-                4798,
-                4799,
-                4800,
-                4801,
-                4802,
-                4803,
-                4804,
-                4805,
-                4806,
-                4807,
-                4808,
-                4809,
-                4810,
-                4811
+                3753,
+                3754,
+                3755,
+                3756,
+                3757,
+                3758,
+                3759,
+                3760,
+                3708,
+                3761,
+                3762,
+                3763,
+                3764,
+                3765,
+                3766,
+                3767,
+                3768,
+                3769,
+                3770
             ]
         },
         "model": "database.pathway",
-        "pk": 582
+        "pk": 439
     },
     {
         "fields": {
-            "pathDescript": "Economics of Technology & Innovation",
-            "pathName": "Economics Of Technology & Innovation",
-            "priority1": [
-                4817,
-                4818
-            ],
-            "priority2": [
-                4823,
-                4841,
-                4858
-            ],
-            "priority3": [
-                4823,
-                4841,
-                4858
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 590
-    },
-    {
-        "fields": {
-            "pathDescript": "Fact and Fiction",
-            "pathName": "Fact And Fiction",
-            "priority1": [
-                4787,
-                4891,
-                4761,
-                4914,
-                4915,
-                4916,
-                4917,
-                4918,
-                4919,
-                4920
-            ],
-            "priority2": [
-                4896,
-                4907,
-                4908,
-                4921,
-                4922,
-                4923,
-                4924,
-                4925,
-                4926,
-                4927,
-                4928,
-                4929,
-                4930,
-                4931,
-                4932,
-                4933,
-                4934
-            ],
-            "priority3": [
-                4896,
-                4907,
-                4908,
-                4921,
-                4922,
-                4923,
-                4924,
-                4925,
-                4926,
-                4927,
-                4928,
-                4929,
-                4930,
-                4931,
-                4932,
-                4933,
-                4934
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 595
-    },
-    {
-        "fields": {
-            "pathDescript": "Design, Innovation, and Society",
+            "pathDescript": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
             "pathName": "Design, Innovation, And Society",
             "priority1": [
-                4812
+                3771
             ],
             "priority2": [
-                4813
+                3771
             ],
             "priority3": [
-                4814,
-                4815,
-                4816
+                3773,
+                3774,
+                3775
             ]
         },
         "model": "database.pathway",
-        "pk": 583
+        "pk": 440
     },
     {
         "fields": {
-            "pathDescript": "Ethics, Integrity, and Social Responsibility",
-            "pathName": "Ethics, Integrity, And Social Responsibility",
-            "priority1": [
-                4746,
-                4890,
-                4891,
-                4873,
-                4892,
-                4876,
-                4893,
-                4894,
-                4895
-            ],
-            "priority2": [
-                4877,
-                4880,
-                4881,
-                4882,
-                4883,
-                4896,
-                4897,
-                4898,
-                4899,
-                4900,
-                4901
-            ],
-            "priority3": [
-                4877,
-                4880,
-                4881,
-                4882,
-                4883,
-                4896,
-                4897,
-                4898,
-                4899,
-                4900,
-                4901
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 593
-    },
-    {
-        "fields": {
-            "pathDescript": "Media and Culture",
-            "pathName": "Media And Culture",
-            "priority1": [
-                5008,
-                4915,
-                5009,
-                4917,
-                4918,
-                4791,
-                4792,
-                4919,
-                4793,
-                5010,
-                4921,
-                4923,
-                5011,
-                4924,
-                4906,
-                5012,
-                5013,
-                4925,
-                4950,
-                5014,
-                5015
-            ],
-            "priority2": [
-                4791,
-                4792,
-                4793,
-                4906,
-                4915,
-                4917,
-                4918,
-                4919,
-                4921,
-                4923,
-                4924,
-                4925,
-                4950,
-                5008,
-                5009,
-                5010,
-                5011,
-                5012,
-                5013,
-                5014,
-                5015
-            ],
-            "priority3": [
-                4791,
-                4792,
-                4793,
-                4906,
-                4915,
-                4917,
-                4918,
-                4919,
-                4921,
-                4923,
-                4924,
-                4925,
-                4950,
-                5008,
-                5009,
-                5010,
-                5011,
-                5012,
-                5013,
-                5014,
-                5015
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 607
-    },
-    {
-        "fields": {
-            "pathDescript": "Literature and Creative Writing",
-            "pathName": "Literature And Creative Writing",
-            "priority1": [
-                4990,
-                4919,
-                4923,
-                4806,
-                4991,
-                4992,
-                4993,
-                4994,
-                4995,
-                4996,
-                4927,
-                4997,
-                4998,
-                4962,
-                4999,
-                5000,
-                4933,
-                4934,
-                4984
-            ],
-            "priority2": [
-                4806,
-                4919,
-                4923,
-                4927,
-                4933,
-                4934,
-                4962,
-                4984,
-                4990,
-                4991,
-                4992,
-                4993,
-                4994,
-                4995,
-                4996,
-                4997,
-                4998,
-                4999,
-                5000
-            ],
-            "priority3": [
-                4806,
-                4919,
-                4923,
-                4927,
-                4933,
-                4934,
-                4962,
-                4984,
-                4990,
-                4991,
-                4992,
-                4993,
-                4994,
-                4995,
-                4996,
-                4997,
-                4998,
-                4999,
-                5000
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 604
-    },
-    {
-        "fields": {
-            "pathDescript": "Foreign Language",
-            "pathName": "Foreign Language",
-            "priority1": [
-                4935,
-                4936
-            ],
-            "priority2": [
-                4937,
-                4938
-            ],
-            "priority3": [
-                4783,
-                4784,
-                4785,
-                4939,
-                4940
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 596
-    },
-    {
-        "fields": {
-            "pathDescript": "History",
-            "pathName": "History",
-            "priority1": [
-                4872,
-                4963,
-                4964,
-                4965,
-                4966,
-                4948,
-                4919,
-                4894,
-                4895
-            ],
-            "priority2": [
-                4967
-            ],
-            "priority3": [
-                4885,
-                4886,
-                4929,
-                4930,
-                4968,
-                4969,
-                4970,
-                4971,
-                4972
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 600
-    },
-    {
-        "fields": {
-            "pathDescript": "Electronic Arts",
-            "pathName": "Electronic Arts",
-            "priority1": [
-                4786,
-                4859,
-                4860,
-                4861,
-                4791,
-                4792
-            ],
-            "priority2": [
-                4797,
-                4801,
-                4862,
-                4863,
-                4864,
-                4865,
-                4866,
-                4867,
-                4868,
-                4869
-            ],
-            "priority3": [
-                4797,
-                4801,
-                4862,
-                4863,
-                4864,
-                4865,
-                4866,
-                4867,
-                4868,
-                4869
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 591
-    },
-    {
-        "fields": {
-            "pathDescript": "Game Studies",
-            "pathName": "Game Studies",
-            "priority1": [
-                4941
-            ],
-            "priority2": [
-                4942,
-                4943,
-                4944
-            ],
-            "priority3": [
-                4942,
-                4943,
-                4944
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 597
-    },
-    {
-        "fields": {
-            "pathDescript": "Sustainability",
-            "pathName": "Sustainability",
-            "priority1": [
-                5044,
-                4871,
-                4872,
-                4876,
-                4894,
-                4895
-            ],
-            "priority2": [
-                5031
-            ],
-            "priority3": [
-                4810,
-                4811,
-                4884,
-                4885,
-                4886,
-                4897,
-                4970,
-                5045,
-                5046,
-                5047,
-                5048,
-                5049,
-                5050,
-                5051,
-                5052,
-                5053,
-                5054
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 614
-    },
-    {
-        "fields": {
-            "pathDescript": "Science, Technology, and Society",
-            "pathName": "Science, Technology, And Society",
-            "priority1": [
-                4973,
-                4974,
-                4793,
-                4894,
-                4895
-            ],
-            "priority2": [
-                4898,
-                4953,
-                4954,
-                4967,
-                5031,
-                5032,
-                5033
-            ],
-            "priority3": [
-                4898,
-                4953,
-                4954,
-                4967,
-                5031,
-                5032,
-                5033
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 611
-    },
-    {
-        "fields": {
-            "pathDescript": "Extent and Limits of Rationality",
-            "pathName": "Extent And Limits Of Rationality",
-            "priority1": [
-                4746,
-                4817,
-                4902,
-                4903,
-                4904,
-                4905
-            ],
-            "priority2": [
-                4749,
-                4758,
-                4834,
-                4839,
-                4906,
-                4907,
-                4908,
-                4909,
-                4910,
-                4911,
-                4912,
-                4913
-            ],
-            "priority3": [
-                4749,
-                4758,
-                4834,
-                4839,
-                4906,
-                4907,
-                4908,
-                4909,
-                4910,
-                4911,
-                4912,
-                4913
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 594
-    },
-    {
-        "fields": {
-            "pathDescript": "Well-being: Body and Mind",
-            "pathName": "Well-Being: Body And Mind",
-            "priority1": [
-                5038,
-                4870,
-                4746,
-                5055,
-                4763,
-                4874,
-                4905,
-                4769,
-                5077
-            ],
-            "priority2": [
-                4774,
-                4777,
-                4778,
-                4779,
-                4780,
-                4901,
-                4933,
-                4978,
-                5000,
-                5078,
-                5079,
-                5080,
-                5081,
-                5082,
-                5083,
-                5084
-            ],
-            "priority3": [
-                4774,
-                4777,
-                4778,
-                4779,
-                4780,
-                4901,
-                4933,
-                4978,
-                5000,
-                5078,
-                5079,
-                5080,
-                5081,
-                5082,
-                5083,
-                5084
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 618
-    },
-    {
-        "fields": {
-            "pathDescript": "Mind, Brain, and Intelligence",
-            "pathName": "Mind, Brain, And Intelligence",
-            "priority1": [
-                4749
-            ],
-            "priority2": [
-                4746,
-                4747,
-                4748,
-                4758,
-                4773,
-                4776,
-                4910,
-                5002,
-                5016,
-                5017
-            ],
-            "priority3": [
-                4746,
-                4747,
-                4748,
-                4758,
-                4773,
-                4776,
-                4910,
-                5002,
-                5016,
-                5017
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 608
-    },
-    {
-        "fields": {
-            "pathDescript": "Information Technology and Web Sciences",
-            "pathName": "Information Technology And Web Sciences",
-            "priority1": [
-                4973,
-                4974,
-                4975
-            ],
-            "priority2": [
-                4973,
-                4974,
-                4975
-            ],
-            "priority3": [
-                4749,
-                4766,
-                4817,
-                4895,
-                4906,
-                4912,
-                4956,
-                4976,
-                4977,
-                4978,
-                4979,
-                4980
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 601
-    },
-    {
-        "fields": {
-            "pathDescript": "Economics",
+            "pathDescript": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
             "pathName": "Economics",
             "priority1": [
-                4817,
-                4818
+                3776,
+                3777
             ],
             "priority2": [
-                4819,
-                4820,
-                4821
+                3776,
+                3777
             ],
             "priority3": [
-                4822,
-                4823,
-                4824,
-                4825,
-                4826,
-                4827,
-                4828,
-                4829,
-                4830,
-                4831,
-                4832,
-                4833,
-                4834,
-                4835,
-                4836,
-                4837,
-                4838,
-                4839,
-                4840,
-                4841,
-                4842,
-                4843,
-                4844,
-                4845,
-                4846,
-                4847,
-                4848,
-                4849,
-                4850,
-                4851,
-                4852,
-                4853,
-                4854
+                3781,
+                3782,
+                3783,
+                3784,
+                3785,
+                3786,
+                3787,
+                3788,
+                3789,
+                3790,
+                3791,
+                3792,
+                3793,
+                3794,
+                3795,
+                3796,
+                3797,
+                3798,
+                3799,
+                3800,
+                3801,
+                3802,
+                3803,
+                3804,
+                3805,
+                3806,
+                3807,
+                3808,
+                3809,
+                3810,
+                3811,
+                3812,
+                3813
             ]
         },
         "model": "database.pathway",
-        "pk": 584
+        "pk": 441
     },
     {
         "fields": {
-            "pathDescript": "Gender, Race, Sexuality, Ethnicity, and Social Change",
+            "pathDescript": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.",
+            "pathName": "Economics Of Banking & Finance",
+            "priority1": [
+                3776,
+                3777
+            ],
+            "priority2": [
+                3776,
+                3777
+            ],
+            "priority3": [
+                3784,
+                3814,
+                3804
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 442
+    },
+    {
+        "fields": {
+            "pathDescript": "Study how individuals and firms make financial and economic decisions, and how those decisions might deviate from those predicted by traditional economic theory. Students are prepared to apply behavioral models of decision-making and experimental methods in economics.",
+            "pathName": "Economics Of Decision-Making",
+            "priority1": [
+                3776,
+                3777
+            ],
+            "priority2": [
+                3776,
+                3777
+            ],
+            "priority3": [
+                3778,
+                3793,
+                3798,
+                3802,
+                3804,
+                3806
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 443
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of markets related to pharmaceuticals, medical devices, and healthcare. Students are prepared to use theory, econometric models, and data to study the role of R&D, patents, innovation, and policies in healthcare markets, and in pharmaceuticals and medical devices.",
+            "pathName": "Economics Of Healthcare Markets",
+            "priority1": [
+                3776,
+                3777
+            ],
+            "priority2": [
+                3776,
+                3777
+            ],
+            "priority3": [
+                3788,
+                3798,
+                3800
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 444
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of regulations and economic policy measures, and their impact on individuals, markets, and the economy. Students are prepared to use economic models, quantitative methods, and data to assess different types of regulations and policies, and their impact.",
+            "pathName": "Economics Of Policy & Regulations",
+            "priority1": [
+                3776,
+                3777
+            ],
+            "priority2": [
+                3776,
+                3777
+            ],
+            "priority3": [
+                3786,
+                3788,
+                3794,
+                3815
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 445
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of mathematical models and econometric techniques used in Economics. Students are prepared to use economic theory, and econometric and statistical methods to study behavior of individuals and firms in the economy.",
+            "pathName": "Economics Of Quantitative Modeling",
+            "priority1": [
+                3776,
+                3777
+            ],
+            "priority2": [
+                3776,
+                3777
+            ],
+            "priority3": [
+                3816,
+                3806,
+                3808
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 446
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of economic models related to innovation and new technologies. Students are prepared to use economic theory, econometric and statistical methods, and data to examine patents, R&D, and innovation more broadly, as well as in specific industries in the economy.",
+            "pathName": "Economics Of Technology & Innovation",
+            "priority1": [
+                3776,
+                3777
+            ],
+            "priority2": [
+                3776,
+                3777
+            ],
+            "priority3": [
+                3782,
+                3800,
+                3817
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 447
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway allows students to study a range of approaches to electronic, or digital arts, such as digital imaging, graphic storytelling, interactive media, and 3D animation. This immersive study will give students a comprehensive view of how to use digital tools to tell stories, and to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
+            "pathName": "Electronic Arts",
+            "priority1": [
+                3745,
+                3818,
+                3819,
+                3820,
+                3750,
+                3751
+            ],
+            "priority2": [
+                3745,
+                3818,
+                3819,
+                3820,
+                3750,
+                3751
+            ],
+            "priority3": [
+                3821,
+                3822,
+                3823,
+                3824,
+                3756,
+                3825,
+                3826,
+                3827,
+                3828,
+                3760
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 448
+    },
+    {
+        "fields": {
+            "pathDescript": "The future seems up for grabs as climate change challenges human and nonhuman societies to meet basic needs for clean air, water, soil, food, and energy. How will we adapt, reduce harm, or mitigate the problems of the past and present? This pathway involves courses in sustainability, defined as the means to ensure the well-being of the planet and quality of life of present and future generations. Courses integrate research and insights from the social sciences, arts, and humanities to pursue a healthy environment, economic prosperity, and social justice by building on the present to inform the future.",
+            "pathName": "Environmental Futures",
+            "priority1": [
+                3748,
+                3829,
+                3776,
+                3830,
+                3831,
+                3832,
+                3833,
+                3834,
+                3835
+            ],
+            "priority2": [
+                3748,
+                3829,
+                3776,
+                3830,
+                3831,
+                3832,
+                3833,
+                3834,
+                3835
+            ],
+            "priority3": [
+                3836,
+                3837,
+                3838,
+                3839,
+                3794,
+                3840,
+                3841,
+                3842,
+                3843,
+                3769,
+                3770,
+                3844,
+                3845,
+                3846,
+                3847,
+                3848
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 449
+    },
+    {
+        "fields": {
+            "pathDescript": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.",
+            "pathName": "Ethics, Integrity, And Social Responsibility",
+            "priority1": [
+                3705,
+                3849,
+                3850,
+                3832,
+                3851,
+                3835,
+                3852,
+                3853,
+                3854
+            ],
+            "priority2": [
+                3705,
+                3849,
+                3850,
+                3832,
+                3851,
+                3835,
+                3852,
+                3853,
+                3854
+            ],
+            "priority3": [
+                3836,
+                3839,
+                3855,
+                3840,
+                3856,
+                3841,
+                3842,
+                3857,
+                3858,
+                3859,
+                3860
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 450
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway explores the design, creation, and analysis of games.  Students completing this pathway will develop depth in creative and critical thinking, technological proficiency and multicultural awareness.",
+            "pathName": "Game Studies",
+            "priority1": [
+                3900
+            ],
+            "priority2": [
+                3900
+            ],
+            "priority3": [
+                3901,
+                3902,
+                3903
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 454
+    },
+    {
+        "fields": {
+            "pathDescript": "A pathway for those who are curious about what makes something fake or factual and how such concepts are evolving in contemporary political and popular culture. Students will learn how to think more precisely and analytically about the distinctions between fact, fiction, truth, and reality.",
+            "pathName": "Fact And Fiction",
+            "priority1": [
+                3746,
+                3850,
+                3720,
+                3873,
+                3874,
+                3875,
+                3876,
+                3877,
+                3878,
+                3879
+            ],
+            "priority2": [
+                3746,
+                3850,
+                3720,
+                3873,
+                3874,
+                3875,
+                3876,
+                3877,
+                3878,
+                3879
+            ],
+            "priority3": [
+                3880,
+                3855,
+                3881,
+                3882,
+                3883,
+                3884,
+                3885,
+                3886,
+                3866,
+                3867,
+                3887,
+                3888,
+                3889,
+                3890,
+                3891,
+                3892,
+                3893
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 452
+    },
+    {
+        "fields": {
+            "pathDescript": "Humans can do, and have done, some really stupid things: we are not as rational as we would like to think, and we are subject to scores of cognitive and social biases. That said, however, we also have the power to correct for these, and to do good and constructive work. Let's see how we can harness our cognitive and social powers for the good. How can critical thinking be used constructively? How can we learn from our past mistakes? How can social institutions and policies be set up to ensure that we will make wise decisions and create a world that lasts into the extended future?",
+            "pathName": "Extent And Limits Of Rationality",
+            "priority1": [
+                3705,
+                3776,
+                3861,
+                3862,
+                3863,
+                3864
+            ],
+            "priority2": [
+                3705,
+                3776,
+                3861,
+                3862,
+                3863,
+                3864
+            ],
+            "priority3": [
+                3708,
+                3865,
+                3793,
+                3798,
+                3866,
+                3867,
+                3868,
+                3717,
+                3869,
+                3870,
+                3871,
+                3872
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 451
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same foreign language.",
+            "pathName": "Foreign Language",
+            "priority1": [
+                3894,
+                3895
+            ],
+            "priority2": [
+                3894,
+                3895
+            ],
+            "priority3": [
+                3742,
+                3743,
+                3744,
+                3898,
+                3899
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 453
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway enables students to cultivate an appreciation of how diverse identities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.",
             "pathName": "Gender, Race, Sexuality, Ethnicity, And Social Change",
             "priority1": [
-                4890,
-                4761,
-                4914,
-                4945,
-                4946,
-                4947,
-                4948,
-                4793
+                3849,
+                3720,
+                3873,
+                3904,
+                3905,
+                3906,
+                3907,
+                3752
             ],
             "priority2": [
-                4879,
-                4924,
-                4949,
-                4950,
-                4951,
-                4952,
-                4953,
-                4954,
-                4955
+                3849,
+                3720,
+                3873,
+                3904,
+                3905,
+                3906,
+                3907,
+                3752
             ],
             "priority3": [
-                4879,
-                4924,
-                4949,
-                4950,
-                4951,
-                4952,
-                4953,
-                4954,
-                4955
+                3838,
+                3908,
+                3883,
+                3909,
+                3910,
+                3911,
+                3912,
+                3913,
+                3914
             ]
         },
         "model": "database.pathway",
-        "pk": 598
+        "pk": 455
     },
     {
         "fields": {
-            "pathDescript": "Living in a World of Data",
-            "pathName": "Living In A World Of Data",
-            "priority1": [
-                4746,
-                4890,
-                4891,
-                4817,
-                4973,
-                4974
-            ],
-            "priority2": [
-                4834,
-                4839,
-                4849,
-                4907,
-                4908,
-                4958,
-                4959,
-                4982,
-                5001,
-                5002,
-                5003,
-                5004
-            ],
-            "priority3": [
-                4834,
-                4839,
-                4849,
-                4907,
-                4908,
-                4958,
-                4959,
-                4982,
-                5001,
-                5002,
-                5003,
-                5004
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 605
-    },
-    {
-        "fields": {
-            "pathDescript": "Video, Performance, and Social Practice",
-            "pathName": "Video, Performance, And Social Practice",
-            "priority1": [
-                4787,
-                4761,
-                4915,
-                4860,
-                4789,
-                4905,
-                4792,
-                5010
-            ],
-            "priority2": [
-                4766,
-                4896,
-                4921,
-                4922,
-                5058,
-                5074,
-                5075,
-                5076
-            ],
-            "priority3": [
-                4767,
-                4801,
-                4896,
-                5058,
-                5075
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 617
-    },
-    {
-        "fields": {
-            "pathDescript": "Strategic Communication",
-            "pathName": "Strategic Communication",
-            "priority1": [
-                5034,
-                5035,
-                4906,
-                4803,
-                5014,
-                4951,
-                5008,
-                5036,
-                4962,
-                4980,
-                4912,
-                5037
-            ],
-            "priority2": [
-                4803,
-                4906,
-                4912,
-                4951,
-                4962,
-                4980,
-                5008,
-                5014,
-                5034,
-                5035,
-                5036,
-                5037
-            ],
-            "priority3": [
-                4803,
-                4906,
-                4912,
-                4951,
-                4962,
-                4980,
-                5008,
-                5014,
-                5034,
-                5035,
-                5036,
-                5037
-            ]
-        },
-        "model": "database.pathway",
-        "pk": 612
-    },
-    {
-        "fields": {
-            "pathDescript": "Interactive Media/Data Design",
+            "pathDescript": "The Interactive Media/Data Design pathway covers communication design theory and practice, interaction design theory and practice, and information design to prepare students for creating different forms of interactive, multimedia communication and data representation. Students use critical thinking, creative thinking, multimedia design, and data representation to develop effective forms of communication in diverse global contexts.",
             "pathName": "Interactive Media/Data Design",
             "priority1": [
-                4914,
-                4906,
-                4956,
-                4981,
-                4982,
-                4958,
-                4983,
-                4984,
-                4959,
-                4962
+                3873,
+                3865,
+                3915,
+                3940,
+                3941,
+                3917,
+                3942,
+                3943,
+                3918,
+                3921
             ],
             "priority2": [
-                4906,
-                4914,
-                4956,
-                4958,
-                4959,
-                4962,
-                4981,
-                4982,
-                4983,
-                4984
+                3873,
+                3865,
+                3915,
+                3940,
+                3941,
+                3917,
+                3942,
+                3943,
+                3918,
+                3921
             ],
             "priority3": [
-                4906,
-                4914,
-                4956,
-                4958,
-                4959,
-                4962,
-                4981,
-                4982,
-                4983,
-                4984
+                3873,
+                3865,
+                3915,
+                3940,
+                3941,
+                3917,
+                3942,
+                3943,
+                3918,
+                3921
             ]
         },
         "model": "database.pathway",
-        "pk": 602
+        "pk": 459
     },
     {
         "fields": {
-            "pathDescript": "Music and Culture",
+            "pathDescript": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.",
+            "pathName": "Media And Culture",
+            "priority1": [
+                3967,
+                3874,
+                3968,
+                3876,
+                3877,
+                3750,
+                3751,
+                3878,
+                3752,
+                3969,
+                3880,
+                3882,
+                3970,
+                3883,
+                3865,
+                3971,
+                3972,
+                3884,
+                3909,
+                3973,
+                3974
+            ],
+            "priority2": [
+                3967,
+                3874,
+                3968,
+                3876,
+                3877,
+                3750,
+                3751,
+                3878,
+                3752,
+                3969,
+                3880,
+                3882,
+                3970,
+                3883,
+                3865,
+                3971,
+                3972,
+                3884,
+                3909,
+                3973,
+                3974
+            ],
+            "priority3": [
+                3967,
+                3874,
+                3968,
+                3876,
+                3877,
+                3750,
+                3751,
+                3878,
+                3752,
+                3969,
+                3880,
+                3882,
+                3970,
+                3883,
+                3865,
+                3971,
+                3972,
+                3884,
+                3909,
+                3973,
+                3974
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 464
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway is designed to train versatile, critical, and self-possessed 21st- century communicators. Students who successfully complete this pathway will demonstrate the ability to make focused, audience-appropriate arguments; communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts; and respond creatively to the analytical demands involved with developing, arranging, and revising ideas and arguments.",
+            "pathName": "Strategic Communication",
+            "priority1": [
+                3993,
+                3994,
+                3865,
+                3762,
+                3973,
+                3910,
+                3967,
+                3995,
+                3921,
+                3939,
+                3871,
+                3996
+            ],
+            "priority2": [
+                3993,
+                3994,
+                3865,
+                3762,
+                3973,
+                3910,
+                3967,
+                3995,
+                3921,
+                3939,
+                3871,
+                3996
+            ],
+            "priority3": [
+                3993,
+                3994,
+                3865,
+                3762,
+                3973,
+                3910,
+                3967,
+                3995,
+                3921,
+                3939,
+                3871,
+                3996
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 469
+    },
+    {
+        "fields": {
+            "pathDescript": "We live in the age of information \u2026 and misinformation \u2026 of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds... and of rushing to judgment on viral videos.  We better all develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding our collective awareness driving our decisions and affecting the world around us.",
+            "pathName": "Living In A World Of Data",
+            "priority1": [
+                3705,
+                3849,
+                3850,
+                3776,
+                3932,
+                3933
+            ],
+            "priority2": [
+                3705,
+                3849,
+                3850,
+                3776,
+                3932,
+                3933
+            ],
+            "priority3": [
+                3941,
+                3917,
+                3918,
+                3793,
+                3798,
+                3808,
+                3866,
+                3867,
+                3960,
+                3961,
+                3962,
+                3963
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 462
+    },
+    {
+        "fields": {
+            "pathDescript": "The Literature and Creative Writing Pathway offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
+            "pathName": "Literature And Creative Writing",
+            "priority1": [
+                3949,
+                3878,
+                3882,
+                3765,
+                3950,
+                3951,
+                3952,
+                3953,
+                3954,
+                3955,
+                3886,
+                3956,
+                3957,
+                3921,
+                3958,
+                3959,
+                3892,
+                3893,
+                3943
+            ],
+            "priority2": [
+                3949,
+                3878,
+                3882,
+                3765,
+                3950,
+                3951,
+                3952,
+                3953,
+                3954,
+                3955,
+                3886,
+                3956,
+                3957,
+                3921,
+                3958,
+                3959,
+                3892,
+                3893,
+                3943
+            ],
+            "priority3": [
+                3949,
+                3878,
+                3882,
+                3765,
+                3950,
+                3951,
+                3952,
+                3953,
+                3954,
+                3955,
+                3886,
+                3956,
+                3957,
+                3921,
+                3958,
+                3959,
+                3892,
+                3893,
+                3943
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 461
+    },
+    {
+        "fields": {
+            "pathDescript": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
             "pathName": "Music And Culture",
             "priority1": [
-                5018,
-                4760,
-                4763,
-                4946,
-                4874,
-                4791,
-                4792,
-                5010
+                3977,
+                3719,
+                3722,
+                3905,
+                3833,
+                3750,
+                3751,
+                3969
             ],
             "priority2": [
-                4797,
-                4801,
-                5019,
-                5020,
-                5021,
-                5022,
-                5023
+                3977,
+                3719,
+                3722,
+                3905,
+                3833,
+                3750,
+                3751,
+                3969
             ],
             "priority3": [
-                4797,
-                4801,
-                5019,
-                5020,
-                5021,
-                5022,
-                5023
+                3978,
+                3979,
+                3980,
+                3756,
+                3981,
+                3982,
+                3760
             ]
         },
         "model": "database.pathway",
-        "pk": 609
+        "pk": 466
     },
     {
         "fields": {
-            "pathDescript": "Thinking with Science",
+            "pathDescript": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provides in our lives and workplaces.  Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered deisgn issues to make technology more usable.",
+            "pathName": "Information Technology And Web Sciences",
+            "priority1": [
+                3932,
+                3933,
+                3934
+            ],
+            "priority2": [
+                3932,
+                3933,
+                3934
+            ],
+            "priority3": [
+                3725,
+                3708,
+                3865,
+                3915,
+                3776,
+                3935,
+                3936,
+                3937,
+                3854,
+                3938,
+                3939,
+                3871
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 458
+    },
+    {
+        "fields": {
+            "pathDescript": "Study Graphic Design through the integration of theory and practice, in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols and images.",
+            "pathName": "Graphic Design",
+            "priority1": [
+                3873,
+                3749,
+                3865,
+                3763,
+                3915,
+                3765,
+                3916,
+                3917,
+                3918,
+                3767,
+                3919,
+                3920,
+                3921
+            ],
+            "priority2": [
+                3873,
+                3749,
+                3865,
+                3763,
+                3915,
+                3765,
+                3916,
+                3917,
+                3918,
+                3767,
+                3919,
+                3920,
+                3921
+            ],
+            "priority3": [
+                3873,
+                3749,
+                3865,
+                3763,
+                3915,
+                3765,
+                3916,
+                3917,
+                3918,
+                3767,
+                3919,
+                3920,
+                3921
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 456
+    },
+    {
+        "fields": {
+            "pathDescript": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You\u2019ll also learn how to effectively communicate and handle foreign languages.",
+            "pathName": "Linguistics",
+            "priority1": [
+                3944,
+                3948
+            ],
+            "priority2": [
+                3944,
+                3948
+            ],
+            "priority3": [
+                3945,
+                3946,
+                3713,
+                3908,
+                3910,
+                3947
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 460
+    },
+    {
+        "fields": {
+            "pathDescript": "The pathway in History is designed for students interested in US and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.",
+            "pathName": "History",
+            "priority1": [
+                3831,
+                3922,
+                3923,
+                3924,
+                3925,
+                3907,
+                3878,
+                3853,
+                3854
+            ],
+            "priority2": [
+                3831,
+                3922,
+                3923,
+                3924,
+                3925,
+                3907,
+                3878,
+                3853,
+                3854
+            ],
+            "priority3": [
+                3927,
+                3928,
+                3929,
+                3930,
+                3931,
+                3888,
+                3889,
+                3844,
+                3845
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 457
+    },
+    {
+        "fields": {
+            "pathDescript": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
+            "pathName": "Science, Technology, And Society",
+            "priority1": [
+                3932,
+                3933,
+                3752,
+                3853,
+                3854
+            ],
+            "priority2": [
+                3932,
+                3933,
+                3752,
+                3853,
+                3854
+            ],
+            "priority3": [
+                3926,
+                3990,
+                3912,
+                3913,
+                3857,
+                3991,
+                3992
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 468
+    },
+    {
+        "fields": {
+            "pathDescript": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions, about enduring and contemporary problems in ethics, science, technology, religion, and politics \u2014 including some of the biggest challenges that humanity currently faces.",
+            "pathName": "Philosophy",
+            "priority1": [
+                3879,
+                3983,
+                3849,
+                3850,
+                3984,
+                3707,
+                3985,
+                3866,
+                3867,
+                3868
+            ],
+            "priority2": [
+                3879,
+                3983,
+                3849,
+                3850,
+                3984,
+                3707,
+                3985,
+                3866,
+                3867,
+                3868
+            ],
+            "priority3": [
+                3986,
+                3987,
+                3887,
+                3860,
+                3840,
+                3988,
+                3964,
+                3989
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 467
+    },
+    {
+        "fields": {
+            "pathDescript": "This Pathway is for students with an interest in symbolic logic, and the connections between formal logic and mathematics, computer science, Artificial Intelligence, and the human mind.",
+            "pathName": "Logical Thinking",
+            "priority1": [
+                3707,
+                3705,
+                3868,
+                3964,
+                3965,
+                3966,
+                3717,
+                3866,
+                3867
+            ],
+            "priority2": [
+                3707,
+                3705,
+                3868,
+                3964,
+                3965,
+                3966,
+                3717,
+                3866,
+                3867
+            ],
+            "priority3": [
+                3707,
+                3705,
+                3868,
+                3964,
+                3965,
+                3966,
+                3717,
+                3866,
+                3867
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 463
+    },
+    {
+        "fields": {
+            "pathDescript": "Discover Cognitive Science: a young but fast-growing field focused on the study of mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artificial intelligence.",
+            "pathName": "Mind, Brain, And Intelligence",
+            "priority1": [
+                3708
+            ],
+            "priority2": [
+                3708
+            ],
+            "priority3": [
+                3705,
+                3706,
+                3707,
+                3732,
+                3735,
+                3975,
+                3717,
+                3961,
+                3869,
+                3976
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 465
+    },
+    {
+        "fields": {
+            "pathDescript": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society.  In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
+            "pathName": "Understanding Human Behavior",
+            "priority1": [
+                3727
+            ],
+            "priority2": [
+                3727
+            ],
+            "priority3": [
+                3728,
+                3960,
+                4020,
+                4021,
+                4022,
+                4023,
+                4024,
+                4025,
+                3961,
+                3869,
+                4026,
+                4027,
+                3733,
+                4028,
+                4029,
+                4030,
+                4031,
+                4032
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 473
+    },
+    {
+        "fields": {
+            "pathDescript": "How do we maintain a sense of well-being in our lives? Each person\u2019s path to well-being in body and mind is unique\u2014arising from an awareness of our needs, goals and what we find fulfilling. The Well-being Interdisciplinary Pathway includes a wide variety of courses that explore the nature of what it is to be human and to orient ourselves in the world, to have relationships, make decisions, be creative, and make discoveries.",
+            "pathName": "Well-Being: Body And Mind",
+            "priority1": [
+                3997,
+                3829,
+                3705,
+                4014,
+                3722
+            ],
+            "priority2": [
+                3997,
+                3829,
+                3705,
+                4014,
+                3722
+            ],
+            "priority3": []
+        },
+        "model": "database.pathway",
+        "pk": 475
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway offers instruction in identifying and understanding the methods and media for scientific knowledge is dissemination. Students who successfully complete this pathway will demonstrate the ability to critique how textual and social representations create diverse and competing receptions of scientific knowledge; analyze the social construction of scientific knowledge; and solve problems through disseminating scientific knowledge across a variety of social and rhetorical contexts.",
             "pathName": "Thinking With Science",
             "priority1": [
-                4891,
-                5055,
-                5056,
-                5057,
-                4894,
-                4895
+                3850,
+                4014,
+                4015,
+                4016,
+                3853,
+                3854
             ],
             "priority2": [
-                4906,
-                4907,
-                4908,
-                4911,
-                4913,
-                4927,
-                4928,
-                4970,
-                4980,
-                5027,
-                5058,
-                5059,
-                5060
+                3850,
+                4014,
+                4015,
+                4016,
+                3853,
+                3854
             ],
             "priority3": [
-                4906,
-                4907,
-                4908,
-                4911,
-                4913,
-                4927,
-                4928,
-                4970,
-                4980,
-                5027,
-                5058,
-                5059,
-                5060
+                4017,
+                4018,
+                3865,
+                3886,
+                3866,
+                3867,
+                3986,
+                3887,
+                3929,
+                3870,
+                3939,
+                4019,
+                3872
             ]
         },
         "model": "database.pathway",
-        "pk": 615
+        "pk": 472
     },
     {
         "fields": {
-            "pathDescript": "Studio Arts",
-            "pathName": "Studio Arts",
+            "pathDescript": "The pathway in Sustainability focuses on the interactions between various systems - social, political, cultural, economic, technological and ecological - that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems.",
+            "pathName": "Sustainability",
             "priority1": [
-                4859,
-                4766
+                4003,
+                3830,
+                3831,
+                3835,
+                3853,
+                3854
             ],
             "priority2": [
-                4794,
-                4795,
-                5038,
-                5039
+                4003,
+                3830,
+                3831,
+                3835,
+                3853,
+                3854
             ],
             "priority3": [
-                4799,
-                5040,
-                5041,
-                5042,
-                5043
+                4004,
+                3856,
+                3929,
+                3843,
+                3769,
+                3770,
+                4005,
+                4006,
+                3844,
+                3845,
+                4007,
+                4008,
+                4009,
+                4010,
+                4011,
+                4012,
+                4013
             ]
         },
         "model": "database.pathway",
-        "pk": 613
+        "pk": 471
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway allows students to study video, performance and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio mediums. Strategically situating art, media and technology in a social context, students engage in creative practice designed to make change from the local to the global.",
+            "pathName": "Video, Performance, And Social Practice",
+            "priority1": [
+                3746,
+                3720,
+                3874,
+                3819,
+                3748,
+                3864,
+                3751,
+                3969
+            ],
+            "priority2": [
+                3746,
+                3720,
+                3874,
+                3819,
+                3748,
+                3864,
+                3751,
+                3969
+            ],
+            "priority3": [
+                4034,
+                3726,
+                4017,
+                3855,
+                3760
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 474
+    },
+    {
+        "fields": {
+            "pathDescript": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history and theory in the visual arts.  Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color, 2 and 3D Design, and learn to articulate ideas about their own, other students\u2019, and historical works through class discussions and critiques.",
+            "pathName": "Studio Arts",
+            "priority1": [
+                3818,
+                3725
+            ],
+            "priority2": [
+                3818,
+                3725
+            ],
+            "priority3": [
+                3999,
+                4000,
+                3758,
+                4001,
+                4002
+            ]
+        },
+        "model": "database.pathway",
+        "pk": 470
     }
 ]
