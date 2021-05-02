@@ -41,3 +41,6 @@ The ideal format for a branch name in this project is `issueNumber-&-issueNumber
 For example, a possible branch name would be called `3-&-16/John`. You'd base your branch off the `all-frontend` or `all-backend` branch depending on what *stack* (frontend or backend) issue you've been assigned. All issues are created with a label assigned to them (if one hasn't been labeled, let the project leader know ASAP).
 
 When you're completely done with your issues that have been assigned to you, push to your specific branch then create a pull request to the your main-stack's branch (`all-frontend` or `all-backend`). If the pull request is approved, you should expect to see your commits made to your stack's main branch **and** your changes should be out on the live production page.
+
+# Thanks
+A big thank you to Professor Bram Van Heuveln for allowing Alex Montes, Christopher Ng, Vincent Chen, and myself to join the BramHub organization and develop a department run organization tool that aims to support over 4,000 current students along with an annual rate of 1,500 incoming students
