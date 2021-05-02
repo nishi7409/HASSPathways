@@ -11,14 +11,12 @@ This project was developed to help students navigate through Rensselaer Polytech
 #### Data Sheet
 https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97qN8w/edit?usp=sharing
 
-#### Fill Database
-Update later
-
 #### Automation
-Update later
-
-#### Server Configuration & Deployment
-Update later
+1. Head to [website]
+2. Login
+3. Head to [website] and upload the CSV file
+4. Go to this repository's GitHub Actions page
+5. Run the automation (it'll run automatically every Sunday @ 12 AM)
 
 # Developer Information
 #### Frontend Setup
@@ -30,9 +28,13 @@ Update later
 - Visit the specified website the console spits out
 
 #### Backend Setup
-- Update later
+- https://github.com/Bram-Hub/CSV-Uploader
+- `python3 manage.py makemigrations`
+- `python3 manage.py migrate`
+- `python3 manage.py createsuperuser` and enter the information (email field can be left empty)
+- `python3 manage.py runserver`
 
-#### Branches/Pull Requests
+#### Branches/Pull Requests (old)
 To maintain an individual's credibility towards this project and order, we'll be using branches and pull requests. Branches will separate our work from one another preventing each other from overwriting someone's work. Pull requests is more of a formaility before it goes to production. With an active pull request, it tells the other developers part of the team that a feature/issue has been newly created/resolved. Pull requests will be handled by @nishi7409
 
 The ideal format for a branch name in this project is `issueNumber-&-issueNumber/FirstName`
